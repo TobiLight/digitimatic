@@ -31,7 +31,7 @@
 	});
 </script>
 
-<main id="main-page" class="min-h-screen mt-[118px]">
+<main id="main-page" class="min-h-screen mt-[74px] md:mt-[109px]">
 	<section class="max-h-[700px] w-full bg-black">
 		<div class="p-4 h-auto flex flex-col justify-center opacity-90">
 			<h1
