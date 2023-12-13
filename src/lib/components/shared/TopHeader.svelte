@@ -4,7 +4,7 @@
 	import Youtube from '$lib/components/icons/Youtube.svelte';
 </script>
 
-<div class="top-header flex justify-between bg-black text-white p-3 text-sm">
+<div class="top-header hidden md:flex justify-between bg-black text-white p-3 text-sm">
 	<div class="mail">
 		<p class="text-gray-400">info@digitimatic.com</p>
 	</div>
