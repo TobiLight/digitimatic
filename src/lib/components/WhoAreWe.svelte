@@ -12,7 +12,7 @@
 		<div class="ml-auto grid gap-4">
 			<Handshake class="text-8xl text-green-500" />
 			<h1
-				class="text-5xl text-green-500 sm:text-7xl md:text-[90px] font-bold md:leading-[90px] tracking-wider"
+				class="text-4xl text-green-500 sm:text-7xl md:text-[90px] font-bold md:leading-[90px] tracking-wider"
 			>
 				The shortcut to instant digital influence.
 			</h1>
@@ -29,7 +29,7 @@
 		<div class="ml-auto grid gap-4">
 			<Bulb class="text-8xl ml-auto text-red-500" />
 			<h1
-				class="text-red-500 text-5xl sm:text-7xl md:text-[5.6rem] font-bold md:leading-[90px] tracking-wider"
+				class="text-red-500 text-4xl sm:text-7xl md:text-[5.6rem] font-bold md:leading-[90px] tracking-wider"
 			>
 				Understanding Consumer Buying Behavior
 			</h1>
@@ -45,7 +45,7 @@
 		<div class="ml-auto grid gap-4">
 			<Gear class="text-8xl text-yellow-500" />
 			<h1
-				class="text-5xl text-yellow-500 sm:text-7xl md:text-[90px] font-bold md:leading-[90px] tracking-wider"
+				class="text-4xl text-yellow-500 sm:text-7xl md:text-[90px] font-bold md:leading-[90px] tracking-wider"
 			>
 				Efficiency and Accountability.
 			</h1>
