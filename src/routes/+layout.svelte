@@ -21,7 +21,7 @@
 		>
 		<button
 			type="button"
-			class="flex md:hidden items-center justify-center p-1 rounded-md border border-gray-600 hover:border-green-600 hover:bg-green-300 cursor-pointer"
+			class="flex md:hidden items-center justify-center p-1 rounded-md border border-gray-600 hover:border-gray-600 hover:bg-gray-300 cursor-pointer"
 			on:click={toggleMenu}
 		>
 			{#if $isMenuOpen}
