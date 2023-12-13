@@ -14,7 +14,7 @@
 <header class="sticky top-0 z-[1]">
 	<TopHeader />
 	<nav
-		class="bg-white border-t px-3 py-5 flex items-center justify-between shadow-lg"
+		class="bg-black text-white border-t px-3 py-5 flex items-center justify-between shadow-lg"
 	>
 		<a on:click={() => isMenuOpen.set(false)} href="/" class="logo"
 			>DIGITIMATIC</a
@@ -41,7 +41,7 @@
 		id="mobileMenu"
 		class={`${
 			$isMenuOpen ? "left-0" : "left-[-100%]"
-		} bg-white fixed z-[2] border-t py-8 px-4 w-3/5 shadow-lg overflow-hidden h-full md:hidden transition-all duration-[.7s] ease-out`}
+		} bg-black text-white fixed z-[2] border-t py-8 px-4 w-3/5 shadow-lg overflow-hidden h-full md:hidden transition-all duration-[.7s] ease-out`}
 	>
 		<ul class="nav-links flex flex-col gap-14 h-full">
 			<li><a href="#who-we-are">About Us</a></li>

@@ -27,26 +27,21 @@
  */
 declare module '$env/static/private' {
 	export const LESSOPEN: string;
-	export const npm_package_dev: string;
 	export const USER: string;
 	export const npm_config_user_agent: string;
 	export const GIT_ASKPASS: string;
 	export const npm_node_execpath: string;
-	export const npm_package_resolved: string;
 	export const SHLVL: string;
 	export const npm_config_noproxy: string;
 	export const MOTD_SHOWN: string;
 	export const HOME: string;
-	export const npm_package_optional: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const VSCODE_IPC_HOOK_CLI: string;
 	export const npm_package_json: string;
-	export const npm_package_engines_node: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
-	export const npm_package_integrity: string;
 	export const COLORTERM: string;
 	export const WSL_DISTRO_NAME: string;
 	export const COLOR: string;
@@ -71,12 +66,10 @@ declare module '$env/static/private' {
 	export const npm_package_version: string;
 	export const npm_lifecycle_event: string;
 	export const LESSCLOSE: string;
-	export const npm_package_dev_optional: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const BASH_ENV: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_init_module: string;
-	export const npm_package_peer: string;
 	export const PWD: string;
 	export const npm_execpath: string;
 	export const XDG_DATA_DIRS: string;
@@ -86,6 +79,7 @@ declare module '$env/static/private' {
 	export const WSLENV: string;
 	export const INIT_CWD: string;
 	export const EDITOR: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -116,26 +110,21 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		LESSOPEN: string;
-		npm_package_dev: string;
 		USER: string;
 		npm_config_user_agent: string;
 		GIT_ASKPASS: string;
 		npm_node_execpath: string;
-		npm_package_resolved: string;
 		SHLVL: string;
 		npm_config_noproxy: string;
 		MOTD_SHOWN: string;
 		HOME: string;
-		npm_package_optional: string;
 		TERM_PROGRAM_VERSION: string;
 		VSCODE_IPC_HOOK_CLI: string;
 		npm_package_json: string;
-		npm_package_engines_node: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
-		npm_package_integrity: string;
 		COLORTERM: string;
 		WSL_DISTRO_NAME: string;
 		COLOR: string;
@@ -160,12 +149,10 @@ declare module '$env/dynamic/private' {
 		npm_package_version: string;
 		npm_lifecycle_event: string;
 		LESSCLOSE: string;
-		npm_package_dev_optional: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		BASH_ENV: string;
 		npm_config_globalconfig: string;
 		npm_config_init_module: string;
-		npm_package_peer: string;
 		PWD: string;
 		npm_execpath: string;
 		XDG_DATA_DIRS: string;
@@ -175,6 +162,7 @@ declare module '$env/dynamic/private' {
 		WSLENV: string;
 		INIT_CWD: string;
 		EDITOR: string;
+		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
