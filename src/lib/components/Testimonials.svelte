@@ -2,7 +2,7 @@
 	import Graph from '$lib/components/icons/Graph.svelte';
 </script>
 
-<section class="success-stories bg-black border-t border-gray-600 p-8 py-20 text-white">
+<section id="testimonials" class="success-stories bg-black border-t border-gray-600 p-8 py-20 text-white">
 	<div
 		class="heading flex flex-col sm:flex sm:flex-row text-center sm:text-left items-center gap-4 md:w-3/4 lg:w-3/4 pb-6"
 	>

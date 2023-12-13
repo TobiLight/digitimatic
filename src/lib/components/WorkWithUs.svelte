@@ -1,4 +1,4 @@
-<section class="work-with-us bg-black border-t border-gray-500 p-8">
+<section id="work-with-us" class="work-with-us bg-black border-t border-gray-500 p-8">
 		<h1 class="text-white font-bold text-center text-2xl">WORK WITH US</h1>
 		<div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-white"></div>
 		<form action="#" method="post" class="mt-10 flex flex-col justify-center w-full md:w-3/5 lg:w-3/6 mx-auto">

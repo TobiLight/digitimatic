@@ -5,7 +5,7 @@
 	import Gear from '$lib/components/icons/Gear.svelte';
 </script>
 
-<section class="who-are-we px-8 py-16 bg-black text-white">
+<section id="who-are-we" class="who-are-we px-8 py-16 bg-black text-white">
 	<h1 class="text-4xl font-extrabold mt-8 mb-4 text-center md:text-right">ABOUT US</h1>
 	<div class="w-[120px] mb-16 h-1 bg-white mx-auto md:mx-0 md:float-right"></div>
 	<div class="mt-16 text-left">

@@ -1,4 +1,4 @@
-<section class="bg-black border-t border-gray-600 p-8 text-white">
+<section id="clients" class="bg-black border-t border-gray-600 p-8 text-white">
 	<h1 class="text-center text-4xl font-bold">SIGNIFICANT ASSOCIATION</h1>
 	<div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-white"></div>
 	<div class="grid mt-16 justify-center gap-6 items-center md:w-3/6 mx-auto">

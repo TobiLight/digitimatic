@@ -62,19 +62,5 @@
 </main>
 
 <style>
-	/* Add your Tailwind CSS styles here */
-	.typewriter {
-		font-family: 'Courier New', monospace;
-		font-size: 24px;
-		white-space: nowrap;
-		overflow: hidden;
-		border-right: 2px solid #000;
-		animation: blink-caret 0.75s step-end infinite;
-	}
-
-	@keyframes blink-caret {
-		50% {
-			border-color: transparent;
-		}
-	}
+	
 </style>

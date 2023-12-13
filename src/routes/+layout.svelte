@@ -28,10 +28,10 @@
 			{/if}
 		</button>
 		<ul class="nav-links hidden md:flex items-center gap-10 relative">
-			<li><a href="#about-us">About Us</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#blog">Blog</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#who-we-are">About Us</a></li>
+			<li><a href="#clients">Clients</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#work-with-us">Contact</a></li>
 		</ul>
 	</nav>
 		<nav
