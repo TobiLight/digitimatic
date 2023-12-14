@@ -13,7 +13,7 @@
 			service, ensuring an impressive 99.9% service reliability
 		</p>
 		<div
-			class="grid grid-cols-4 md:grid-cols-5 gap-3 md:w-6/12 md:mx-auto items-center"
+			class="grid grid-cols-4 gap-3 md:w-6/12 md:mx-auto items-center"
 		>
 			<div
 				class="flex-none w-fit h-auto relative bg-gradient-to-r from-gray-200 to-gray-500 rounded-md"
@@ -57,7 +57,7 @@
 		</div>
 
 		<div
-			class="grid grid-cols-3 md:grid-cols-5 gap-3 md:w-8/12 md:mx-auto items-center"
+			class="grid grid-cols-3 gap-3 md:w-8/12 md:mx-auto items-center"
 		>
 			<div
 				class="flex-none w-auto h-auto relative bg-gradient-to-r from-sky-500 to-indigo-500 rounded-md"
@@ -65,7 +65,7 @@
 				<img
 					src="https://digitimatic.com/wp-content/uploads/2023/12/digital_journal.png"
 					alt=""
-					class="inset-0 w-fit h-[50px] object-cover rounded-lg"
+					class="inset-0 w-fit h-[50px] md:mx-auto object-cover rounded-lg"
 					loading="lazy"
 				/>
 			</div>
@@ -94,7 +94,7 @@
 		</div>
 
 		<div
-			class="grid grid-cols-3 md:grid-cols-5 gap-3 md:w-10/12 md:mx-auto items-center"
+			class="grid grid-cols-3 gap-3 md:w-8/12 md:mx-auto items-center"
 		>
 			<div class="flex-none w-auto h-auto relative rounded-md">
 				<img
@@ -111,7 +111,7 @@
 				<img
 					src="https://digitimatic.com/wp-content/uploads/2023/12/variety.png"
 					alt=""
-					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
+					class="inset-0 w-fit h-auto lg:h-[75px] mx-auto object-cover rounded-lg"
 					loading="lazy"
 				/>
 			</div>
@@ -122,14 +122,14 @@
 				<img
 					src="https://digitimatic.com/wp-content/uploads/2023/12/benzinga.png"
 					alt=""
-					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
+					class="inset-0 w-fit h-auto md:h-[75px] mx-auto object-cover rounded-lg"
 					loading="lazy"
 				/>
 			</div>
 			
 		</div>
 		<div
-			class="grid grid-cols-4 md:grid-cols-5 gap-3 md:w-10/12 md:mx-auto items-center"
+			class="grid grid-cols-4 gap-3 md:w-10/12 md:mx-auto items-center"
 		>
 			<div class="flex-none w-auto h-auto bg-gradient-to-r from-orange-200 to-red-300 relative rounded-md">
 				<img
