@@ -16,9 +16,13 @@
 	<nav
 		class="bg-black text-white border-t px-3 py-5 flex items-center justify-between shadow-lg"
 	>
-		<a on:click={() => isMenuOpen.set(false)} href="/" class="logo"
-			>DIGITIMATIC</a
-		>
+		<a on:click={() => isMenuOpen.set(false)} href="/" class="logo w-32 flex-none relative">
+			<img
+				src="https://digitimatic.com/wp-content/uploads/2023/12/digitimatic.png"
+				alt="Digitimatic"
+				class="inset-0 w-full h-full object-cover rounded-lg"
+			/>
+		</a>
 		<button
 			type="button"
 			class="flex md:hidden items-center justify-center p-1 rounded-md border border-gray-600 hover:border-gray-600 hover:bg-gray-300 cursor-pointer"
@@ -41,7 +45,7 @@
 		id="mobileMenu"
 		class={`${
 			$isMenuOpen ? "left-0" : "left-[-100%]"
-		} bg-black text-white fixed z-[3] border-t py-8 px-4 w-3/5 shadow-lg overflow-hidden h-full md:hidden transition-all duration-[.7s] ease-out`}
+		} bg-black text-white fixed z-[3] border-t border-gray-500 py-8 px-4 w-3/5 shadow-lg overflow-hidden h-full md:hidden transition-all duration-[.7s] ease-out`}
 	>
 		<ul class="nav-links flex flex-col gap-14 h-full">
 			<li><a href="#who-we-are">About Us</a></li>

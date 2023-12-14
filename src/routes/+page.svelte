@@ -31,15 +31,14 @@
 	});
 </script>
 
-<main id="main-page" class="min-h-screen mt-[74px] md:mt-[109px]">
-	<section class="max-h-[700px] w-full bg-black">
-		<div class="p-4 h-auto flex flex-col justify-center opacity-90">
+<main id="main-page" class="min-h-screen mt-[112px] md:mt-[157px]">
+	<section class="max-h-[700px] w-full bg-black bg-[url('https://digitimatic.com/wp-content/uploads/2023/12/bg-scaled.jpg')]">
+		<div class="p-4 h-[700px] flex flex-col justify-center opacity-70 bg-back">
 			<h1
 				class="text-white text-5xl sm:text-7xl sm:leading-[70px] md:text-[100px] font-bold md:leading-[100px] sm:ml-8"
 			>
 				High Quality Media Coverage
 			</h1>
-			<div class="w-44 bg-white h-14 p-2 mt-10 sm:ml-8"></div>
 			<div class="text-white w-3/4 my-8 text-lg md:text-2xl sm:ml-8">
 				<p>
 					We have honed the publication process to the very last detail. Putting an emphasis on

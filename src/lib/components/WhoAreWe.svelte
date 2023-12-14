@@ -25,7 +25,7 @@
 			messaging solutions for businesses and individuals seeking to reach a wider audience.
 		</p>
 	</div>
-	<div class="mt-16 text-right">
+	<div class="mt-16 text-right border-t border-gray-500 pt-14">
 		<div class="ml-auto grid gap-4">
 			<Bulb class="text-8xl ml-auto text-red-500" />
 			<h1
@@ -41,7 +41,7 @@
 			choice, utilizing the power of subconscious selling
 		</p>
 	</div>
-	<div class="mt-16 text-left">
+	<div class="mt-16 text-left border-t border-gray-500 pt-14">
 		<div class="ml-auto grid gap-4">
 			<Gear class="text-8xl text-yellow-500" />
 			<h1

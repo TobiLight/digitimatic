@@ -1,32 +1,170 @@
-<section id="clients" class="bg-black border-t border-gray-600 p-8 text-white">
+<section
+	id="clients"
+	class="bg-black border-t-2 border-gray-600 p-8 text-white"
+>
 	<h1 class="text-center text-4xl font-bold">SIGNIFICANT ASSOCIATION</h1>
 	<div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-white"></div>
-	<div class="grid mt-16 justify-center gap-6 items-center md:w-3/6 mx-auto">
-		<p class="mb-6 text-center md:text-xl">
-			We take pride in our vast database, consisting of more than 1,000 esteemed news organizations
-			that have established familiarity with our brand and expertise. This invaluable resource
-			empowers us to provide our customers with an unwavering commitment to exceptional service,
-			ensuring an impressive 99.9% service reliability
+	<div class="grid mt-16 justify-center gap-6 items-center w-full">
+		<p class="mb-6 text-center md:text-xl md:w-3/6 mx-auto">
+			We take pride in our vast database, consisting of more than 1,000
+			esteemed news organizations that have established familiarity with
+			our brand and expertise. This invaluable resource empowers us to
+			provide our customers with an unwavering commitment to exceptional
+			service, ensuring an impressive 99.9% service reliability
 		</p>
-		<div class="grid grid-cols-5 md:flex flex-row gap-6 md:w-4/6 md:mx-auto">
-			<div class="p-3 bg-white rounded-full w-20"></div>
-			<div class="p-3 bg-white rounded-full w-20"></div>
-			<div class="p-3 bg-white rounded-full w-20"></div>
-			<div class="p-3 bg-white rounded-full w-20"></div>
-			<div class="p-3 bg-white rounded-full w-20"></div>
+		<div
+			class="grid grid-cols-4 md:grid-cols-5 gap-3 md:w-6/12 md:mx-auto items-center"
+		>
+			<div
+				class="flex-none w-fit h-auto relative bg-gradient-to-r from-gray-200 to-gray-500 rounded-md"
+			>
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/forbes.png"
+					alt=""
+					class="inset-0 w-32 h-[55px] mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+
+			<div class="flex-none w-fit h-auto relative bg-white rounded-md">
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/dailynail.png"
+					alt=""
+					class="inset-0 w-32 h-[55px] object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+
+			<div class="flex-none w-auto h-auto relative rounded-md">
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/yahoo.png"
+					alt=""
+					class="inset-0 w-32 h-[55px] object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+
+			<div
+				class="flex-none w-auto h-auto px-3 relative bg-white rounded-md"
+			>
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/entrepreneur.png"
+					alt=""
+					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
 		</div>
-		<div class="flex justify-center md:flex flex-row gap-6 md:w-4/5 md:mx-auto">
-			<div class="p-3 bg-white rounded-full w-full"></div>
-			<div class="p-3 bg-white rounded-full w-full"></div>
-			<div class="p-3 bg-white rounded-full w-full"></div>
-			<div class="p-3 bg-white rounded-full w-full"></div>
+
+		<div
+			class="grid grid-cols-3 md:grid-cols-5 gap-3 md:w-8/12 md:mx-auto items-center"
+		>
+			<div
+				class="flex-none w-auto h-auto relative bg-gradient-to-r from-sky-500 to-indigo-500 rounded-md"
+			>
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/digital_journal.png"
+					alt=""
+					class="inset-0 w-fit h-[50px] object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+
+			<div
+				class="flex-none w-auto h-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md"
+			>
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/bloomberg.png"
+					alt=""
+					class="inset-0 w-fit h-[50px] mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+
+			<div
+				class="flex-none w-auto h-auto relative bg-gradient-to-r from-gray-500 to-white rounded-md"
+			>
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/marketwatch.png"
+					alt=""
+					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
 		</div>
-		<div class="grid grid-cols-5 md:flex flex-row gap-6 md:w-4/6 md:mx-auto">
-			<div class="p-3 bg-white rounded-full w-20"></div>
-			<div class="p-3 bg-white rounded-full w-20"></div>
-			<div class="p-3 bg-white rounded-full w-20"></div>
-			<div class="p-3 bg-white rounded-full w-20"></div>
-			<div class="p-3 bg-white rounded-full w-20"></div>
+
+		<div
+			class="grid grid-cols-3 md:grid-cols-5 gap-3 md:w-10/12 md:mx-auto items-center"
+		>
+			<div class="flex-none w-auto h-auto relative rounded-md">
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/laweekly.jpg"
+					alt=""
+					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+
+			<div
+				class="flex-none w-auto h-auto relative bg-gradient-to-r from-green-200 to-blue-300 rounded-md"
+			>
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/variety.png"
+					alt=""
+					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+
+			<div
+				class="flex-none w-auto h-auto relative bg-gradient-to-r from-gray-200 to-gray-500 rounded-md"
+			>
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/benzinga.png"
+					alt=""
+					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+			
+		</div>
+		<div
+			class="grid grid-cols-4 md:grid-cols-5 gap-3 md:w-10/12 md:mx-auto items-center"
+		>
+			<div class="flex-none w-auto h-auto bg-gradient-to-r from-orange-200 to-red-300 relative rounded-md">
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/gq.png"
+					alt=""
+					class="inset-0 w-[80px] h-auto mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+			<div
+				class="flex-none w-auto h-auto relative rounded-md"
+			>
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/adweek.png"
+					alt=""
+					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+			<div class="flex-none w-auto h-auto relative bg-white rounded-md">
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/nasdaq.jpg"
+					alt=""
+					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+			<div class="flex-none w-auto h-auto relative rounded-md">
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/newyorkpost.png"
+					alt=""
+					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
 		</div>
 	</div>
 </section>
