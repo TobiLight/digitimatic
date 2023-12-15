@@ -2,9 +2,10 @@
 	import Graph from '$lib/components/icons/Graph.svelte';
 </script>
 
-<section id="testimonials" class="success-stories bg-black border-t-2 border-gray-600 p-8 py-20 text-white bg-[url('https://digitimatic.com/wp-content/uploads/2023/12/bg2.jpg')] opacity-80">
+<section id="testimonials" class="success-stories bg-black border-t-2 border-gray-600 p-8 py-20 text-white relative">
+	<img src="https://digitimatic.com/wp-content/uploads/2023/12/bg2.jpg" class="absolute overflow-hidden top-0 left-0 right-0 bg-cover h-full w-full opacity-50" alt="">
 	<div
-		class="heading z-[1] flex flex-col sm:flex sm:flex-row text-center sm:text-left items-center gap-4 md:w-3/4 lg:w-3/4 pb-6"
+		class="heading flex flex-col sm:flex sm:flex-row text-center sm:text-left items-center gap-4 md:w-3/4 lg:w-3/4 pb-6 relative z-[0]"
 	>
 		<div class="flex items-center lg:items-end gap-3 rounded-full border border-white p-4">
 			<Graph class="text-white w-32 h-32" />
@@ -17,10 +18,10 @@
 			</p>
 		</div>
 	</div>
-	<hr class="h-1 bg-white rounded-full" />
+	<hr class="h-1 bg-white rounded-full z-[1] relative" />
 
 	<div class="mt-16 grid gap-8 px-2 md:w-3/6 mx-auto">
-		<div class="grid gap-2">
+		<div class="grid gap-2 bg-black opacity-70 p-3 text-white relative z-[0]">
 			<h1 class="text-xl font-bold">Sergey Grybniak</h1>
 			<!-- <div class="flex"></div> -->
 			<p>
@@ -32,9 +33,8 @@
 				business for his agency and successfully sold out his ICO.
 			</p>
 		</div>
-		<div class="grid gap-2 text-right">
+		<div class="grid gap-2 text-right bg-black opacity-70 p-3 text-white relative z-[0]">
 			<h1 class="text-xl font-bold">Guy Sheetrit</h1>
-			<!-- <div class="flex"></div> -->
 			<p>
 				We worked with Guy to help him establish a strong online presence by securing multiple
 				features for him on various news outlets and optimizing his bio for lead generation. These
@@ -46,9 +46,8 @@
 				He has also been featured among promising entrepreneurs to watch for in the Daily Mail
 			</p>
 		</div>
-		<div class="grid gap-2 border-b pb-3">
+		<div class="grid gap-2 border-b pb-3 bg-black opacity-70 p-3 text-white relative z-[0]">
 			<h1 class="text-xl font-bold">Open Head NFT</h1>
-			<!-- <div class="flex"></div> -->
 			<p>
 				Open Head NFT came into the crypto space with a unique offering of on-chain raffles which
 				means full transparency in the selection process. Loot boxes to win over $100 ETH and
@@ -58,9 +57,8 @@
 			</p>
 		</div>
 
-		<div class="grid gap-2 text-right">
+		<!-- <div class="grid gap-2 text-right">
 			<h1 class="text-xl font-bold">Altura NFT</h1>
-			<!-- <div class="flex"></div> -->
 			<p>
 				Altura, a leading platform for Web3 game developers was in need of eyes balls to see their
 				unique offer and came to us. With a mutual understanding, we went to work and got them a few
@@ -69,6 +67,6 @@
 				etc. Currently, Altura has transacted $3.9M in total marketplace volume and boasts of over 44k
 				unique marketplace users.
 			</p>
-		</div>
+		</div> -->
 	</div>
 </section>
