@@ -17,23 +17,23 @@
 				class="grid grid-cols-3 sm:flex justify-center gap-3 md:w-5/12 md:mx-auto items-center"
 			>
 				<figure
-					class="flex-none w-[120px] h-auto relative bg-gradient-to-r from-gray-200 to-gray-500 rounded-md"
+					class="flex-none w-auto h-auto relative bg-gradient-to-r from-gray-200 to-gray-500 rounded-md"
 				>
 					<img
 						src="https://digitimatic.com/wp-content/uploads/2023/12/forbes.png"
 						alt="Forbes"
-						class="inset-0 w-32 h-[60px] mx-auto object-cover rounded-lg"
+						class="inset-0 w-fit h-[60px] mx-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
 				</figure>
 
 				<figure
-					class="flex-none w-[120px] h-auto relative bg-white rounded-md"
+					class="flex-none w-auto h-auto relative bg-white rounded-md"
 				>
 					<img
 						src="https://digitimatic.com/wp-content/uploads/2023/12/dailymail.png"
 						alt="Daily Mail"
-						class="inset-0 w-32 h-auto object-cover rounded-lg"
+						class="inset-0 w-fit h-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
 				</figure>
@@ -42,15 +42,15 @@
 					<img
 						src="https://digitimatic.com/wp-content/uploads/2023/12/yahoo.png"
 						alt="Yahoo"
-						class="inset-0 w-32 h-auto object-cover rounded-lg"
+						class="inset-0 w-fit h-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
 				</figure>
 			</div>
 
-			<div class="flex justify-center gap-3 md:w-5/12 md:mx-auto items-center">
-				<div
-					class="flex-none w-[120px] h-auto relative bg-gradient-to-r from-sky-500 to-indigo-500 rounded-md"
+			<div class="grid grid-cols-3 justify-center gap-3 md:w-5/12 md:mx-auto items-center">
+				<figure
+					class="flex-none w-auto h-auto relative bg-gradient-to-r from-sky-500 to-indigo-500 rounded-md"
 				>
 					<img
 						src="https://digitimatic.com/wp-content/uploads/2023/12/digital_journal.png"
@@ -58,10 +58,10 @@
 						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
-				</div>
+				</figure>
 
-				<div
-					class="flex-none w-[120px] h-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md"
+				<figure
+					class="flex-none w-auto h-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md"
 				>
 					<img
 						src="https://digitimatic.com/wp-content/uploads/2023/12/bloomberg.png"
@@ -69,10 +69,10 @@
 						class="inset-0 px-2 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
-				</div>
+				</figure>
 
-				<div
-					class="flex-none w-[120px] h-auto relative bg-gradient-to-r from-gray-500 to-white rounded-md"
+				<figure
+					class="flex-none w-auto h-auto relative bg-gradient-to-r from-gray-500 to-white rounded-md"
 				>
 					<img
 						src="https://digitimatic.com/wp-content/uploads/2023/12/marketwatch.png"
@@ -80,7 +80,7 @@
 						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
-				</div>
+				</figure>
 			</div>
 
 			<!-- <div
