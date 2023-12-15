@@ -53,7 +53,7 @@
 					class="flex-none w-auto h-auto relative bg-gradient-to-r from-sky-500 to-indigo-500 rounded-md"
 				>
 					<img
-						src="https://digitimatic.com/wp-content/uploads/2023/12/digital_journal.png"
+						src="https://digitimatic.com/wp-content/uploads/2023/12/digital_journal-1.png"
 						alt="Digital Journal"
 						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
@@ -64,9 +64,9 @@
 					class="flex-none w-auto h-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md"
 				>
 					<img
-						src="https://digitimatic.com/wp-content/uploads/2023/12/bloomberg.png"
+						src="https://digitimatic.com/wp-content/uploads/2023/12/bloomberg-1.png"
 						alt="Bloomberg"
-						class="inset-0 px-2 w-fit h-auto mx-auto object-cover rounded-lg"
+						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
 				</figure>
@@ -88,7 +88,7 @@
 			>
 				<div class="flex-none w-auto h-auto relative rounded-md">
 					<img
-						src="https://digitimatic.com/wp-content/uploads/2023/12/laweekly-1.jpg"
+						src="https://digitimatic.com/wp-content/uploads/2023/12/laweekly.jpg"
 						alt="LA Weekly"
 						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
