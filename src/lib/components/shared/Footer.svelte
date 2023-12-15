@@ -7,7 +7,13 @@
 	class="relative bottom-0 flex flex-col-reverse gap-4 md:gap-10 justify-center items-center md:flex-row md:justify-between bg-black text-white p-3 border-t border-gray-600"
 >
 	<div class="logo-copyright flex flex-col items-center w-auto">
-		<h1>DIGITIMATIC</h1>
+		<a href="/" class="logo w-32 flex-none relative">
+			<img
+				src="https://digitimatic.com/wp-content/uploads/2023/12/digitimatic.png"
+				alt="Digitimatic"
+				class="inset-0 w-full h-[50px] object-cover rounded-lg"
+			/>
+		</a>
 		<p class="text-xs">Copyright &copy;{new Date().getFullYear()} Digitimatic</p>
 	</div>
 
