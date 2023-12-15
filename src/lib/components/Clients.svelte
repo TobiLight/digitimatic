@@ -132,8 +132,8 @@
 				</div>
 				<div class="flex-none w-auto h-auto relative rounded-md">
 					<img
-						src="https://digitimatic.com/wp-content/uploads/2023/12/adweek-1.png"
-						alt="ADWEEK"
+						src="https://digitimatic.com/wp-content/uploads/2023/12/newyorkpost-1.png"
+						alt="New York Post"
 						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
@@ -165,8 +165,8 @@
 				</div>
 				<div class="flex-none w-auto h-auto relative rounded-md">
 					<img
-						src="https://digitimatic.com/wp-content/uploads/2023/12/newyorkpost-1.png"
-						alt="New York Post"
+						src="https://digitimatic.com/wp-content/uploads/2023/12/adweek-1.png"
+						alt="ADWEEK"
 						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
 					/>

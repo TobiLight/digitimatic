@@ -2,9 +2,9 @@
 	import Graph from '$lib/components/icons/Graph.svelte';
 </script>
 
-<section id="testimonials" class="success-stories bg-black border-t-2 border-gray-600 p-8 py-20 text-white">
+<section id="testimonials" class="success-stories bg-black border-t-2 border-gray-600 p-8 py-20 text-white bg-[url('https://digitimatic.com/wp-content/uploads/2023/12/bg2.jpg')] opacity-80">
 	<div
-		class="heading flex flex-col sm:flex sm:flex-row text-center sm:text-left items-center gap-4 md:w-3/4 lg:w-3/4 pb-6"
+		class="heading z-[1] flex flex-col sm:flex sm:flex-row text-center sm:text-left items-center gap-4 md:w-3/4 lg:w-3/4 pb-6"
 	>
 		<div class="flex items-center lg:items-end gap-3 rounded-full border border-white p-4">
 			<Graph class="text-white w-32 h-32" />
@@ -20,7 +20,7 @@
 	<hr class="h-1 bg-white rounded-full" />
 
 	<div class="mt-16 grid gap-8 px-2 md:w-3/6 mx-auto">
-		<div class="grid gap-2 border-b pb-3">
+		<div class="grid gap-2">
 			<h1 class="text-xl font-bold">Sergey Grybniak</h1>
 			<!-- <div class="flex"></div> -->
 			<p>
@@ -32,7 +32,7 @@
 				business for his agency and successfully sold out his ICO.
 			</p>
 		</div>
-		<div class="grid gap-2 text-right border-b pb-3">
+		<div class="grid gap-2 text-right">
 			<h1 class="text-xl font-bold">Guy Sheetrit</h1>
 			<!-- <div class="flex"></div> -->
 			<p>
