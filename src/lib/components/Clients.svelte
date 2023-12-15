@@ -37,7 +37,7 @@
 				<img
 					src="https://digitimatic.com/wp-content/uploads/2023/12/yahoo.png"
 					alt=""
-					class="inset-0 w-32 h-[55px] object-cover rounded-lg"
+					class="inset-0 w-32 h-[45px] sm:h-[55px] object-cover rounded-lg"
 					loading="lazy"
 				/>
 			</div>
