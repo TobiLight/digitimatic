@@ -12,9 +12,7 @@
 			provide our customers with an unwavering commitment to exceptional
 			service, ensuring an impressive 99.9% service reliability
 		</p>
-		<div
-			class="grid grid-cols-4 gap-3 md:w-6/12 md:mx-auto items-center"
-		>
+		<div class="grid grid-cols-3 gap-3 md:w-6/12 md:mx-auto items-center">
 			<div
 				class="flex-none w-fit h-auto relative bg-gradient-to-r from-gray-200 to-gray-500 rounded-md"
 			>
@@ -43,22 +41,9 @@
 					loading="lazy"
 				/>
 			</div>
-
-			<div
-				class="flex-none w-auto h-auto px-3 relative bg-white rounded-md"
-			>
-				<img
-					src="https://digitimatic.com/wp-content/uploads/2023/12/entrepreneur.png"
-					alt=""
-					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
-					loading="lazy"
-				/>
-			</div>
 		</div>
 
-		<div
-			class="grid grid-cols-3 gap-3 md:w-8/12 md:mx-auto items-center"
-		>
+		<div class="grid grid-cols-3 gap-3 md:w-8/12 md:mx-auto items-center">
 			<div
 				class="flex-none w-auto h-auto relative bg-gradient-to-r from-sky-500 to-indigo-500 rounded-md"
 			>
@@ -93,9 +78,7 @@
 			</div>
 		</div>
 
-		<div
-			class="grid grid-cols-3 gap-3 md:w-8/12 md:mx-auto items-center"
-		>
+		<div class="grid grid-cols-3 gap-3 md:w-8/12 md:mx-auto items-center">
 			<div class="flex-none w-auto h-auto relative rounded-md">
 				<img
 					src="https://digitimatic.com/wp-content/uploads/2023/12/laweekly.jpg"
@@ -126,12 +109,11 @@
 					loading="lazy"
 				/>
 			</div>
-			
 		</div>
-		<div
-			class="grid grid-cols-4 gap-3 md:w-10/12 md:mx-auto items-center"
-		>
-			<div class="flex-none w-auto h-auto bg-gradient-to-r from-orange-200 to-red-300 relative rounded-md">
+		<div class="grid grid-cols-3 gap-3 md:w-10/12 md:mx-auto items-center">
+			<div
+				class="flex-none w-auto h-auto bg-gradient-to-r from-orange-200 to-red-300 relative rounded-md"
+			>
 				<img
 					src="https://digitimatic.com/wp-content/uploads/2023/12/gq.png"
 					alt=""
@@ -139,9 +121,7 @@
 					loading="lazy"
 				/>
 			</div>
-			<div
-				class="flex-none w-auto h-auto relative rounded-md"
-			>
+			<div class="flex-none w-auto h-auto relative rounded-md">
 				<img
 					src="https://digitimatic.com/wp-content/uploads/2023/12/adweek.png"
 					alt=""
@@ -152,6 +132,19 @@
 			<div class="flex-none w-auto h-auto relative bg-white rounded-md">
 				<img
 					src="https://digitimatic.com/wp-content/uploads/2023/12/nasdaq.jpg"
+					alt=""
+					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
+					loading="lazy"
+				/>
+			</div>
+		</div>
+
+		<div class="grid grid-cols-2 gap-3 md:w-10/12 md:mx-auto items-center">
+			<div
+				class="flex-none w-auto h-auto px-3 relative bg-white rounded-md"
+			>
+				<img
+					src="https://digitimatic.com/wp-content/uploads/2023/12/entrepreneur.png"
 					alt=""
 					class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 					loading="lazy"
