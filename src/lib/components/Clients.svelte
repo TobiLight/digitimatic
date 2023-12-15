@@ -22,7 +22,7 @@
 					<img
 						src="https://digitimatic.com/wp-content/uploads/2023/12/forbes.png"
 						alt="Forbes"
-						class="inset-0 w-32 h-auto mx-auto object-cover rounded-lg"
+						class="inset-0 w-32 h-[60px] mx-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
 				</figure>
