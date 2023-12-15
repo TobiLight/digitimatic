@@ -10,7 +10,7 @@
 	<div class="w-[120px] mb-16 h-1 bg-white mx-auto md:mx-0 md:float-right"></div>
 	<div class="mt-16 text-left">
 		<div class="ml-auto grid gap-4">
-			<Handshake class="w-14 h-14 text-green-500" />
+			<Handshake class="w-14 h-14 md:w-28 md:h-28 text-green-500" />
 			<h1
 				class="text-4xl text-green-500 sm:text-7xl md:text-[90px] font-bold md:leading-[90px] tracking-wider"
 			>
@@ -27,7 +27,7 @@
 	</div>
 	<div class="mt-16 text-right border-t border-gray-500 pt-14">
 		<div class="ml-auto grid gap-4">
-			<Bulb class="w-14 h-14 ml-auto text-red-500" />
+			<Bulb class="w-14 h-14 md:w-28 md:h-28 ml-auto text-red-500" />
 			<h1
 				class="text-red-500 text-4xl sm:text-7xl md:text-[5.6rem] font-bold md:leading-[90px] tracking-wider"
 			>
@@ -43,7 +43,7 @@
 	</div>
 	<div class="mt-16 text-left border-t border-gray-500 pt-14">
 		<div class="ml-auto grid gap-4">
-			<Gear class="w-14 h-14 text-yellow-500" />
+			<Gear class="w-14 h-14 md:w-28 md:h-28 text-yellow-500" />
 			<h1
 				class="text-4xl text-yellow-500 sm:text-7xl md:text-[90px] font-bold md:leading-[90px] tracking-wider"
 			>

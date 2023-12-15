@@ -3,7 +3,7 @@
 </script>
 
 <section id="testimonials" class="success-stories bg-black border-t-2 border-gray-600 p-8 py-20 text-white relative">
-	<img src="https://digitimatic.com/wp-content/uploads/2023/12/bg2.jpg" class="absolute overflow-hidden top-0 left-0 right-0 bg-cover h-full w-full opacity-50" alt="">
+	<!-- <img src="https://digitimatic.com/wp-content/uploads/2023/12/bg2.jpg" class="absolute overflow-hidden top-0 left-0 right-0 bg-cover md:h-full w-full opacity-60" alt=""> -->
 	<div
 		class="heading flex flex-col sm:flex sm:flex-row text-center sm:text-left items-center gap-4 md:w-3/4 lg:w-3/4 pb-6 relative z-[0]"
 	>
@@ -18,7 +18,7 @@
 			</p>
 		</div>
 	</div>
-	<hr class="h-1 bg-white rounded-full z-[1] relative" />
+	<hr class="h-1 bg-white rounded-full z-[0] relative" />
 
 	<div class="mt-16 grid gap-8 px-2 md:w-3/6 mx-auto">
 		<div class="grid gap-2 bg-black opacity-70 p-3 text-white relative z-[0]">
