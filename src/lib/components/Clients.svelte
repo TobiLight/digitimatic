@@ -56,12 +56,12 @@
 			</div>
 
 			<div
-				class="flex-nne flex w-auto h-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md"
+				class="flex-none w-auto h-auto relative bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md"
 			>
 				<img
 					src="https://digitimatic.com/wp-content/uploads/2023/12/bloomberg.png"
-					alt=""
-					class="relative inset-0 w-fit h-[40px] sm:h-[50px] mx-auto object-cover rounded-lg"
+					alt="Bloomberg"
+					class="inset-0 p-2 w-fit h-[40px] sm:h-[50px] mx-auto object-cover rounded-lg"
 					loading="lazy"
 				/>
 			</div>
