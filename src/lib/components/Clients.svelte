@@ -14,7 +14,7 @@
 		</p>
 		<div class="md:hdden grid gap-y-4">
 			<div
-				class="grid grid-cols-3 sm:flex justify-center gap-3 md:w-5/12 md:mx-auto items-center"
+				class="grid grid-cols-3 justify-center gap-3 md:w-5/12 md:mx-auto items-center"
 			>
 				<figure
 					class="flex-none w-auto h-auto relative bg-gradient-to-r from-gray-200 to-gray-500 rounded-md"
@@ -22,7 +22,7 @@
 					<img
 						src="https://digitimatic.com/wp-content/uploads/2023/12/forbes.png"
 						alt="Forbes"
-						class="inset-0 w-fit h-[60px] mx-auto object-cover rounded-lg"
+						class="inset-0 w-fit h-[70px] mx-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
 				</figure>
@@ -83,7 +83,7 @@
 				</figure>
 			</div>
 
-			<!-- <div
+			<div
 				class="grid grid-cols-3 gap-3 md:w-5/12 md:mx-auto items-center"
 			>
 				<div class="flex-none w-auto h-auto relative rounded-md">
@@ -171,7 +171,7 @@
 						loading="lazy"
 					/>
 				</div>
-			</div> -->
+			</div>
 		</div>
 
 	</div>

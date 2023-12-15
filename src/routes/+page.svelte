@@ -32,7 +32,7 @@
 </script>
 
 <main id="main-page" class="min-h-screen mt-[112px] md:mt-[157px]">
-	<section class="max-h-[700px] w-full bg-black bg-[url('https://digitimatic.com/wp-content/uploads/2023/12/bg-scaled.jpg')]">
+	<section class="max-h-[700px] w-full bg-black bg-fixed bg-[url('https://digitimatic.com/wp-content/uploads/2023/12/bg-scaled.jpg')]">
 		<div class="p-4 h-[400px] md:h-[700px] flex flex-col justify-center opacity-70 bg-back">
 			<h1
 				class="text-white text-5xl sm:text-7xl sm:leading-[70px] md:text-[100px] font-bold md:leading-[100px] sm:ml-8"
