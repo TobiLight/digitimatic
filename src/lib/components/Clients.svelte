@@ -20,9 +20,9 @@
 					class="flex-none w-auto h-auto relative bg-gradient-to-r from-gray-200 to-gray-500 rounded-md"
 				>
 					<img
-						src="https://digitimatic.com/wp-content/uploads/2023/12/forbes.png"
+						src="https://digitimatic.com/wp-content/uploads/2023/12/forbes-1.png"
 						alt="Forbes"
-						class="inset-0 w-fit h-[70px] mx-auto object-cover rounded-lg"
+						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
 				</figure>
@@ -88,7 +88,7 @@
 			>
 				<div class="flex-none w-auto h-auto relative rounded-md">
 					<img
-						src="https://digitimatic.com/wp-content/uploads/2023/12/laweekly.jpg"
+						src="https://digitimatic.com/wp-content/uploads/2023/12/laweekly-1.jpg"
 						alt="LA Weekly"
 						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
@@ -110,7 +110,7 @@
 					class="flex-none w-auto h-auto relative bg-gradient-to-r from-gray-200 to-gray-500 rounded-md"
 				>
 					<img
-						src="https://digitimatic.com/wp-content/uploads/2023/12/benzinga.png"
+						src="https://digitimatic.com/wp-content/uploads/2023/12/benzinga-1.png"
 						alt="Benzinga"
 						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
@@ -124,15 +124,15 @@
 					class="flex-none w-auto h-auto bg-gradient-to-r from-orange-200 to-red-300 relative rounded-md"
 				>
 					<img
-						src="https://digitimatic.com/wp-content/uploads/2023/12/gq.png"
+						src="https://digitimatic.com/wp-content/uploads/2023/12/gq-1.png"
 						alt="GQ"
-						class="inset-0 w-[80px] h-auto mx-auto object-cover rounded-lg"
+						class="inset-0 w-auto h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
 				</div>
 				<div class="flex-none w-auto h-auto relative rounded-md">
 					<img
-						src="https://digitimatic.com/wp-content/uploads/2023/12/adweek.png"
+						src="https://digitimatic.com/wp-content/uploads/2023/12/adweek-1.png"
 						alt="ADWEEK"
 						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
@@ -165,7 +165,7 @@
 				</div>
 				<div class="flex-none w-auto h-auto relative rounded-md">
 					<img
-						src="https://digitimatic.com/wp-content/uploads/2023/12/newyorkpost.png"
+						src="https://digitimatic.com/wp-content/uploads/2023/12/newyorkpost-1.png"
 						alt="New York Post"
 						class="inset-0 w-fit h-auto mx-auto object-cover rounded-lg"
 						loading="lazy"
