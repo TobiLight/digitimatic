@@ -27,7 +27,7 @@
 					/>
 				</figure>
 
-				<div
+				<figure
 					class="flex-none w-[120px] h-auto relative bg-white rounded-md"
 				>
 					<img
@@ -36,16 +36,16 @@
 						class="inset-0 w-32 h-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
-				</div>
+				</figure>
 
-				<div class="flex-none w-auto h-auto relative rounded-md">
+				<figure class="flex-none w-auto h-auto relative rounded-md">
 					<img
 						src="https://digitimatic.com/wp-content/uploads/2023/12/yahoo.png"
 						alt="Yahoo"
 						class="inset-0 w-32 h-auto object-cover rounded-lg"
 						loading="lazy"
 					/>
-				</div>
+				</figure>
 			</div>
 
 			<div class="flex justify-center gap-3 md:w-5/12 md:mx-auto items-center">
