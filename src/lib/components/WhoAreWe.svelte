@@ -155,7 +155,7 @@
 		on:inview_change={({ detail }) => {
 			aboutSection.about3 = detail.inView;
 		}}
-		class="mt-16 text-left h-[560px]"
+		class="mt-16 text-left h-[350px] md:h-[420px] lg:h-[560px]"
 	>
 		{#if aboutSection.about3}
 			<div
