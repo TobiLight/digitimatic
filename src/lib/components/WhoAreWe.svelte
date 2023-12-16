@@ -79,13 +79,12 @@
 		}}
 		class="mt-16 text-left"
 	>
-		{#if aboutSection.about1}
 			<div
 				transition:fade={{
 					delay: 500,
 					duration: 600,
 				}}
-				class={"ml-auto grid gap-4"}
+				class={aboutSection.about1 ? "ml-auto grid gap-4 animate__animated animate__fadeIn" :"ml-auto grid gap-4 animate__animated animate__fadeOut"}
 			>
 				<Handshake class="w-14 h-14 md:w-28 md:h-28 text-green-500" />
 				<h1
@@ -100,7 +99,7 @@
 					delay: 500,
 					duration: 600,
 				}}
-				class="mt-6 text-base sm:text-xl md:text-2xl md:w-3/5"
+				class={aboutSection.about1 ? "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 animate__animated animate__fadeIn" : "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 animate__animated animate__fadeOut"}
 			>
 				Crafting unforgettable brand identities for emerging businesses,
 				inspiring trailblazers for aspiring entrepreneurs, and
@@ -109,7 +108,6 @@
 				that specializes in delivering effective messaging solutions for
 				businesses and individuals seeking to reach a wider audience.
 			</p>
-		{/if}
 	</div>
 
 	<div
@@ -119,13 +117,12 @@
 		}}
 		class="mt-16 text-right border-t-2 border-gray-500 pt-12"
 	>
-		{#if aboutSection.about2}
 			<div
 				transition:fade={{
 					delay: 500,
 					duration: 600,
 				}}
-				class="ml-auto grid gap-4"
+				class={aboutSection.about2 ? "ml-auto grid gap-4 animate__animated animate__fadeIn" : "ml-auto grid gap-4 animate__animated animate__fadeOut"}
 			>
 				<Bulb class="w-14 h-14 md:w-28 md:h-28 ml-auto text-red-500" />
 				<h1
@@ -140,14 +137,13 @@
 					delay: 500,
 					duration: 600,
 				}}
-				class="mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 ml-auto"
+				class={ aboutSection.about2 ? "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 ml-auto animate__animated animate__fadeIn" : "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 ml-auto animate__animated animate__fadeOut"}
 			>
 				In today's market, buyers are not only astute but also highly
 				self aware. Our mission is to assist you in effortlessly
 				captivating customers by positioning you as the unmistakable
 				choice, utilizing the power of subconscious selling
 			</p>
-		{/if}
 	</div>
 
 	<div
@@ -160,9 +156,9 @@
 		{#if aboutSection.about3}
 			<div
 				id="about-3"
-				transition:fly={{
-					x: 0,
-					y: 30,
+				transition:fade={{
+					// x: 0,
+					// y: 30,
 					delay: 500,
 					duration: 600,
 				}}
