@@ -5,22 +5,32 @@
 	import "../app.css";
 	import { isMenuOpen } from "../stores/store";
 	import Footer from "$lib/components/shared/Footer.svelte";
+	import "animate.css";
+	import { inview } from "svelte-inview";
 
 	function toggleMenu() {
 		isMenuOpen.set(!$isMenuOpen);
 	}
+
+	let isInView: boolean;
+  const options = {};
 </script>
 
 <header class="fixed w-full top-0 z-[1]">
 	<TopHeader />
 	<nav
-		class="bg-black text-white border-t px-3 py-5 flex items-center justify-between shadow-lg"
+		class="bg-black text-white border-t px-3 py-5 flex items-center justify-between shadow-lg h-[113px]"
 	>
-		<a on:click={() => isMenuOpen.set(false)} href="/" class="logo w-32 flex-none relative">
+		<a
+			on:click={() => isMenuOpen.set(false)}
+			href="/"
+			class="logo w-32 flex-none relative"
+		>
 			<img
 				src="https://digitimatic.com/wp-content/uploads/2023/12/digitimatic.png"
 				alt="Digitimatic"
 				class="inset-0 w-full h-full object-cover rounded-lg"
+				loading="lazy"
 			/>
 		</a>
 		<button
