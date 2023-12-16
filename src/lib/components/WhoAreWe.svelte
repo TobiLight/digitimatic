@@ -86,13 +86,13 @@
 			</p>
 		{/if}
 	</div>
-	<hr class="my-14 bg-gray-500" />
+
 	<div
 		use:inview={options}
 		on:inview_change={(e) => {
 			aboutSection.about2 = e.detail.inView;
 		}}
-		class="mt-16 text-right"
+		class="mt-16 text-right border-t-2 border-gray-500 pt-12"
 	>
 		{#if aboutSection.about2}
 			<div
@@ -125,8 +125,6 @@
 		{/if}
 	</div>
 
-	<hr class="my-14 bg-gray-500" />
-
 	<div
 		use:inview={options}
 		on:inview_change={(e) => {
@@ -140,7 +138,7 @@
 					delay: 500,
 					duration: 600,
 				}}
-				class="ml-auto grid gap-4"
+				class="ml-auto grid gap-4 border-t-2 border-gray-500 pt-12"
 			>
 				<Gear class="w-14 h-14 md:w-28 md:h-28 text-yellow-500" />
 				<h1
