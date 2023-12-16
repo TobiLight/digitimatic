@@ -1,6 +1,6 @@
 <section
 	id="work-with-us"
-	class="work-with-us bg-black border-t-2 border-gray-500 p-8 relative bg-[url('https://digitimatic.com/wp-content/uploads/2023/12/bg2.jpg')]"
+	class="work-with-us bg-black border-t-2 border-gray-500 p-8 relative"
 >
 	<!-- <img
 		src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2F5JdtbnY.jpg&f=1&nofb=1&ipt=4cafee4709cf3f0b06287c46ca66c0536291d3133da16cf6292a62526cb59f9b&ipo=images "
