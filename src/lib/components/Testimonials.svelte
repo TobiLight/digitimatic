@@ -17,15 +17,14 @@
 		isInView = e.detail.inView;
 	}}
 	id="testimonials"
-	class="success-stories bg-black border-t-2 border-gray-600 p-8 py-20 text-white relative"
+	class="success-stories bg-black p-8 py-20 text-white relative"
 >
 	{#if isInView}
 		<div
-			transition:slide={{
+			transition:fade={{
 				delay: 500,
 				duration: 600,
 				easing: quintOut,
-				axis: 'y'
 			}}
 			class="heading flex flex-col sm:flex sm:flex-row text-center sm:text-left items-center gap-4 md:w-3/4 lg:w-3/4 pb-6 relative z-[0]"
 		>
@@ -46,7 +45,7 @@
 			</div>
 		</div>
 	{/if}
-	<hr class="h-1 bg-white rounded-full z-[0] relative" />
+	<!-- <hr class="h-1 w-3/4 bg-white rounded-full z-[0] relative" /> -->
 
 	<div class="mt-16 grid gap-8 px-2 md:w-3/6 mx-auto">
 		<div
@@ -114,3 +113,6 @@
 		</div> -->
 	</div>
 </section>
+
+<style>
+</style>

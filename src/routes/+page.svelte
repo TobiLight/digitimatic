@@ -6,6 +6,7 @@
 	import Clients from "$lib/components/Clients.svelte";
 	import Testimonials from "$lib/components/Testimonials.svelte";
 	import { inview } from "svelte-inview";
+    import Test from "$lib/components/Test.svelte";
 	let isInView: boolean;
 	const options = {};
 
@@ -65,7 +66,10 @@
 		</div>
 	</section>
 	<WhoAreWe />
+	<hr class="border-t-2 border-gray-600" />
 	<Clients />
+	<hr class="border-t-2 border-gray-600" />
 	<Testimonials />
+	<hr class="border-t-2 border-gray-600" />
 	<WorkWithUs />
 </main>

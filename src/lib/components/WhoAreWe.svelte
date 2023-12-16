@@ -5,8 +5,10 @@
 	import Gear from "$lib/components/icons/Gear.svelte";
 	import type { ObserverEventDetails, Options } from "svelte-inview";
 	import { inview } from "svelte-inview";
-	import { slide, fade } from "svelte/transition";
+	import { slide, fade, fly } from "svelte/transition";
 	import { quintOut } from "svelte/easing";
+	import { onMount } from "svelte";
+	import "animate.css";
 
 	let isInView: boolean;
 	const options: Options = {
@@ -18,16 +20,39 @@
 		about2: false,
 		about3: false,
 	};
+
+	function onScroll() {
+		let el = document.getElementById("about-3");
+
+		if (el) {
+			console.log(el.getBoundingClientRect().y);
+
+			return el.getBoundingClientRect().y;
+		}
+	}
+
+	// onMount(() => {
+	// 	window.addEventListener('scroll', onScroll);
+
+	// 	return () => {
+	// 		window.removeEventListener('scroll', onScroll)
+	// 	}
+	// })
 </script>
 
-<section id="who-are-we" class="who-are-we px-8 py-16 bg-black text-white">
-	<div
-		use:inview={options}
-		on:inview_change={(e) => {
-			isInView = e.detail.inView;
-		}}
-	>
-		{#if isInView}
+<section
+	use:inview={options}
+	on:inview_change={(e) => {
+		isInView = e.detail.inView;
+	}}
+	on:inview_leave={(e) => {
+		console.log(e);
+	}}
+	id="who-we-are"
+	class="who-are-we px-8 py-16 bg-black text-white"
+>
+	{#if isInView}
+		<div>
 			<h1
 				transition:slide={{
 					delay: 500,
@@ -44,8 +69,8 @@
 				}}
 				class="w-[120px] mb-16 h-1 bg-white mx-auto md:mx-0 md:float-right"
 			></div>
-		{/if}
-	</div>
+		</div>
+	{/if}
 
 	<div
 		use:inview={options}
@@ -127,14 +152,17 @@
 
 	<div
 		use:inview={options}
-		on:inview_change={(e) => {
-			aboutSection.about3 = e.detail.inView;
+		on:inview_change={({ detail }) => {
+			aboutSection.about3 = detail.inView;
 		}}
-		class={"mt-16 text-left"}
+		class="mt-16 text-left h-[560px]"
 	>
 		{#if aboutSection.about3}
 			<div
-				transition:fade={{
+				id="about-3"
+				transition:fly={{
+					x: 0,
+					y: 30,
 					delay: 500,
 					duration: 600,
 				}}
