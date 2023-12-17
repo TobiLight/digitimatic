@@ -19,7 +19,6 @@
 	id="testimonials"
 	class="success-stories bg-black p-8 py-20 text-white relative"
 >
-	{#if isInView}
 		<div
 			transition:fade={{
 				delay: 500,
@@ -44,7 +43,6 @@
 				</p>
 			</div>
 		</div>
-	{/if}
 	<!-- <hr class="h-1 w-3/4 bg-white rounded-full z-[0] relative" /> -->
 
 	<div class="mt-16 grid gap-8 px-2 md:w-3/6 mx-auto">
