@@ -119,7 +119,7 @@
 	>
 			<div
 				transition:fade={{
-					delay: 500,
+					delay: 250,
 					duration: 600,
 				}}
 				class={aboutSection.about2 ? "ml-auto grid gap-4 animate__animated animate__fadeIn" : "ml-auto grid gap-4 animate__animated animate__fadeOut"}
@@ -134,7 +134,7 @@
 
 			<p
 				transition:fade={{
-					delay: 500,
+					delay: 250,
 					duration: 600,
 				}}
 				class={ aboutSection.about2 ? "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 ml-auto animate__animated animate__fadeIn" : "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 ml-auto animate__animated animate__fadeOut"}
@@ -153,16 +153,13 @@
 		}}
 		class="mt-16 text-left h-[350px] md:h-[420px] lg:h-[560px]"
 	>
-		{#if aboutSection.about3}
 			<div
 				id="about-3"
 				transition:fade={{
-					// x: 0,
-					// y: 30,
-					delay: 500,
+					delay: 250,
 					duration: 600,
 				}}
-				class="ml-auto grid gap-4 border-t-2 border-gray-500 pt-12"
+				class={ aboutSection.about3 ? "ml-auto grid gap-4 border-t-2 border-gray-500 pt-12 animate__animated animate__fadeIn" : "ml-auto grid gap-4 border-t-2 border-gray-500 pt-12 animate__animated animate__fadeOut"}
 			>
 				<Gear class="w-14 h-14 md:w-28 md:h-28 text-yellow-500" />
 				<h1
@@ -184,6 +181,5 @@
 				deliverables while ensuring a seamless and hassle free
 				experience through our 'hands-off' approach.
 			</p>
-		{/if}
 	</div>
 </section>
