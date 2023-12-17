@@ -115,7 +115,7 @@
 		on:inview_change={(e) => {
 			aboutSection.about2 = e.detail.inView;
 		}}
-		class="mt-16 text-right border-t-2 border-gray-500 pt-12"
+		class="mt-16 text-right border-t-2 border-gray-500 pt-12 overflow-hidden"
 	>
 			<div
 				transition:fade={{
@@ -137,7 +137,7 @@
 					delay: 250,
 					duration: 600,
 				}}
-				class={ aboutSection.about2 ? "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 ml-auto animate__animated animate__fadeIn" : "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 ml-auto animate__animated animate__fadeOut"}
+				class={ aboutSection.about2 ? "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 ml-auto animate__animated animate__fadeIn" : "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 ml-auto animate__animated animate__fadeInRight"}
 			>
 				In today's market, buyers are not only astute but also highly
 				self aware. Our mission is to assist you in effortlessly
@@ -174,7 +174,7 @@
 					delay: 250,
 					duration: 600,
 				}}
-				class={aboutSection.about3 ? "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 animate__animated animate__fadeIn" : "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 animate__animated animate__fadeOut"}
+				class={aboutSection.about3 ? "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 animate__animated animate__fadeInLeft" : "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 animate__animated animate__fadeOutLeft"}
 			>
 				We will assume responsibility for securing the media coverage
 				outlined in our plan. Our objective is to surpass the promised
