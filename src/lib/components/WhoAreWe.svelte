@@ -171,10 +171,10 @@
 
 			<p
 				transition:fade={{
-					delay: 500,
+					delay: 250,
 					duration: 600,
 				}}
-				class="mt-6 text-base sm:text-xl md:text-2xl md:w-3/5"
+				class={aboutSection.about3 ? "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 animate__animated animate__fadeIn" : "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 animate__animated animate__fadeOut"}
 			>
 				We will assume responsibility for securing the media coverage
 				outlined in our plan. Our objective is to surpass the promised
