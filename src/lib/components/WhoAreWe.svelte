@@ -21,15 +21,6 @@
 		about3: false,
 	};
 
-	function onScroll() {
-		let el = document.getElementById("about-3");
-
-		if (el) {
-			console.log(el.getBoundingClientRect().y);
-
-			return el.getBoundingClientRect().y;
-		}
-	}
 
 	// onMount(() => {
 	// 	window.addEventListener('scroll', onScroll);

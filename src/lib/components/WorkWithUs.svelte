@@ -1,24 +1,30 @@
+<script lang="ts">
+	import type { Options } from "svelte-inview";
+	import { inview } from "svelte-inview";
+
+	let isInView: boolean;
+	const options: Options = {
+		rootMargin: "50px",
+	};
+</script>
+
 <section
 	id="work-with-us"
 	class="work-with-us bg-black border-t-2 border-gray-500 p-8 relative"
+	use:inview={options}
+	on:inview_change={(e) => {
+		isInView = e.detail.inView;
+	}}
 >
-	<!-- <img
-		src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapercave.com%2Fwp%2F5JdtbnY.jpg&f=1&nofb=1&ipt=4cafee4709cf3f0b06287c46ca66c0536291d3133da16cf6292a62526cb59f9b&ipo=images "
-		alt=""
-		class="absolute top-0 left-0 right-0 w-full object-cover opacity-30 overflow-hidden"
-	/> -->
-	<!-- <img
-		src="https://digitimatic.com/wp-content/uploads/2023/12/bg2.jpg"
-		class="absolute overflow-hidden top-0 left-0 right-0 bg-cover h-fit w-full opacity-60"
-		alt=""
-	/> -->
 	<div class="bg-blak z-[0] relative opacity-80">
 		<h1 class="text-white font-bold text-center text-2xl">WORK WITH US</h1>
 		<div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-white"></div>
 		<form
 			action="#"
 			method="post"
-			class="relative z-[0] mt-10 flex flex-col justify-center w-full md:w-3/5 lg:w-3/6 mx-auto"
+			class={`${
+				isInView ? "animate__animated animate__zoomIn" : ""
+			} relative z-[0] mt-10 flex flex-col justify-center w-full md:w-3/5 lg:w-3/6 mx-auto`}
 		>
 			<div class="form-title md:mt-8">
 				<h1 class="text-4xl text-white font-extrabold text-center">

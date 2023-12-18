@@ -8,6 +8,8 @@
 	const options: Options = {
 		rootMargin: "50px",
 	};
+
+	
 </script>
 
 <section
