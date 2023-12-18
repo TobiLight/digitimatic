@@ -92,6 +92,6 @@
 
 <style>
 	form {
-		--animate-duration: 2.5s
+		--animate-duration: 2s
 	}
 </style>
