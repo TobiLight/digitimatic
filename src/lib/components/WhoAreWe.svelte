@@ -1,13 +1,10 @@
 <script lang="ts">
 	import Bulb from "$lib/components/icons/Bulb.svelte";
 	import Handshake from "$lib/components/icons/Handshake.svelte";
-	import ClockwiseCircle from "$lib/components/icons/ClockwiseCircle.svelte";
 	import Gear from "$lib/components/icons/Gear.svelte";
-	import type { ObserverEventDetails, Options } from "svelte-inview";
+	import type { Options } from "svelte-inview";
 	import { inview } from "svelte-inview";
-	import { slide, fade, fly } from "svelte/transition";
-	import { quintOut } from "svelte/easing";
-	import { onMount } from "svelte";
+	import { slide, fade } from "svelte/transition";
 	import "animate.css";
 
 	let isInView: boolean;

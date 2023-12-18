@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Graph from "$lib/components/icons/Graph.svelte";
-	import type { ObserverEventDetails, Options } from "svelte-inview";
+	import type { Options } from "svelte-inview";
 	import { inview } from "svelte-inview";
-	import { slide, fade } from "svelte/transition";
+	import { fade } from "svelte/transition";
 	import { quintOut } from "svelte/easing";
 	import Slide from "$lib/components/Slide.svelte";
 

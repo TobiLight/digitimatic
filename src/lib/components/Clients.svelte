@@ -1,8 +1,7 @@
 <script lang="ts">
-    import { onMount } from "svelte";
-	import type { ObserverEventDetails, Options } from "svelte-inview";
+    import type { Options } from "svelte-inview";
 	import { inview } from "svelte-inview";
-	import { slide, fade } from "svelte/transition";
+	import { fade } from "svelte/transition";
 
 	let isInView: boolean;
 	const options: Options = {

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Options } from "svelte-inview";
 	import { inview } from "svelte-inview";
-	import { slide, fade, fly } from "svelte/transition";
+	import { fade } from "svelte/transition";
 
 	let isInView: boolean;
 	const options: Options = {
