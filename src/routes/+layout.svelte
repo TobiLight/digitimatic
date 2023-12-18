@@ -13,7 +13,7 @@
 	}
 
 	let isInView: boolean;
-  const options = {};
+	const options = {};
 </script>
 
 <header class="fixed w-full top-0 z-[1]">
@@ -58,10 +58,26 @@
 		} bg-black text-white fixed z-[3] border-t border-gray-500 py-8 px-4 w-3/5 shadow-lg overflow-hidden h-full md:hidden transition-all duration-[.7s] ease-out`}
 	>
 		<ul class="nav-links flex flex-col gap-14 h-full">
-			<li><a href="#who-we-are">About Us</a></li>
-			<li><a href="#clients">Clients</a></li>
-			<li><a href="#testimonials">Testimonials</a></li>
-			<li><a href="#work-with-us">Contact</a></li>
+			<li>
+				<a on:click={() => isMenuOpen.set(false)} href="#who-we-are"
+					>About Us</a
+				>
+			</li>
+			<li>
+				<a on:click={() => isMenuOpen.set(false)} href="#clients"
+					>Clients</a
+				>
+			</li>
+			<li>
+				<a on:click={() => isMenuOpen.set(false)} href="#testimonials"
+					>Testimonials</a
+				>
+			</li>
+			<li>
+				<a on:click={() => isMenuOpen.set(false)} href="#work-with-us"
+					>Contact</a
+				>
+			</li>
 		</ul>
 	</nav>
 </header>

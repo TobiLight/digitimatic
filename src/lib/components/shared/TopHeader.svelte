@@ -1,7 +1,7 @@
 <script>
 	import Facebook from '$lib/components/icons/Facebook.svelte';
 	import Twitter from '$lib/components/icons/Twitter.svelte';
-	import Youtube from '$lib/components/icons/Youtube.svelte';
+	import Instagram from '$lib/components/icons/Instagram.svelte';
 </script>
 
 <div class="top-header hidden md:flex justify-between bg-black text-white p-3 text-sm">
@@ -12,7 +12,7 @@
 		<p class="text-gray-400">Follow us:</p>
 		<div class="flex gap-2 items-center">
 			<Facebook class="text-blue-600" />
-			<Youtube class="text-red-500" />
+			<Instagram />
 			<Twitter class="text-white" />
 		</div>
 	</div>
