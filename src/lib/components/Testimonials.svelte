@@ -47,7 +47,7 @@
 			easing: quintOut,
 		}}
 		class={`${
-			heading ? "animate__animated animate__fadeInLeft" : ""
+			heading ? "animate__animated animate__fadeInLeft animate__slow" : "animate__animated animate__fadeOutLeft"
 		} heading flex flex-col sm:flex sm:flex-row text-center sm:text-left items-center gap-4 md:w-3/4 lg:w-3/4 pb-6 relative z-[0]`}
 	>
 		<div
