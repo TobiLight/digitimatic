@@ -18,8 +18,8 @@
 	}}
 >
 	<div class="bg-blak z-[0] relative opacity-80">
-		<h1 class="text-red-500 font-bold text-center text-2xl">WORK WITH US</h1>
-		<div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-red-500"></div>
+		<h1 class="text-green-500 font-bold text-center text-2xl">WORK WITH US</h1>
+		<div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-green-500"></div>
 		<form
 			transition:fade={{
 				delay: 500,
@@ -82,7 +82,7 @@
 			</div>
 			<div class="flex justify-center mt-3">
 				<button
-					class="w-auto rounded-md px-10 bg-blue-500 text-white p-4 text-lg font-bold"
+					class="w-auto rounded-md px-10 bg-green-500 hover:bg-green-700 text-white p-4 text-lg font-bold"
 					>Send now</button
 				>
 			</div>

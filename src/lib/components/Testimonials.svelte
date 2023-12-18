@@ -58,13 +58,13 @@
 		} heading flex flex-col sm:flex sm:flex-row text-center sm:text-left items-center gap-4 md:w-3/4 lg:w-3/4 pb-6 relative z-[0]`}
 	>
 		<div
-			class="flex items-center lg:items-end gap-3 rounded-full border border-red-500 p-4"
+			class="flex items-center lg:items-end gap-3 rounded-full border border-green-500 p-4"
 		>
-			<Graph class="text-red-500 w-32 h-32" />
+			<Graph class="text-green-500 w-32 h-32" />
 		</div>
 		<div class="grid gap-2">
 			<h1
-				class="text-4xl text-red-500 md:text-6xl lg:text-7xl font-extrabold"
+				class="text-4xl text-green-500 md:text-6xl lg:text-7xl font-extrabold"
 			>
 				Success Stories
 			</h1>

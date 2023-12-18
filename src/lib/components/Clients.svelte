@@ -24,9 +24,9 @@
 			duration: 600,
 		}}
 	 class={`${isInView ? 'animate__animated animate__fadeIn animate__slower' : 'animate__animated animate__fadeOut'}`}>
-		<h1 class="text-center text-4xl font-bold">SIGNIFICANT ASSOCIATION</h1>
+		<h1 class="text-center text-4xl font-bold text-green-500">SIGNIFICANT ASSOCIATION</h1>
 
-		<div id="clients" class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-white"></div>
+		<div id="clients" class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-green-500"></div>
 
 		<div class="grid mt-8 justify-center gap-6 items-center w-full">
 			<p class="mb-6 text-center md:text-xl md:w-3/6 mx-auto">
