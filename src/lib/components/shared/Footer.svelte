@@ -18,7 +18,7 @@
 		<p class="text-xs">Copyright &copy;{new Date().getFullYear()} Digitimatic</p>
 	</div>
 
-	<nav class="footer-links md:w-6/12">
+	<nav class="footer-links md:w-6/12 text-sm">
 		<ul class="flex gap-8 justify-between items-center w-full">
 			<li><a href="#who-we-are">About Us</a></li>
 			<li><a href="#clients">Clients</a></li>
