@@ -33,26 +33,28 @@
 </script>
 
 <div class="slider relative h-[500px] md:h-fit">
-	{#each slides as slider, i}
-		{#if currentSlide === i}
-			<div
-				class="slide h-[500px] max-h-[650px] md:h-full p-3 rounded-md"
-				transition:blur={{ amount: 10 }}
+	<div class="slide">
+		{#each slides as slider, i}
+			{#if currentSlide === i}
+				<div
+					class="slid h-full absolute p-3 rounded-md"
+					transition:blur={{ amount: 10 }}
+				>
+					<blockquote>{slider.testimonial}</blockquote>
+					<p class="w-auto font-bold text-right mt-4">- {slider.name}</p>
+				</div>
+			{/if}
+		{/each}
+		<!-- <div
+			class="flex items-center gap-5 justify-center mt-8 absolute transform translate-y-[-50%] bottom-0"
+		> -->
+			<button class="prev" on:click={prevSlide}>prev</button>
+			<button
+				class="next border rounded px-3 py-1 z-[2] cursor-pointer"
+				on:click={nextSlide}>next</button
 			>
-				{slider.testimonial}
-			</div>
-		{/if}
-	{/each}
-	<!-- <div class="flex items-center gap-5 justify-center mt-8 absolute transform translate-y-[-50%] bottom-0"> -->
-		<button
-			class="prev"
-			on:click={prevSlide}>prev</button
-		>
-		<button
-			class="next border rounded px-3 py-1 z-[2] cursor-pointer"
-			on:click={nextSlide}>next</button
-		>
-	<!-- </div> -->
+		<!-- </div> -->
+	</div>
 
 	<div class="nav">
 		{#each slides as slider, i}
