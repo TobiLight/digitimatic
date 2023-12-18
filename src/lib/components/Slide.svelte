@@ -32,7 +32,7 @@
 	timer();
 </script>
 
-<div class={`${currentSlide === 1 ? 'h-[370px] mb-2' : 'h-[240px] mb-1'} slider relative md:h-fit`}>
+<div class={`${currentSlide === 1 ? 'h-[370px] mb-8' : 'h-[300px] mb-4'} slider relative md:h-fit`}>
 	<div class="slide">
 		{#each slides as slider, i}
 			{#if currentSlide === i}
