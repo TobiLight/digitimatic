@@ -24,7 +24,7 @@
 			delay: 500,
 			duration: 600,
 		}}
-	 class={`${isInView ? 'animate__animated animate__fadeIn animate__slower' : ''}`}>
+	 class={`${isInView ? 'animate__animated animate__fadeIn animate__slower' : 'animate__animated animate__fadeOut'}`}>
 		<h1 class="text-center text-4xl font-bold">SIGNIFICANT ASSOCIATION</h1>
 
 		<div id="clients" class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-white"></div>
