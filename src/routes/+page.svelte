@@ -6,7 +6,6 @@
 	import Clients from "$lib/components/Clients.svelte";
 	import Testimonials from "$lib/components/Testimonials.svelte";
 	import { inview } from "svelte-inview";
-	import Test from "$lib/components/Test.svelte";
 	let isInView: boolean;
 	const options = {};
 
