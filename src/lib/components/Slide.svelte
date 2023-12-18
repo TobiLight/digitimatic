@@ -46,11 +46,11 @@
 	<!-- <div class="flex items-center gap-5 justify-center mt-8 absolute transform translate-y-[-50%] bottom-0"> -->
 		<button
 			class="prev border rounded px-3 py-1 z-[2] cursor-pointer"
-			on:click={prevSlide}> {'<'} </button
+			on:click={prevSlide}>prev</button
 		>
 		<button
 			class="next border rounded px-3 py-1 z-[2] cursor-pointer"
-			on:click={nextSlide}>{'>'}</button
+			on:click={nextSlide}>next</button
 		>
 	<!-- </div> -->
 
@@ -102,8 +102,8 @@
 	.prev {
 		position: absolute;
 		z-index: 2;
-		top: 50%;
-		transform: translateY(-50%);
+		top: 100%;
+		transform: translateY(50%);
 		background: transparent;
 		border: 1px solid #fff;
 		color: #fff;
@@ -112,10 +112,10 @@
 		cursor: pointer;
 	}
 	.next {
-		right: -30px;
+		right: 110px;
 	}
 	.prev {
-		left: -30px;
+		left: 120px;
 	}
 	.nav {
 		/* position: absolute; */
