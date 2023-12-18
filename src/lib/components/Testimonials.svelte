@@ -28,6 +28,11 @@
 			testimonial:
 				"Open Head NFT came into the crypto space with a unique offering of on-chain raffles which means full transparency in the selection process. Loot boxes to win over $100 ETH and passive staking. The founder knew he had a unicorn and came to us to ensure Open Head is a success, with placements in major US publications. Within 48hrs of our campaign, open-head nft discord gained over 10k active users and went on to sell out with over 60 ETH in volume.",
 		},
+		{
+			name: "Altura NFT",
+			testimonial:
+				"Altura, a leading platform for Web3 game developers was in need of eyes balls to see their unique offer and came to us. With a mutual understanding, we went to work and got them a few features on International Business Times, BeinCrypto, and Yahoo to mention a few. Altura currently powers the following next generation of gaming such as Animera, Haunted Space, etc. Currently, Altura has transacted $3.9M in total marketplace volume and boasts of over 44k unique marketplace users.",
+		},
 	];
 </script>
 
@@ -47,16 +52,20 @@
 			easing: quintOut,
 		}}
 		class={`${
-			heading ? "animate__animated animate__fadeInLeft animate__slow" : "animate__animated animate__fadeOutLeft"
+			heading
+				? "animate__animated animate__fadeInLeft animate__slow"
+				: "animate__animated animate__fadeOutLeft"
 		} heading flex flex-col sm:flex sm:flex-row text-center sm:text-left items-center gap-4 md:w-3/4 lg:w-3/4 pb-6 relative z-[0]`}
 	>
 		<div
-			class="flex items-center lg:items-end gap-3 rounded-full border border-white p-4"
+			class="flex items-center lg:items-end gap-3 rounded-full border border-red-500 p-4"
 		>
-			<Graph class="text-white w-32 h-32" />
+			<Graph class="text-red-500 w-32 h-32" />
 		</div>
 		<div class="grid gap-2">
-			<h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold">
+			<h1
+				class="text-4xl text-red-500 md:text-6xl lg:text-7xl font-extrabold"
+			>
 				Success Stories
 			</h1>
 			<p class="text-xl sm:text-2xl">
@@ -68,12 +77,10 @@
 	</div>
 	<!-- <hr class="h-1 w-3/4 bg-white rounded-full z-[0] relative" /> -->
 
-	<div class="mt-8 mb-8 md:mb-16 md:mt-32 grid gap-8 px-2 md:w-3/6 mx-auto relative max-h-[620px]">
-		<Slide
-		duration={5000}
-		slides={clients}
-	/>
-		
+	<div
+		class="mt-8 mb-8 md:mb-16 md:mt-32 grid gap-8 px-2 md:w-3/6 mx-auto relative max-h-[620px]"
+	>
+		<Slide duration={5000} slides={clients} />
 
 		<!-- <div class="grid gap-2 text-right">
 			<h1 class="text-xl font-bold">Altura NFT</h1>

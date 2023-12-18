@@ -18,8 +18,8 @@
 	}}
 >
 	<div class="bg-blak z-[0] relative opacity-80">
-		<h1 class="text-white font-bold text-center text-2xl">WORK WITH US</h1>
-		<div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-white"></div>
+		<h1 class="text-red-500 font-bold text-center text-2xl">WORK WITH US</h1>
+		<div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-red-500"></div>
 		<form
 			transition:fade={{
 				delay: 500,

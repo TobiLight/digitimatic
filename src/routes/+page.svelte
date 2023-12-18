@@ -34,6 +34,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Digitimatic</title>
+</svelte:head>
+
 <main id="main-page" class="min-h-screen mt-[112px] md:mt-[157px]">
 	<section
 		class="max-h-[700px] w-full bg-black bg-fixed bg-[url('https://digitimatic.com/wp-content/uploads/2023/12/bg-scaled.jpg')]"
