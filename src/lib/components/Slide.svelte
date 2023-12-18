@@ -32,16 +32,16 @@
 	timer();
 </script>
 
-<div class="slider relative h-[500px] md:h-fit">
+<div class={`${currentSlide === 1 ? 'h-[590px]' : 'h-[370px]'} slider relative md:h-fit`}>
 	<div class="slide">
 		{#each slides as slider, i}
 			{#if currentSlide === i}
 				<div
-					class="slid h-full absolute p-3 rounded-md"
+					class="slid h-auto absolute p-3 rounded-md"
 					transition:blur={{ amount: 10 }}
 				>
 					<blockquote>{slider.testimonial}</blockquote>
-					<p class="w-auto font-bold text-right mt-4">- {slider.name}</p>
+					<p class={`w-auto font-bold text-right mt-4`}>- {slider.name}</p>
 				</div>
 			{/if}
 		{/each}
@@ -104,7 +104,7 @@
 	.next,
 	.prev {
 		position: absolute;
-		z-index: 2;
+		z-index: 0;
 		top: 50%;
 		transform: translateY(-50%);
 		background: transparent;
