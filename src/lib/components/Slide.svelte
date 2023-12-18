@@ -32,11 +32,11 @@
 	timer();
 </script>
 
-<div class="slider relative h-[400px]">
+<div class="slider relative h-[500px] md:h-fit">
 	{#each slides as slider, i}
 		{#if currentSlide === i}
 			<div
-				class="slide bg-[#222] h-auto p-3 rounded-md"
+				class="slide h-[500px] max-h-[650px] md:h-full p-3 rounded-md"
 				transition:blur={{ amount: 10 }}
 			>
 				{slider.testimonial}
@@ -45,7 +45,7 @@
 	{/each}
 	<!-- <div class="flex items-center gap-5 justify-center mt-8 absolute transform translate-y-[-50%] bottom-0"> -->
 		<button
-			class="prev border rounded px-3 py-1 z-[2] cursor-pointer"
+			class="prev"
 			on:click={prevSlide}>prev</button
 		>
 		<button
@@ -54,7 +54,7 @@
 		>
 	<!-- </div> -->
 
-	<!-- <div class="nav">
+	<div class="nav">
 		{#each slides as slider, i}
 			<button
 				class="bubble"
@@ -68,12 +68,13 @@
 				class:twoup={i === currentSlide + 2}
 			/>
 		{/each}
-	</div> -->
+	</div>
 </div>
 
 <style>
 	.slider {
 		position: relative;
+		width: 100%;
 		/* background-color: #222; */
 	}
 	.slide {
@@ -81,7 +82,7 @@
 		inset: 0;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		/* align-items: center; */
 		color: #fff;
 		/* font-size: 7rem; */
 		font-family:
@@ -102,8 +103,8 @@
 	.prev {
 		position: absolute;
 		z-index: 2;
-		top: 100%;
-		transform: translateY(50%);
+		top: 50%;
+		transform: translateY(-50%);
 		background: transparent;
 		border: 1px solid #fff;
 		color: #fff;
@@ -112,10 +113,10 @@
 		cursor: pointer;
 	}
 	.next {
-		right: 110px;
+		right: 20px;
 	}
 	.prev {
-		left: 120px;
+		left: 20px;
 	}
 	.nav {
 		/* position: absolute; */

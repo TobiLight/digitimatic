@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Options } from "svelte-inview";
 	import { inview } from "svelte-inview";
+	import { slide, fade, fly } from "svelte/transition";
 
 	let isInView: boolean;
 	const options: Options = {
@@ -20,10 +21,16 @@
 		<h1 class="text-white font-bold text-center text-2xl">WORK WITH US</h1>
 		<div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-white"></div>
 		<form
+			transition:fade={{
+				delay: 500,
+				duration: 600,
+			}}
 			action="#"
 			method="post"
 			class={`${
-				isInView ? "animate__animated animate__zoomIn" : "animate__animated animate__zoomOut"
+				isInView
+					? "animate__animated animate__fadeIn animate__slow"
+					: "animate__animated animate__fadeOut"
 			} relative z-[0] mt-10 flex flex-col justify-center w-full md:w-3/5 lg:w-3/6 mx-auto`}
 		>
 			<div class="form-title md:mt-8">
@@ -82,3 +89,9 @@
 		</form>
 	</div>
 </section>
+
+<style>
+	form {
+		--animate-duration: 2.5s
+	}
+</style>

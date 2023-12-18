@@ -68,7 +68,7 @@
 	</div>
 	<!-- <hr class="h-1 w-3/4 bg-white rounded-full z-[0] relative" /> -->
 
-	<div class="mt-16 gid gap-8 px-2 md:w-3/6 mx-auto relative max-h-[450px]">
+	<div class="mt-8 mb-8 md:mb-16 md:mt-32 grid gap-8 px-2 md:w-3/6 mx-auto relative max-h-[650px]">
 		<Slide
 		duration={100000}
 		slides={clients}

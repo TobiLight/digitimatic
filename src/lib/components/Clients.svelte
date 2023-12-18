@@ -13,14 +13,16 @@
 </script>
 
 <section
-	
-	id="clients"
+	use:inview={options}
+	on:inview_change={(e) => {
+		isInView = e.detail.inView;
+	}}
 	class="bg-black p-14 text-white"
 >
-	<div>
+	<div class={`${isInView ? 'animate__animated animate__fadeIn animate__slower' : ''}`}>
 		<h1 class="text-center text-4xl font-bold">SIGNIFICANT ASSOCIATION</h1>
 
-		<div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-white"></div>
+		<div id="clients" class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-white"></div>
 
 		<div class="grid mt-8 justify-center gap-6 items-center w-full">
 			<p class="mb-6 text-center md:text-xl md:w-3/6 mx-auto">
@@ -197,3 +199,10 @@
 		</div>
 	</div>
 </section>
+
+
+<style>
+	#clients {
+		--animate-duration: 2.5s
+	}
+</style>
