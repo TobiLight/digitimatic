@@ -28,17 +28,17 @@
 	</nav>
 	<div class="footer-social-links flex items-center md:justify-between gap-4">
 		<div class="w-10 h-10 bg-blue-600 p-2 flex items-center justify-center rounded-full">
-			<a href="#">
+			<a href="https://www.facebook.com/digitimatic">
 				<Facebook class="w-4 h-4 text-white" />
 			</a>
 		</div>
 		<div class="w-10 h-10 bg-white p-2 flex items-center justify-center rounded-full">
-			<a href="#">
+			<a href="https://www.instagram.com/digitimatic?igshid=YzAwZjE1ZTI0Zg==">
 				<Instagram class="w-4 h-4 text-black" />
 			</a>
 		</div>
 		<div class="w-10 h-10 bg-white p-2 flex items-center justify-center rounded-full">
-			<a href="#">
+			<a href="https://x.com/digitimatic">
 				<Twitter class="w-4 h-4 text-black" />
 			</a>
 		</div>
