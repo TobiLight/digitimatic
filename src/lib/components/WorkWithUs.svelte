@@ -23,7 +23,7 @@
 			action="#"
 			method="post"
 			class={`${
-				isInView ? "animate__animated animate__zoomIn" : ""
+				isInView ? "animate__animated animate__zoomIn" : "animate__animated animate__zoomOut"
 			} relative z-[0] mt-10 flex flex-col justify-center w-full md:w-3/5 lg:w-3/6 mx-auto`}
 		>
 			<div class="form-title md:mt-8">
