@@ -20,10 +20,10 @@
 
 	<nav class="footer-links md:w-6/12">
 		<ul class="flex gap-8 justify-between items-center w-full">
-			<li><a href="#about-us">About Us</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#blog">Blog</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#who-we-are">About Us</a></li>
+			<li><a href="#clients">Clients</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#work-with-us">Contact</a></li>
 		</ul>
 	</nav>
 	<div class="footer-social-links flex items-center md:justify-between gap-4">

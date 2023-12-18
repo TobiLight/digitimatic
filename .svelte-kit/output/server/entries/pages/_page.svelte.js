@@ -7,10 +7,10 @@ const css$2 = {
 };
 const WorkWithUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
-  return `<section id="work-with-us" class="work-with-us bg-black border-t-2 border-gray-500 p-8 relative"><div class="bg-blak z-[0] relative opacity-80"><h1 class="text-red-500 font-bold text-center text-2xl" data-svelte-h="svelte-i48plv">WORK WITH US</h1> <div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-red-500"></div> <form action="#" method="post" class="${escape(
+  return `<section id="work-with-us" class="work-with-us bg-black border-t-2 border-gray-500 p-8 relative"><div class="bg-blak z-[0] relative opacity-80"><h1 class="text-green-500 font-bold text-center text-2xl" data-svelte-h="svelte-1y8winf">WORK WITH US</h1> <div class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-green-500"></div> <form action="#" method="post" class="${escape(
     null_to_empty(`${"animate__animated animate__fadeOut"} relative z-[0] mt-10 flex flex-col justify-center w-full md:w-3/5 lg:w-3/6 mx-auto`),
     true
-  ) + " svelte-1ikekkg"}"><div class="form-title md:mt-8" data-svelte-h="svelte-1utxaym"><h1 class="text-4xl text-white font-extrabold text-center">Get in touch with us.</h1></div> <div class="flex flex-row items-center gap-5 md:gap-4 mt-10" data-svelte-h="svelte-zv6g5z"><label for="fullname" class="w-full"><input type="text" placeholder="Full name" class="bg-white p-4 rounded-md text-black w-full"></label> <label for="phone" class="w-full"><input type="text" placeholder="Phone Number" class="bg-white p-4 rounded-md text-black w-full"></label></div> <div class="flex flex-row items-center gap-5 md:gap-4 mt-4" data-svelte-h="svelte-78lmmm"><label for="email" class="w-full"><input type="email" placeholder="Email Address" class="bg-white p-4 rounded-md text-black w-full"></label> <label for="company" class="w-full"><input type="text" placeholder="Company" class="bg-white p-4 rounded-md text-black w-full"></label></div> <div class="mt-4" data-svelte-h="svelte-nfcwx4"><textarea name="message" id="" cols="30" rows="5" class="w-full rounded-md p-4 bg-white" placeholder="How can we help you?"></textarea></div> <div class="flex justify-center mt-3" data-svelte-h="svelte-18vu04e"><button class="w-auto rounded-md px-10 bg-blue-500 text-white p-4 text-lg font-bold">Send now</button></div></form></div> </section>`;
+  ) + " svelte-1ikekkg"}"><div class="form-title md:mt-8" data-svelte-h="svelte-1utxaym"><h1 class="text-4xl text-white font-extrabold text-center">Get in touch with us.</h1></div> <div class="flex flex-row items-center gap-5 md:gap-4 mt-10" data-svelte-h="svelte-zv6g5z"><label for="fullname" class="w-full"><input type="text" placeholder="Full name" class="bg-white p-4 rounded-md text-black w-full"></label> <label for="phone" class="w-full"><input type="text" placeholder="Phone Number" class="bg-white p-4 rounded-md text-black w-full"></label></div> <div class="flex flex-row items-center gap-5 md:gap-4 mt-4" data-svelte-h="svelte-78lmmm"><label for="email" class="w-full"><input type="email" placeholder="Email Address" class="bg-white p-4 rounded-md text-black w-full"></label> <label for="company" class="w-full"><input type="text" placeholder="Company" class="bg-white p-4 rounded-md text-black w-full"></label></div> <div class="mt-4" data-svelte-h="svelte-nfcwx4"><textarea name="message" id="" cols="30" rows="5" class="w-full rounded-md p-4 bg-white" placeholder="How can we help you?"></textarea></div> <div class="flex justify-center mt-3" data-svelte-h="svelte-1hl07hq"><button class="w-auto rounded-md px-10 bg-green-500 hover:bg-green-700 text-white p-4 text-lg font-bold">Send now</button></div></form></div> </section>`;
 });
 const Bulb = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<svg${spread(
@@ -56,56 +56,56 @@ const WhoAreWe = create_ssr_component(($$result, $$props, $$bindings, slots) => 
   )}>${validate_component(Handshake, "Handshake").$$render(
     $$result,
     {
-      class: "w-14 h-14 md:w-28 md:h-28 text-green-500"
+      class: "w-14 h-14 md:w-28 md:h-28 text-gray-500"
     },
     {},
     {}
-  )} <h1 class="text-4xl text-green-500 sm:text-7xl md:text-[90px] font-bold md:leading-[90px] tracking-wider" data-svelte-h="svelte-lh6tca">The shortcut to instant digital influence.</h1></div> <p${add_attribute(
+  )} <h1 class="text-4xl text-gray-500 sm:text-7xl md:text-[90px] font-bold md:leading-[90px] tracking-wider" data-svelte-h="svelte-1upcbio">The shortcut to instant digital influence.</h1></div> <p${add_attribute(
     "class",
     "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 animate__animated animate__fadeOutLeft",
     0
   )}>Crafting unforgettable brand identities for emerging businesses,
-				inspiring trailblazers for aspiring entrepreneurs, and
-				empowering social media personalities for everyday users of
-				online platforms. Digitimatic is a premier publicity company
-				that specializes in delivering effective messaging solutions for
-				businesses and individuals seeking to reach a wider audience.</p></div> <div class="mt-16 text-right border-t-2 border-gray-500 pt-12 overflow-hidden"><div${add_attribute(
+			inspiring trailblazers for aspiring entrepreneurs, and empowering
+			social media personalities for everyday users of online platforms.
+			Digitimatic is a premier publicity company that specializes in
+			delivering effective messaging solutions for businesses and
+			individuals seeking to reach a wider audience.</p></div> <div class="mt-16 text-right border-t-2 border-gray-500 pt-12 overflow-hidden"><div${add_attribute(
     "class",
     "ml-auto grid gap-4 animate__animated animate__fadeOutRight",
     0
   )}>${validate_component(Bulb, "Bulb").$$render(
     $$result,
     {
-      class: "w-14 h-14 md:w-28 md:h-28 ml-auto text-red-500"
+      class: "w-14 h-14 md:w-28 md:h-28 ml-auto text-gray-500"
     },
     {},
     {}
-  )} <h1 class="text-red-500 text-4xl sm:text-7xl md:text-[5.6rem] font-bold md:leading-[90px] tracking-wider" data-svelte-h="svelte-1sacv1g">Understanding Consumer Buying Behavior</h1></div> <p${add_attribute(
+  )} <h1 class="text-gray-500 text-4xl sm:text-7xl md:text-[5.6rem] font-bold md:leading-[90px] tracking-wider" data-svelte-h="svelte-121ad6m">Understanding Consumer Buying Behavior</h1></div> <p${add_attribute(
     "class",
     "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 ml-auto animate__animated animate__fadeOutRight",
     0
-  )}>In today&#39;s market, buyers are not only astute but also highly
-				self aware. Our mission is to assist you in effortlessly
-				captivating customers by positioning you as the unmistakable
-				choice, utilizing the power of subconscious selling</p></div> <div class="mt-16 text-left overflow-hidden"><div id="about-3"${add_attribute(
+  )}>In today&#39;s market, buyers are not only astute but also highly self
+			aware. Our mission is to assist you in effortlessly captivating
+			customers by positioning you as the unmistakable choice, utilizing
+			the power of subconscious selling</p></div> <div class="mt-16 text-left overflow-hidden"><div id="about-3"${add_attribute(
     "class",
     "ml-auto grid gap-4 border-t-2 border-gray-500 pt-12 animate__animated animate__fadeOutLeft",
     0
   )}>${validate_component(Gear, "Gear").$$render(
     $$result,
     {
-      class: "w-14 h-14 md:w-28 md:h-28 text-yellow-500"
+      class: "w-14 h-14 md:w-28 md:h-28 text-gray-500"
     },
     {},
     {}
-  )} <h1 class="text-4xl text-yellow-500 sm:text-7xl md:text-[90px] font-bold md:leading-[90px] tracking-wider" data-svelte-h="svelte-lwxuna">Efficiency and Accountability.</h1></div> <p${add_attribute(
+  )} <h1 class="text-4xl text-gray-500 sm:text-7xl md:text-[90px] font-bold md:leading-[90px] tracking-wider" data-svelte-h="svelte-1vinqp7">Efficiency and Accountability.</h1></div> <p${add_attribute(
     "class",
     "mt-6 text-base sm:text-xl md:text-2xl md:w-3/5 animate__animated animate__fadeOutLeft",
     0
   )}>We will assume responsibility for securing the media coverage
-				outlined in our plan. Our objective is to surpass the promised
-				deliverables while ensuring a seamless and hassle free
-				experience through our &#39;hands-off&#39; approach.</p></div></section>`;
+			outlined in our plan. Our objective is to surpass the promised
+			deliverables while ensuring a seamless and hassle free experience
+			through our &#39;hands-off&#39; approach.</p></div></section>`;
 });
 const Clients_svelte_svelte_type_style_lang = "";
 const css$1 = {
@@ -118,7 +118,7 @@ const Clients = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     "class",
     `${"animate__animated animate__fadeOut"}`,
     0
-  )}><h1 class="text-center text-4xl font-bold" data-svelte-h="svelte-g953jr">SIGNIFICANT ASSOCIATION</h1> <div id="clients" class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-white svelte-i4fa54"></div> <div class="grid mt-8 justify-center gap-6 items-center w-full" data-svelte-h="svelte-1adm55s"><p class="mb-6 text-center md:text-xl md:w-3/6 mx-auto">We take pride in our vast database, consisting of more than
+  )}><h1 class="text-center text-4xl font-bold text-green-500" data-svelte-h="svelte-1lqxlfe">SIGNIFICANT ASSOCIATION</h1> <div id="clients" class="w-[80px] mt-2 rounded-full h-1 mx-auto bg-green-500 svelte-i4fa54"></div> <div class="grid mt-8 justify-center gap-6 items-center w-full" data-svelte-h="svelte-1adm55s"><p class="mb-6 text-center md:text-xl md:w-3/6 mx-auto">We take pride in our vast database, consisting of more than
 				1,000 esteemed news organizations that have established
 				familiarity with our brand and expertise. This invaluable
 				resource empowers us to provide our customers with an unwavering
@@ -196,7 +196,7 @@ const Testimonials = create_ssr_component(($$result, $$props, $$bindings, slots)
     "class",
     `${"animate__animated animate__fadeOutLeft"} heading flex flex-col sm:flex sm:flex-row text-center sm:text-left items-center gap-4 md:w-3/4 lg:w-3/4 pb-6 relative z-[0]`,
     0
-  )}><div class="flex items-center lg:items-end gap-3 rounded-full border border-red-500 p-4">${validate_component(Graph, "Graph").$$render($$result, { class: "text-red-500 w-32 h-32" }, {}, {})}</div> <div class="grid gap-2" data-svelte-h="svelte-1lfu3ms"><h1 class="text-4xl text-red-500 md:text-6xl lg:text-7xl font-extrabold">Success Stories</h1> <p class="text-xl sm:text-2xl">Recognizing the strength of your business is important, but when
+  )}><div class="flex items-center lg:items-end gap-3 rounded-full border border-green-500 p-4">${validate_component(Graph, "Graph").$$render($$result, { class: "text-green-500 w-32 h-32" }, {}, {})}</div> <div class="grid gap-2" data-svelte-h="svelte-1n7s7ag"><h1 class="text-4xl text-green-500 md:text-6xl lg:text-7xl font-extrabold">Success Stories</h1> <p class="text-xl sm:text-2xl">Recognizing the strength of your business is important, but when
 				others acknowledge and hold it in high regard, it becomes a game
 				changer.</p></div></div>  <div class="mt-8 mb-8 md:mb-16 md:mt-32 grid gap-8 px-2 md:w-3/6 mx-auto relative max-h-[620px]">${validate_component(Slide, "Slide").$$render($$result, { duration: 5e3, slides: clients }, {}, {})} </div> </section>`;
 });
