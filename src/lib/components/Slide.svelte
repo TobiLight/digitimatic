@@ -48,10 +48,10 @@
 		<!-- <div
 			class="flex items-center gap-5 justify-center mt-8 absolute transform translate-y-[-50%] bottom-0"
 		> -->
-			<button class="prev" on:click={prevSlide}>prev</button>
+			<button class="prev bg-[#2e2e2e] border rounded-full" on:click={prevSlide}>{'<'}</button>
 			<button
-				class="next border rounded px-3 py-1 z-[2] cursor-pointer"
-				on:click={nextSlide}>next</button
+				class="next bg-[#2e2e2e] border rounded-full px-3 py-1 z-[2] cursor-pointer"
+				on:click={nextSlide}>{'>'}</button
 			>
 		<!-- </div> -->
 	</div>
@@ -107,18 +107,18 @@
 		z-index: 0;
 		top: 50%;
 		transform: translateY(-50%);
-		background: transparent;
+		/* background: transparent; */
 		border: 1px solid #fff;
 		color: #fff;
 		padding: 4px 10px;
-		border-radius: 4px;
+		/* border-radius: 4px; */
 		cursor: pointer;
 	}
 	.next {
-		right: 20px;
+		right: -30px;
 	}
 	.prev {
-		left: 20px;
+		left: -30px;
 	}
 	.nav {
 		/* position: absolute; */
