@@ -13,7 +13,7 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter(),
 		prerender: {
-			handleMissingId: 'ignore', // or a custom function to handle the error
+			// handleMissingId: 'ignore', // or a custom function to handle the error
 			// handleHttpError: 'ignore'
 		},
 	}
