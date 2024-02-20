@@ -51,7 +51,7 @@
 			<li><a href="/#who-we-are">About Us</a></li>
 			<li><a href="/#partners">Partners</a></li>
 			<li><a href="/blog">Blog</a></li>
-			<li><a href="https://digitimatic.com/media-placement">Services</a></li>
+			<li><a target="_blank" href="https://digitimatic.com/media-placement">Services</a></li>
 			<li><a href="/#testimonials">Testimonials</a></li>
 			<li><a href="/contact">Contact</a></li>
 		</ul>

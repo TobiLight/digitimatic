@@ -14,8 +14,7 @@
 		const formattedTargetId: string | null = targetId?.startsWith('/#')
 			? targetId.substring(1)
 			: targetId;
-
-		if (formattedTargetId && formattedTargetId.startsWith('/')) {
+		if (formattedTargetId && (formattedTargetId.includes('digitimatic') || formattedTargetId.includes('/blog'))) {
 			// If it's a URL path, navigate to that URL
 			window.location.href = formattedTargetId;
 			return;
