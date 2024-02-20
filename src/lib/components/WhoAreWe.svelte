@@ -6,13 +6,13 @@
 </script>
 
 <section id="who-we-are" class="mt-10 border-t-2 pt-24 pb-20 px-4 relative overflow-hidden">
-	<h1 class="text-center text-xl md:text-2xl font-semibold">ABOUT US</h1>
+	<h2 class="text-center text-xl md:text-2xl font-semibold">ABOUT US</h2>
 	<div class="text-center sm:max-w-[600px] md:max-w-[800px] mx-auto flex flex-col gap-y-5">
-		<h1
+		<h2
 			class="mt-10 text-5xl leading-[1.2] sm:leading-snug md:leading-[82px] md:text-7xl font-semibold md:font-bold"
 		>
 			A great company has a great <span class="team-behind whitespace-nowrap">team behind</span>
-		</h1>
+		</h2>
 		<p class="text-lg md:text-xl">
 			Behind Every Great Company Lies a Great Team. A synergized team, driven by passion and
 			expertise, is the secret sauce for a company's triumph. Discover the magic of collaboration
@@ -78,7 +78,7 @@
 					<Bulb class="text-7xl text-purple-800" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h1 class="text-2xl font-bold">Understanding Consumer Buying Behavior</h1>
+					<h2 class="text-2xl font-bold">Understanding Consumer Buying Behavior</h2>
 					<p class="text-lg">
 						In today's market, buyers are not only astute but also highly self aware. Our mission is
 						to assist you in effortlessly captivating customers by positioning you as the
@@ -93,7 +93,7 @@
 					<Gear class="text-7xl text-sky-800" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h1 class="text-2xl font-bold">Efficiency and Accountability</h1>
+					<h2 class="text-2xl font-bold">Efficiency and Accountability</h2>
 					<p class="text-lg">
 						We will assume responsibility for securing the media coverage outlined in our plan. Our
 						objective is to surpass the promised deliverables while ensuring a seamless and hassle
@@ -108,7 +108,7 @@
 					<Handshake class="text-7xl text-sky-600" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h1 class="text-2xl font-bold">The shortcut to instant digital influence</h1>
+					<h2 class="text-2xl font-bold">The shortcut to instant digital influence</h2>
 					<p class="text-lg">
 						Crafting unforgettable brand identities for emerging businesses, inspiring trailblazers
 						for aspiring entrepreneurs, and empowering social media personalities for everyday users
@@ -125,7 +125,7 @@
 					<Growth class="text-7xl text-purple-600" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h1 class="text-2xl font-bold">Paving paths to prosperity</h1>
+					<h2 class="text-2xl font-bold">Paving paths to prosperity</h2>
 					<p class="text-lg">
 						Embark on a journey of exponential growth with Digitimatic. Our strategic prowess
 						extends beyond publicity, propelling businesses towards unparalleled success. Whether

@@ -22,11 +22,11 @@
 	}}
 >
 		<div class="grid md:grid-cols-2 items-center justify-between gap-6 md:gap-10">
-			<h1
+			<p
 				class="text-2xl sm:text-3xl md:text-2xl lg:text-3xl font-bold text-center md:text-left sm:max-w-[350px] md:max-w-[600px]"
 			>
 				Ready to grow your business? Get in touch today!
-			</h1>
+			</p>
 			<a
 				href="/contact"
 				class="w-auto md:place-self-end rounded-full text-lg bg-black hover:bg-transparent hover:text-black border-2 border-black text-white p-4 font-bold flex items-center justify-center gap-3 transition-all ease-linear"

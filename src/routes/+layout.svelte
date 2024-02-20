@@ -1,5 +1,4 @@
 <script lang="ts">
-	import TopHeader from '$lib/components/shared/TopHeader.svelte';
 	import MenuIcon from '$lib/components/icons/Menu.svelte';
 	import WorkWithUs from '$lib/components/WorkWithUs.svelte';
 	import CloseIcon from '$lib/components/icons/Close.svelte';
@@ -7,13 +6,21 @@
 	import { isMenuOpen } from '../stores/store';
 	import Footer from '$lib/components/shared/Footer.svelte';
 	import 'animate.css';
-
+	
 	function toggleMenu() {
 		isMenuOpen.set(!$isMenuOpen);
 	}
 </script>
 
-<header class="fixed bg-white w-full top-0 z-[1] 2xl:bg-gray-200">
+<svelte:head>
+	<meta
+		name="description"
+		content="Welcome to our digital agency specializing in PR, Branding, and Advertising solutions. We excel in digital PR, innovative branding strategies, and impactful advertising campaigns. Our streamlined digital process ensures efficiency and simplicity without compromising quality."
+	/>
+	<title>Digital Agency | PR, Branding, Advertising Solutions</title>
+</svelte:head>
+
+<header class="fixed bg-white w-full top-0 z-[999] 2xl:bg-gray-200">
 	<nav
 		class="border-t p-3 flex items-center justify-between shadow-lg h-auto 2xl:w-3/4 2xl:mx-auto 2xl:bg-white"
 	>
@@ -43,6 +50,7 @@
 		<ul class="nav-links hidden lg:flex items-center gap-10 relative">
 			<li><a href="/#who-we-are">About Us</a></li>
 			<li><a href="/#partners">Partners</a></li>
+			<li><a href="/blog">Blog</a></li>
 			<li><a href="https://digitimatic.com/media-placement">Services</a></li>
 			<li><a href="/#testimonials">Testimonials</a></li>
 			<li><a href="/contact">Contact</a></li>
@@ -56,10 +64,14 @@
 	>
 		<ul class="nav-links flex flex-col items-center gap-14 h-full">
 			<li>
-				<a on:click={() => isMenuOpen.set(false)} href="https://branding.digitimatic.com">Branding</a>
+				<a on:click={() => isMenuOpen.set(false)} href="https://branding.digitimatic.com"
+					>Branding</a
+				>
 			</li>
 			<li>
-				<a on:click={() => isMenuOpen.set(false)} href="https://digitimatic.com/media-placement">Media Placement</a>
+				<a on:click={() => isMenuOpen.set(false)} href="https://digitimatic.com/media-placement"
+					>Media Placement</a
+				>
 			</li>
 		</ul>
 	</nav>

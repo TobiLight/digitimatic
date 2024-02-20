@@ -61,11 +61,11 @@
 	<div
 		class="mt-10 md:mt-0 text-center sm:max-w-[600px] md:max-w-[800px] mx-auto flex flex-col gap-y-5"
 	>
-		<h1
+		<p
 			class="text-5xl leading-[1.2] sm:leading-snug md:leading-[82px] md:text-7xl font-semibold md:font-bold"
 		>
 			Don't take our word for it, take theirs!
-		</h1>
+		</p>
 	</div>
 
 	<div class="testimonial-container grid gap-6 relative">

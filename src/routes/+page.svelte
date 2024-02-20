@@ -1,27 +1,49 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { isMenuOpen } from '../stores/store';
-	import WorkWithUs from '$lib/components/WorkWithUs.svelte';
 	import WhoAreWe from '$lib/components/WhoAreWe.svelte';
-	import Partners from '$lib/components/Partners.svelte';
 	import Testimonials from '$lib/components/Testimonials.svelte';
 	import RightArrow from '$lib/components/icons/RightArrow.svelte';
 	import HeroRocket from '$lib/components/icons/hero-rocket.webp';
-	import Handshake from '$lib/components/icons/Handshake.svelte';
-	import LeftArrowN from '$lib/components/icons/LeftArrowN.svelte';
-	import RightArrowN from '$lib/components/icons/RightArrowN.svelte';
-	import Bulb from '$lib/components/icons/Bulb.svelte';
-	import Gear from '$lib/components/icons/Gear.svelte';
-	import Growth from '$lib/components/icons/Growth.svelte';
-	import { fade, slide, blur, scale } from 'svelte/transition';
-	import { quintIn, quintInOut, quintOut } from 'svelte/easing';
-	import UpArrow from '$lib/components/icons/UpArrow.svelte';
-	import DownArrow from '$lib/components/icons/DownArrow.svelte';
+	import { slide } from 'svelte/transition';
+
+	function smoothScroll(e: MouseEvent) {
+		e.preventDefault();
+		const targetId: string | null = (e.currentTarget as HTMLAnchorElement).getAttribute('href');
+
+		const formattedTargetId: string | null = targetId?.startsWith('/#')
+			? targetId.substring(1)
+			: targetId;
+
+		if (formattedTargetId && formattedTargetId.startsWith('/')) {
+			// If it's a URL path, navigate to that URL
+			window.location.href = formattedTargetId;
+			return;
+		}
+		const targetElement: HTMLElement | null = document.querySelector(formattedTargetId || '');
+		if (targetElement) {
+			targetElement.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
+
+	function makeLinksSmooth() {
+		const navLinks: NodeListOf<HTMLAnchorElement> = document.querySelectorAll('nav a');
+
+		navLinks.forEach((link: HTMLAnchorElement) => {
+			link.addEventListener('click', smoothScroll);
+		});
+	}
 
 	onMount(() => {
 		// type();
 		// window.addEventListener("scroll", reveal);
 		// reveal();
+		console.log('loaded');
+		makeLinksSmooth();
+		window.addEventListener('load', function () {
+			console.log('Page fully loaded');
+		});
+		document.addEventListener('DOMContentLoaded', makeLinksSmooth);
 
 		const pageSection = document.getElementById('main-page');
 
@@ -100,25 +122,9 @@
 		{
 			src: 'https://res.cloudinary.com/dmqndbqqy/image/upload/f_auto,q_auto/v1/digitimatic-media/qz2ngis9tzthqxdksmnr',
 			alt: 'New York Post'
-		},
-	];
-
-	let currentSlide = 0;
-	const prevSlide = (i: number) => {
-		currentSlide = i;
-		if (currentSlide < 0) currentSlide = partners.length - 1;
-	};
-	const nextSlide = (i: number) => {
-		currentSlide = i;
-		if (currentSlide >= partners.length) {
-			currentSlide = 0;
 		}
-	};
+	];
 </script>
-
-<svelte:head>
-	<title>Digitimatic | Digital Agency</title>
-</svelte:head>
 
 <section class="mt-28 md:mt-0 px-4 py-8 overflow-hidden">
 	<div class="flex flex-col md:flex-row gap-6 md:gap-3 md:items-center md:justify-between">
@@ -131,7 +137,8 @@
 				<h1
 					class="font-bold tracking-wide text-3xl leading-[37px] sm:mx-auto sm:text-[3.5rem] sm:leading-[65px] md:text-[2.8rem] lg:text-[3.5rem] md:leading-[60px]"
 				>
-					We are a <span class="marketing whitespace-nowrap">digital agency</span> that specializes in
+					We are a <span class="marketing whitespace-nowrap">digital agency</span> that specializes
+					in
 					<a href="/contact" class="underline">PR</a>,
 					<a href="https://branding.digitimatic.com" class="underline">Branding</a> and Advertising solutions
 				</h1>
@@ -166,15 +173,15 @@
 <WhoAreWe />
 
 <section id="partners" class="pt-8 pb-20 px-4 relative overflow-hidden">
-	<h1 class="text-center text-xl md:text-2xl font-semibold">SIGNIFICANT ASSOCIATION</h1>
+	<h2 class="text-center text-xl md:text-2xl font-semibold">SIGNIFICANT ASSOCIATION</h2>
 	<div
 		class="mt-10 md:mt-0 text-center sm:max-w-[600px] md:max-w-[800px] mx-auto flex flex-col gap-y-5"
 	>
-		<h1
+		<h2
 			class="text-5xl leading-[1.2] sm:leading-snug md:leading-[82px] md:text-7xl font-semibold md:font-bold"
 		>
 			Our work results speak by <span class="themselves whitespace-nowrap">themselves</span>
-		</h1>
+		</h2>
 		<p class="text-lg md:text-xl">
 			We take pride in our vast database, consisting of more than 1,000 esteemed news organizations
 			that have established familiarity with our brand and expertise. This invaluable resource
@@ -182,7 +189,7 @@
 			ensuring an impressive 99.9% service reliability.
 		</p>
 	</div>
-	
+
 	<div
 		class="mt-6 flex flex-wrap justify-center gap-5 items-center mx-auto w-4/5 md:w-3/5 relative"
 	>

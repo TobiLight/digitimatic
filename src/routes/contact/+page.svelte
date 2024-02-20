@@ -4,11 +4,10 @@
 	import Twitter from '$lib/components/icons/TwitterAlt.svelte';
 	import Instagram from '$lib/components/icons/InstagramAlt.svelte';
 	import Envelope from '$lib/components/icons/Envelope.svelte';
-	import Phone from '$lib/components/icons/Phone.svelte';
 	import Loading from '$lib/components/icons/Loading.svelte';
 	import { deserialize, applyAction } from '$app/forms';
 	import type { ActionResult } from '@sveltejs/kit';
-	
+
 	let loading: boolean = false;
 	let formEl: HTMLFormElement;
 	export let actionData: {
@@ -26,42 +25,40 @@
 		loading = true;
 		const data = new FormData(event.currentTarget);
 
-		const req = await fetch('/contact?/sendMail', {
+		const req = await fetch('/api/contact', {
 			method: 'POST',
 			body: data
 		});
 
-		const result: ActionResult<
-			{
-				message: string;
-				success: boolean;
-				email?: string;
-				name?: string;
-				businessName?: string;
-				budget?: string;
-				description?: string;
-			},
-			{
-				message: string;
-				success: boolean;
-				email?: string;
-				name?: string;
-				businessName?: string;
-				budget?: string;
-				description?: string;
-			}
-		> = deserialize(await req.text());
+		const res = (await req.json()) as {
+			message: string;
+			success: boolean;
+			email?: string;
+			name?: string;
+			businessName?: string;
+			budget?: string;
+			description?: string;
+		};
 
 		actionData = {
-			success: result.data.success,
-			message: result.data.message,
-			...result.data
+			...res
 		};
-		applyAction(result);
+
 		loading = false;
-		if (result.type === 'success') formEl.reset();
+
+		if (res.success) return formEl.reset();
+
+		return;
 	}
 </script>
+
+<svelte:head>
+	<meta
+		name="description"
+		content="Ready to elevate your brand presence? Contact us today for innovative PR, Branding, and Advertising solutions tailored to your needs."
+	/>
+	<title>Contact Us - Digital Agency | PR, Branding, Advertising Solutions</title>
+</svelte:head>
 
 <section class="mt-28 md:mt-0 px-4 py-8 overflow-hidden">
 	<div
@@ -123,7 +120,7 @@
 			<form
 				on:submit|preventDefault={handleSubmit}
 				bind:this={formEl}
-				action="/contact?/sendMail"
+				action="/api/contact"
 				method="POST"
 				class="bg-sky-200 px-8 py-14 rounded-3xl grid gap-6 w-full flex-1"
 			>
