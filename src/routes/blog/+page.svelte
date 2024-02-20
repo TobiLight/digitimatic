@@ -46,7 +46,7 @@
 	});
 </script>
 
-<section class="p-10">
+<section class="p-10 pb-64 md:pb-54">
 	<div class="flex flex-col gap-10 md:gap-0 md:flex-row justify-between">
 		<h1 class="text-6xl font-bold">Blog</h1>
 		<!-- <form action="">
