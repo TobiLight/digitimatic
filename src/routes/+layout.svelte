@@ -77,7 +77,7 @@
 	</nav>
 </header>
 
-<main id="main-page" class="min-h-screen mt-[70px] 2xl:bg-gray-200">
+<main id="main-page" class="min-h-screen mt-[70px]">
 	<div class="2xl:bg-white 2xl:w-3/4 2xl:mx-auto 2xl:shadow-xl min-h-[inherit] relative">
 		<slot />
 	</div>

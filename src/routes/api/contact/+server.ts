@@ -104,6 +104,8 @@ export const POST: RequestHandler = async ({ fetch, request }) => {
 				'Content-Type': 'application/json'
 			}
 		})
+
+		console.log(email.status)
 		if (email.status === 200)
 			return new Response(JSON.stringify({ success: true, message: "Sent successfully!" }), {
 				headers: {
