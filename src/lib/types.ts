@@ -7,3 +7,5 @@ export type Posts = {
 	date: string
 	_embedded: { 'wp:featuredmedia': Array<{ source_url: string }> }
 }
+
+export type APIResponse<T extends Posts[] | { message?: string, data?: { status: number } }> = T

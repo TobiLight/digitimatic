@@ -112,7 +112,9 @@ export const POST: RequestHandler = async ({ fetch, request }) => {
 				},
 				status: 200
 			})
-		else
+		else {
+			const err = await email.json()
+			console.log("Error occured: ", err)
 			return new Response(JSON.stringify({
 				success: false,
 				message: 'An error has occured while sending your message. Please try again!',
@@ -122,6 +124,7 @@ export const POST: RequestHandler = async ({ fetch, request }) => {
 				},
 				status: 400
 			})
+		}
 	} catch (err: any) {
 		console.log("An error has occured", err)
 		return new Response(JSON.stringify({
