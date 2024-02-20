@@ -85,9 +85,9 @@
 <main id="main-page" class="min-h-screen mt-[70px]">
 	<div class="2xl:bg-white 2xl:w-3/4 2xl:mx-auto 2xl:shadow-xl min-h-[inherit] relative">
 		<slot />
+		<WorkWithUs />
 	</div>
 </main>
-<WorkWithUs />
 <Footer />
 
 <style>
