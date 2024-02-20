@@ -105,7 +105,6 @@ export const POST: RequestHandler = async ({ fetch, request }) => {
 			}
 		})
 
-		console.log(email.status)
 		if (email.status === 200)
 			return new Response(JSON.stringify({ success: true, message: "Sent successfully!" }), {
 				headers: {
@@ -124,6 +123,7 @@ export const POST: RequestHandler = async ({ fetch, request }) => {
 				status: 400
 			})
 	} catch (err: any) {
+		console.log("An error has occured", err)
 		return new Response(JSON.stringify({
 			success: false,
 			message: err.message
