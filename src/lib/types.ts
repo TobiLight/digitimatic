@@ -9,3 +9,4 @@ export type Posts = {
 }
 
 export type APIResponse<T extends Posts[] | { message?: string, data?: { status: number } }> = T
+
