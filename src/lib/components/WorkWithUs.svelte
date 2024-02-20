@@ -15,7 +15,7 @@
 			isInView
 				? 'animate__animated animate__fadeIn animate__slow'
 				: 'animate__animated animate__fadeOut'
-		} work-with-us relative bottom-[-200px] xs:bottom-[-140px] bg-[lightgreen] border-4 border-green-500 p-16 w-11/12 xs:w-3/4 sm:w-4/5 md:w-2/3 xl:w-1/2 mx-auto rounded-xl grid items-center`}
+		} work-with-us absolute left-0 right-0 bottom-[-200px] xs:bottom-[-140px] bg-[lightgreen] border-4 border-green-500 p-16 w-11/12 xs:w-3/4 sm:w-4/5 md:w-2/3 xl:w-1/2 mx-auto rounded-xl grid items-center`}
 	use:inview={options}
 	on:inview_change={(e) => {
 		isInView = e.detail.inView;
