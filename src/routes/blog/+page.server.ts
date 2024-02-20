@@ -13,7 +13,6 @@ export const load: PageServerLoad = async ({ fetch, url }) => {
 	// const totalPosts = parseInt(currentPage as string) * perPage
 	const postUrl = `${WORDPRESS_URL}/wp-json/wp/v2/posts?_embed&per_page=${perPage}&page=${currentPage}`;
 
-
 	try {
 		const response = await fetch(postUrl, { method: "GET" });
 		const pages: string | null = response.headers.get('X-WP-TotalPages')

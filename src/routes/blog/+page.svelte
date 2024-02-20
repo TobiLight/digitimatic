@@ -80,7 +80,7 @@
 		{/if}
 	</div>
 	<div class="fetch-more-posts flex items-center gap-6 justify-center mt-20">
-		{#if currentPage !== 1}
+		{#if currentPage > 1}
 			<form data-sveltekit-reload method="GET" action="?/" on:submit={(e) => (isLoading = true)}>
 				<input type="hidden" value={`${currentPage - 1}`} name="page" />
 				<label for="fetch-more">
