@@ -16,14 +16,14 @@ export const load: PageServerLoad = async ({ fetch, url }) => {
 	try {
 		const response = await fetch(postUrl, { method: "GET" });
 		const pages: string | null = response.headers.get('X-WP-TotalPages')
-		const posts: Posts[] & { message: string, data: { status: number } } = await response.json();
+		const posts: Posts[] & { message?: string, data?: { status: number } } = await response.json();
 
 		if (posts.length > 0)
 			return { posts, pages, currentPage };
 
 
-		if (posts.data)
-			throw error(posts.data.status as NumericRange<400, 599>, posts.message)
+		if (posts?.data)
+			throw error(posts.data.status as NumericRange<400, 599>, posts?.message)
 
 	} catch (e: any) {
 		console.error('Error fetching posts:', e);

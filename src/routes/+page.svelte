@@ -34,10 +34,6 @@
 	}
 
 	onMount(() => {
-		// type();
-		// window.addEventListener("scroll", reveal);
-		// reveal();
-		console.log('loaded');
 		makeLinksSmooth();
 		window.addEventListener('load', function () {
 			console.log('Page fully loaded');
