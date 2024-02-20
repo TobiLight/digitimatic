@@ -6,7 +6,7 @@
 	import { isMenuOpen } from '../stores/store';
 	import Footer from '$lib/components/shared/Footer.svelte';
 	import 'animate.css';
-	
+
 	function toggleMenu() {
 		isMenuOpen.set(!$isMenuOpen);
 	}
@@ -64,19 +64,21 @@
 	>
 		<ul class="nav-links flex flex-col items-center gap-14 h-full">
 			<li>
-				<a on:click={() => isMenuOpen.set(false)} href="https://branding.digitimatic.com"
-					>Branding</a
+				<a
+					target="_blank"
+					on:click={() => isMenuOpen.set(false)}
+					href="https://branding.digitimatic.com">Branding</a
 				>
 			</li>
 			<li>
-				<a on:click={() => isMenuOpen.set(false)} href="https://digitimatic.com/media-placement"
-					>Media Placement</a
+				<a
+					target="_blank"
+					on:click={() => isMenuOpen.set(false)}
+					href="https://digitimatic.com/media-placement">Media Placement</a
 				>
 			</li>
 			<li>
-				<a on:click={() => isMenuOpen.set(false)} href="https://digitimatic.com/blog"
-					>Blog</a
-				>
+				<a on:click={() => isMenuOpen.set(false)} href="/blog">Blog</a>
 			</li>
 		</ul>
 	</nav>
