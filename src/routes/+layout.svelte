@@ -74,7 +74,7 @@
 				>
 			</li>
 			<li>
-				<a on:click={() => isMenuOpen.set(false)} href="https://branding.digitimatic.com/blog"
+				<a on:click={() => isMenuOpen.set(false)} href="https://digitimatic.com/blog"
 					>Blog</a
 				>
 			</li>
