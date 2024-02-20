@@ -60,7 +60,7 @@
 	<title>Contact Us - Digital Agency | PR, Branding, Advertising Solutions</title>
 </svelte:head>
 
-<section class="mt-28 md:mt-0 px-4 py-8 overflow-hidden">
+<section class="mt-28 md:mt-0 px-4 pt-8 pb-72 md:pb-54 overflow-hidden">
 	<div
 		class="flex flex-col lg:flex-row gap-6 lg:gap-10 md:gap-3 md:items-center md:justify-between"
 	>
