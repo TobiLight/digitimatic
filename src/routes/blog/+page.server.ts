@@ -10,7 +10,6 @@ import { error, type NumericRange } from '@sveltejs/kit';
 export const load: PageServerLoad = async ({ fetch, url }) => {
 	const currentPage = url.searchParams.get('page') ?? 1
 	const perPage = parseInt(WORDPRESS_PER_PAGE) || 6; // Use env variable or default
-	// const totalPosts = parseInt(currentPage as string) * perPage
 	const postUrl = `${WORDPRESS_URL}/wp-json/wp/v2/posts?_embed&per_page=${perPage}&page=${currentPage}`;
 
 	try {
