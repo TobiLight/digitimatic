@@ -23,9 +23,10 @@
 			<ul class="flex flex-wrap gap-x-8 gap-y-3 justify-center items-center w-full">
 				<li><a href="#who-we-are">About Us</a></li>
 				<li><a href="#partners">Partners</a></li>
+				<li><a href="/blog">Blog</a></li>
 				<li><a href="https://digitimatic.com/media-placement">Services</a></li>
 				<li><a href="#testimonials">Testimonials</a></li>
-				<li><a href="#work-with-us">Contact</a></li>
+				<li><a href="/contact">Contact</a></li>
 			</ul>
 		</nav>
 		<div class="footer-social-links flex items-center md:justify-between gap-4">

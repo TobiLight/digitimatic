@@ -59,7 +59,7 @@
 	<nav
 		id="mobileMenu"
 		class={`${
-			$isMenuOpen ? 'h-[180px] py-8' : 'h-0 py-0'
+			$isMenuOpen ? 'h-[250px] py-8' : 'h-0 py-0'
 		} bg-white font-semibold fixed z-[3] border-t-2 w-full px-4 shadow-lg overflow-hidden lg:hidden transition-all duration-[.7s] ease-out`}
 	>
 		<ul class="nav-links flex flex-col items-center gap-14 h-full">
@@ -71,6 +71,11 @@
 			<li>
 				<a on:click={() => isMenuOpen.set(false)} href="https://digitimatic.com/media-placement"
 					>Media Placement</a
+				>
+			</li>
+			<li>
+				<a on:click={() => isMenuOpen.set(false)} href="https://branding.digitimatic.com/blog"
+					>Blog</a
 				>
 			</li>
 		</ul>
