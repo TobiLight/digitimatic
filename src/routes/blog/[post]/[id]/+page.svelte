@@ -6,6 +6,12 @@
 
 	export let data: PageServerData;
 	const { post, categories, relatedPosts } = data;
+	const formatter = new Intl.DateTimeFormat('en-US', {
+		month: 'short',
+		day: 'numeric',
+		year: 'numeric'
+	});
+
 </script>
 
 <svelte:head>
@@ -32,7 +38,7 @@
 				{/if}
 			</div>
 			<div class="post-date font-semibold">
-				<p>Feb 10, 2024</p>
+				<p>{formatter.format(new Date(post.date))}</p>
 			</div>
 		</div>
 		<div class="post-wrapper mx-auto mt-14 grid gap-10">
