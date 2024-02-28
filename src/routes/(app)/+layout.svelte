@@ -2,8 +2,8 @@
 	import MenuIcon from '$lib/components/icons/Menu.svelte';
 	import WorkWithUs from '$lib/components/WorkWithUs.svelte';
 	import CloseIcon from '$lib/components/icons/Close.svelte';
-	import '../app.css';
-	import { isMenuOpen } from '../stores/store';
+	import '../../app.css';
+	import { isMenuOpen } from '../../stores/store';
 	import Footer from '$lib/components/shared/Footer.svelte';
 	import 'animate.css';
 
@@ -51,7 +51,7 @@
 			<li><a href="/#who-we-are">About Us</a></li>
 			<li><a href="/#partners">Partners</a></li>
 			<li><a href="/blog">Blog</a></li>
-			<li><a target="_blank" href="https://digitimatic.com/media-placement">Services</a></li>
+			<li><a target="_blank" href="/media-placement">Services</a></li>
 			<li><a href="/#testimonials">Testimonials</a></li>
 			<li><a href="/contact">Contact</a></li>
 		</ul>
@@ -74,7 +74,7 @@
 				<a
 					target="_blank"
 					on:click={() => isMenuOpen.set(false)}
-					href="https://digitimatic.com/media-placement">Media Placement</a
+					href="/media-placement">Media Placement</a
 				>
 			</li>
 			<li>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { isMenuOpen } from '../stores/store';
+	import { isMenuOpen } from '../../stores/store';
 	import WhoAreWe from '$lib/components/WhoAreWe.svelte';
 	import Testimonials from '$lib/components/Testimonials.svelte';
 	import HeroRocket from '$lib/components/icons/hero-rocket.webp';
@@ -14,7 +14,8 @@
 		const formattedTargetId: string | null = targetId?.startsWith('/#')
 			? targetId.substring(1)
 			: targetId;
-		if (formattedTargetId && formattedTargetId.startsWith("/")) {
+		
+		if (formattedTargetId && (formattedTargetId.startsWith("/") || formattedTargetId.includes('https://'))) {
 			// If it's a URL path, navigate to that URL
 			window.location.href = formattedTargetId;
 			return;
