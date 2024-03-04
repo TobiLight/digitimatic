@@ -12,7 +12,7 @@
 			<a href="/" class="logo w-32 flex-none relative">
 				<img
 					src="https://res.cloudinary.com/dmqndbqqy/image/upload/f_auto,q_auto/v1/digitimatic-media/jyhuiubuywqacrjeptfw"
-					alt="Digitimatic"
+					alt="Digitimatic logo"
 					class="inset-0 w-full h-[50px] object-cover rounded-lg"
 				/>
 			</a>

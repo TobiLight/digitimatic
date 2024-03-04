@@ -31,7 +31,7 @@
 		>
 			<img
 				src="https://res.cloudinary.com/dmqndbqqy/image/upload/f_auto,q_auto/v1/digitimatic-media/jyhuiubuywqacrjeptfw"
-				alt="Digitimatic"
+				alt="Digitimatic logo"
 				class="inset-0 w-full h-full object-cover"
 				loading="lazy"
 			/>
