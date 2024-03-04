@@ -126,48 +126,42 @@
 </script>
 
 <section class="mt-28 md:mt-0 px-4 py-8 overflow-hidden">
-	<div class="flex flex-col md:flex-row gap-6 md:gap-3 md:items-center md:justify-between">
+	<div class="flex flex-col lg:flex-row gap-6 lg:gap-14 md:items-center md:justify-between">
 		<div class="flex flex-col max-w-[900px] w-full">
-			<div class="mb-2 font-semibold mx-auto md:mx-0 md:text-2xl md:flex items-center gap-x-3">
+			<div class="font-semibold mx-auto md:mx-0 md:text-2xl md:flex items-center gap-x-3">
 				<div class="hidden md:block w-20 h-[2px] bg-black"></div>
 				<p>DIGITAL AGENCY</p>
 			</div>
-			<div class="flex flex-col gap-4 text-center md:text-left md:mt-6 md:gap-6">
+			<div class="flex flex-col gap-4 text-center lg:text-left lg:mt-6 lg:gap-6">
 				<h1
-					class="font-bold tracking-wide text-3xl leading-[37px] sm:mx-auto sm:text-[3.5rem] sm:leading-[65px] md:text-[2.8rem] lg:text-[3.5rem] md:leading-[60px]"
+					class="font-bold tracking-wide text-3xl leading-[37px] sm:mx-auto sm:text-[3.5rem] sm:leading-[65px] md:text-[2.8rem] lg:text-[3.5rem] lg:leading-[70px]"
 				>
-					We are a <span class="marketin whitespace-nowrap inline-block">
-						<img
-							src="https://res.cloudinary.com/dmqndbqqy/image/upload/f_auto,q_auto/v1/digitimatic-media/zrwa7k0swsk7c6vviniq"
-							data-sizes="auto"
-							alt="Digital agency"
-							class="marketing-img"
-						/>
-						digital agency</span
+					Get the <span>Brand Recognition</span> You Deserve:
+					<span class=" bg-black text-white">
+						<a href="/contact" class="underline">PR</a>,
+						<a href="https://branding.digitimatic.com" class="underline">Branding</a>
+						and Advertising solutions</span
 					>
-					that specializes in
-					<a href="/contact" class="underline">PR</a>,
-					<a href="https://branding.digitimatic.com" class="underline">Branding</a> and Advertising solutions
 				</h1>
-				<p class="tracking-wider text-lg sm:mx-auto w-full md:mx-0">
-					We have honed the digital process to the very last detail, putting an emphasis on
-					efficiency and simplicity without compromising quality.
+				<p class="tracking-wider text-xl sm:mx-auto w-full md:mx-0">
+					We deliver streamlined digital PR, branding, and advertising solutions that are efficient,
+					simple, and achieve exceptional results.
 				</p>
 			</div>
 			<div
-				class="flex flex-col sm:flex-row sm:justify-center md:justify-normal gap-4 mt-6 md:mt-10"
+				class="flex flex-col sm:flex-row sm:justify-center lg:justify-normal gap-4 mt-6 md:mt-10"
 			>
 				<a
 					href="/contact"
 					class="w-full sm:w-auto sm:px-8 rounded-full text-lg bg-black hover:bg-transparent hover:text-black border-2 border-black text-white py-4 font-bold flex items-center justify-center gap-3 transition-all ease-linear"
 				>
-					Get in touch <span><RightArrow class="text-2xl mt-1" /></span>
+					Get consultation <span><RightArrow class="text-2xl mt-1" /></span>
 				</a>
 				<a
 					href="https://digitimatic.com/media-placement"
 					class="w-full sm:w-auto sm:px-8 rounded-full text-lg bg-transparent hover:bg-[lightgreen] border-2 border-black text-black py-4 font-bold flex items-center justify-center gap-3 transition-all ease-linear"
 				>
-					Our services
+					Explore Our services
 				</a>
 			</div>
 		</div>
@@ -180,20 +174,17 @@
 <WhoAreWe />
 
 <section id="partners" class="pt-8 pb-20 px-4 relative overflow-hidden">
-	<h2 class="text-center text-xl md:text-2xl font-semibold">SIGNIFICANT ASSOCIATION</h2>
+	<h2 class="text-center text-xl md:text-2xl font-semibold">Proven Results</h2>
 	<div
 		class="mt-10 md:mt-0 text-center sm:max-w-[600px] md:max-w-[800px] mx-auto flex flex-col gap-y-5"
 	>
 		<h2
-			class="text-5xl leading-[1.2] sm:leading-snug md:leading-[82px] md:text-7xl font-semibold md:font-bold"
+			class="text-5xl leading-[1.2] sm:leading-snug md:leading-[82px] md:text-6xl font-semibold md:font-bold"
 		>
-			Our work results speak by <span class="themselves whitespace-nowrap">themselves</span>
+			How We Helped Businesses Like Yours Grow
 		</h2>
 		<p class="text-lg md:text-xl">
-			We take pride in our vast database, consisting of more than 1,000 esteemed news organizations
-			that have established familiarity with our brand and expertise. This invaluable resource
-			empowers us to provide our customers with an unwavering commitment to exceptional service,
-			ensuring an impressive 99.9% service reliability.
+			Our clients are our biggest advocates! We leverage our extensive network of media contacts to secure impactful placements that drive results for your brand.
 		</p>
 	</div>
 

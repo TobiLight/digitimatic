@@ -9,14 +9,12 @@
 	<h2 class="text-center text-xl md:text-2xl font-semibold">ABOUT US</h2>
 	<div class="text-center sm:max-w-[600px] md:max-w-[800px] mx-auto flex flex-col gap-y-5">
 		<h2
-			class="mt-10 text-5xl leading-[1.2] sm:leading-snug md:leading-[82px] md:text-7xl font-semibold md:font-bold"
+			class="mt-10 text-5xl !leading-[1.30] sm:!leading-[1.32] lg:leading-[86px] md:text-6xl font-semibold md:font-bold"
 		>
-			A great company has a great <span class="team-behind whitespace-nowrap">team behind</span>
+			The Digital Experts Behind <span class="team-behind bg-black text-white">Your Brand's Success</span>
 		</h2>
 		<p class="text-lg md:text-xl">
-			Behind Every Great Company Lies a Great Team. A synergized team, driven by passion and
-			expertise, is the secret sauce for a company's triumph. Discover the magic of collaboration
-			and shared goals
+			At Digitimatic, we're a team of passionate digital marketing experts with a proven track record of success. We combine creativity, data-driven strategies, and cutting-edge tools to deliver exceptional results for our clients.
 		</p>
 	</div>
 	<div
@@ -80,9 +78,7 @@
 				<div class="flex flex-col gap-3">
 					<h2 class="text-2xl font-bold">Understanding Consumer Buying Behavior</h2>
 					<p class="text-lg">
-						In today's market, buyers are not only astute but also highly self aware. Our mission is
-						to assist you in effortlessly captivating customers by positioning you as the
-						unmistakable choice, utilizing the power of subconscious selling.
+						We help you understand buyer behavior to position your brand for success.
 					</p>
 				</div>
 			</div>
@@ -93,11 +89,9 @@
 					<Gear class="text-7xl text-sky-800" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-2xl font-bold">Efficiency and Accountability</h2>
+					<h2 class="text-2xl font-bold">Guaranteed Media Coverage</h2>
 					<p class="text-lg">
-						We will assume responsibility for securing the media coverage outlined in our plan. Our
-						objective is to surpass the promised deliverables while ensuring a seamless and hassle
-						free experience through our 'hands-off' approach.
+						We take ownership of securing placements and exceeding expectations.
 					</p>
 				</div>
 			</div>
@@ -108,13 +102,9 @@
 					<Handshake class="text-7xl text-sky-600" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-2xl font-bold">The shortcut to instant digital influence</h2>
+					<h2 class="text-2xl font-bold">We Elevate Your Online Presence</h2>
 					<p class="text-lg">
-						Crafting unforgettable brand identities for emerging businesses, inspiring trailblazers
-						for aspiring entrepreneurs, and empowering social media personalities for everyday users
-						of online platforms. Digitimatic is a premier publicity company that specializes in
-						delivering effective messaging solutions for businesses and individuals seeking to reach
-						a wider audience.
+						We create impactful brands for businesses and empower individuals to thrive on social media. (This rephrased version combines the key points and is more concise.)
 					</p>
 				</div>
 			</div>
@@ -127,10 +117,7 @@
 				<div class="flex flex-col gap-3">
 					<h2 class="text-2xl font-bold">Paving paths to prosperity</h2>
 					<p class="text-lg">
-						Embark on a journey of exponential growth with Digitimatic. Our strategic prowess
-						extends beyond publicity, propelling businesses towards unparalleled success. Whether
-						you're a startup seeking traction or an established entity aiming for expansion, we
-						navigate the digital landscape to catalyze your growth.
+						 We craft personalized digital marketing strategies to fuel growth, regardless of your stage. <span class="font-semibold">For startups, we help you launch with a bang</span> by developing targeted strategies to get your new venture off the ground and build a strong brand foundation. <span class="font-semibold">For established businesses, we help you scale new heights</span> by leveraging data-driven insights to optimize your marketing efforts and propel your company's growth.
 					</p>
 				</div>
 			</div>

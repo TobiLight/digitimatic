@@ -15,9 +15,9 @@
 <svelte:head>
 	<meta
 		name="description"
-		content="Welcome to our digital agency specializing in PR, Branding, and Advertising solutions. We excel in digital PR, innovative branding strategies, and impactful advertising campaigns. Our streamlined digital process ensures efficiency and simplicity without compromising quality."
+		content="Grow Your Brand & Attract Customers with Award-Winning PR, Branding & Advertising. Digitimatic - Your Digital Marketing Partner. Contact Us for a Free Consultation"
 	/>
-	<title>Digital Agency | PR, Branding, Advertising Solutions</title>
+	<title>Digitimatic: PR, Branding & Advertising Solutions </title>
 </svelte:head>
 
 <header class="fixed bg-white w-full top-0 z-[999] 2xl:bg-gray-200">

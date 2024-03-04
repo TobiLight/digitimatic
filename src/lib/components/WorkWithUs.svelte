@@ -25,13 +25,13 @@
 			<p
 				class="text-2xl sm:text-3xl md:text-2xl lg:text-3xl font-bold text-center md:text-left sm:max-w-[350px] md:max-w-[600px]"
 			>
-				Ready to grow your business? Get in touch today!
+				Get A Personalized Quote To Unlock Your Growth Potential
 			</p>
 			<a
 				href="/contact"
 				class="w-fit place-self-center lg:place-self-center rounded-full text-lg bg-black hover:bg-transparent hover:text-black border-2 border-black text-white p-4 font-bold flex items-center justify-center gap-3 transition-all ease-linear"
 			>
-				Get in touch <span><RightArrow class="text-2xl mt-1" /></span>
+				Start Your Growth <span><RightArrow class="text-2xl mt-1" /></span>
 			</a>
 		</div>
 </section>
