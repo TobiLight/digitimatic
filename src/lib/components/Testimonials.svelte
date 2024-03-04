@@ -69,12 +69,16 @@
 
 		<div class="w-full flex gap-8 justify-center items-center testimonial-nav">
 			<button
+			aria-label="Previous"
+			title="Previous"
 				on:click={() => prevSlide(currentSlide - 1)}
 				class="p-3 bg-black text-white rounded-full transition-all ease-linear hover:scale-[90%]"
 			>
 				<LeftArrowN class="text-2xl" />
 			</button>
 			<button
+			aria-label="Next"
+			title="Next"
 				on:click={() => nextSlide(currentSlide + 1)}
 				class="p-3 bg-black text-white rounded-full transition-all ease-linear hover:scale-[90%]"
 			>
