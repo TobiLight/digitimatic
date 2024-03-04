@@ -14,8 +14,11 @@
 		const formattedTargetId: string | null = targetId?.startsWith('/#')
 			? targetId.substring(1)
 			: targetId;
-		
-		if (formattedTargetId && (formattedTargetId.startsWith("/") || formattedTargetId.includes('https://'))) {
+
+		if (
+			formattedTargetId &&
+			(formattedTargetId.startsWith('/') || formattedTargetId.includes('https://'))
+		) {
 			// If it's a URL path, navigate to that URL
 			window.location.href = formattedTargetId;
 			return;
@@ -133,8 +136,16 @@
 				<h1
 					class="font-bold tracking-wide text-3xl leading-[37px] sm:mx-auto sm:text-[3.5rem] sm:leading-[65px] md:text-[2.8rem] lg:text-[3.5rem] md:leading-[60px]"
 				>
-					We are a <span class="marketing whitespace-nowrap">digital agency</span> that specializes
-					in
+					We are a <span class="marketin whitespace-nowrap inline-block">
+						<img
+							src="https://res.cloudinary.com/dmqndbqqy/image/upload/f_auto,q_auto/v1/digitimatic-media/zrwa7k0swsk7c6vviniq"
+							data-sizes="auto"
+							alt="Digital agency"
+							class="marketing-img"
+						/>
+						digital agency</span
+					>
+					that specializes in
 					<a href="/contact" class="underline">PR</a>,
 					<a href="https://branding.digitimatic.com" class="underline">Branding</a> and Advertising solutions
 				</h1>
@@ -161,7 +172,7 @@
 			</div>
 		</div>
 		<div class="w-full mx-auto md:ml-[-55px] md:mr-[-103px] sm:w-3/5 md:w-full hero-image">
-			<img src={HeroRocket} alt="Hero rocket" class="w-full h-full object-cover flex-1" />
+			<img src={HeroRocket} alt="Digitmatic Hero" class="w-full h-full object-cover flex-1" />
 		</div>
 	</div>
 </section>
@@ -205,6 +216,15 @@
 <Testimonials />
 
 <style>
+	.marketing-img {
+		position: absolute;
+		z-index: 1;
+		margin-left: -24px;
+		margin-right: -24px;
+		padding-left: 15px;
+		padding-right: 24px;
+		width: 265px;
+	}
 	.marketing {
 		z-index: -1;
 		background-image: url('https://res.cloudinary.com/dmqndbqqy/image/upload/f_auto,q_auto/v1/digitimatic-media/zrwa7k0swsk7c6vviniq');
