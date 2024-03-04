@@ -31,7 +31,7 @@
 				href="/contact"
 				class="w-fit place-self-center lg:place-self-center rounded-full text-lg bg-black hover:bg-transparent hover:text-black border-2 border-black text-white p-4 font-bold flex items-center justify-center gap-3 transition-all ease-linear"
 			>
-				Start Your Growth <span><RightArrow class="text-2xl mt-1" /></span>
+				Boost Your Brand Now <span><RightArrow class="text-2xl mt-1" /></span>
 			</a>
 		</div>
 </section>
