@@ -9,11 +9,11 @@
 		class="w-full flex flex-col-reverse gap-4 md:gap-10 justify-items-end items-center md:items-end md:flex-row md:justify-between bg-black text-white p-3 border-t border-gray-600 2xl:w-3/4 2xl:mx-auto h-[inherit]"
 	>
 		<div class="logo-copyright flex flex-col items-center w-auto">
-			<a href="/" class="logo w-32 flex-none relative">
+			<a href="/" class="logo w-32 h-12 flex-none relative">
 				<img
 					src="https://res.cloudinary.com/dmqndbqqy/image/upload/f_auto,q_auto/v1/digitimatic-media/jyhuiubuywqacrjeptfw"
 					alt="Digitimatic logo"
-					class="inset-0 w-full h-[50px] object-cover rounded-lg"
+					class="inset-0 w-full h-full object-cover rounded-lg"
 				/>
 			</a>
 			<p class="text-xs">Copyright &copy;{new Date().getFullYear()} Digitimatic</p>
