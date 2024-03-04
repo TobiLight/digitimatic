@@ -15,7 +15,7 @@
 			isInView
 				? 'animate__animated animate__fadeIn animate__slow'
 				: 'animate__animated animate__fadeOut'
-		} work-with-us absolute left-0 right-0 bottom-[-120px] xs:bottom-[-140px] bg-[lightgreen] border-4 border-green-500 p-16 w-11/12 xs:w-3/4 sm:w-4/5 md:w-2/3 xl:w-1/2 mx-auto rounded-xl grid items-center`}
+		} work-with-us absolute left-0 right-0 bottom-[-120px] xs:bottom-[-140px] bg-[lightgreen] border-4 border-green-500 p-10 lg:p-16 w-11/12 xs:w-3/4 sm:w-4/5 md:w-2/3 xl:w-1/2 mx-auto rounded-xl grid items-center`}
 	use:inview={options}
 	on:inview_change={(e) => {
 		isInView = e.detail.inView;
@@ -23,7 +23,7 @@
 >
 		<div class="grid justify-center lg:grid-cols-2 items-center lg:justify-between gap-6 md:gap-10">
 			<p
-				class="text-2xl sm:text-3xl md:text-2xl lg:text-3xl font-bold text-center md:text-left sm:max-w-[350px] md:max-w-[600px]"
+				class="text-2xl sm:text-3xl md:text-2xl lg:text-3xl font-bold text-center lg:text-left sm:max-w-[350px] md:max-w-[600px]"
 			>
 				Get A Personalized Quote To Unlock Your Growth Potential
 			</p>
