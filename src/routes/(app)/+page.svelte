@@ -152,12 +152,14 @@
 				class="flex flex-col sm:flex-row sm:justify-center lg:justify-normal gap-4 mt-6 md:mt-10"
 			>
 				<a
+				title="Get Consultation"
 					href="/contact"
 					class="w-full sm:w-auto sm:px-8 rounded-full text-lg bg-black hover:bg-transparent hover:text-black border-2 border-black text-white py-4 font-bold flex items-center justify-center gap-3 transition-all ease-linear"
 				>
-					Get consultation <span><RightArrow class="text-2xl mt-1" /></span>
+					Get Consultation <span><RightArrow class="text-2xl mt-1" /></span>
 				</a>
 				<a
+				title="Explore Our Services"
 					href="https://digitimatic.com/media-placement"
 					class="w-full sm:w-auto sm:px-8 rounded-full text-lg bg-transparent hover:bg-[lightgreen] border-2 border-black text-black py-4 font-bold flex items-center justify-center gap-3 transition-all ease-linear"
 				>
