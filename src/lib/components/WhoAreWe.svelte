@@ -104,7 +104,7 @@
 				<div class="flex flex-col gap-3">
 					<h2 class="text-2xl font-bold">We Elevate Your Online Presence</h2>
 					<p class="text-lg">
-						We create impactful brands for businesses and empower individuals to thrive on social media. (This rephrased version combines the key points and is more concise.)
+						We create impactful brands for businesses and empower individuals to thrive on social media.
 					</p>
 				</div>
 			</div>
