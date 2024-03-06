@@ -136,10 +136,10 @@
 				<h1
 					class="font-bold tracking-wide text-3xl leading-[37px] sm:mx-auto sm:text-[3.5rem] sm:leading-[65px] md:text-[2.8rem] lg:text-[3.5rem] lg:leading-[70px]"
 				>
-					Get the <span>Brand Recognition</span> You Deserve:
+					Get the <span> Brand Recognition </span> You Deserve:
 					<span class=" bg-black text-white">
-						<a href="/contact" class="underline">PR</a>,
-						<a href="https://branding.digitimatic.com" class="underline">Branding</a>
+						<a href="/contact" class="underline">PR </a>,
+						<a href="https://branding.digitimatic.com" class="underline">Branding </a>
 						and Advertising solutions</span
 					>
 				</h1>
