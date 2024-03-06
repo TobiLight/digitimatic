@@ -35,7 +35,7 @@
 	};
 </script>
 
-<section id="testimonials" class="mt-10 border-t-2 pt-14 pb-72 md:pb-52 px-4 relative overflow-hidden">
+<section id="testimonials" class="mt-10 pt-20 pb-72 md:pb-52 px-4 relative overflow-hidden">
 	<div
 		class="mt-10 md:mt-0 text-center sm:max-w-[600px] md:max-w-[800px] mx-auto flex flex-col gap-y-5"
 	>

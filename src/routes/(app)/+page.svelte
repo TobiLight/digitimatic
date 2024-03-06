@@ -175,7 +175,7 @@
 
 <WhoAreWe />
 
-<section id="partners" class="pt-8 pb-20 px-4 relative overflow-hidden">
+<section id="partners" class="border-t-2 pt-16 pb-20 px-4 relative overflow-hidden">
 	<h2 class="text-center text-xl md:text-2xl font-semibold">Proven Results</h2>
 	<div
 		class="mt-10 md:mt-0 text-center sm:max-w-[600px] md:max-w-[800px] mx-auto flex flex-col gap-y-5"
@@ -205,9 +205,8 @@
 			</figure>
 		{/each}
 	</div>
+	<Testimonials />
 </section>
-
-<Testimonials />
 
 <style>
 	.marketing-img {

@@ -11,7 +11,7 @@
 		<h2
 			class="mt-10 text-5xl !leading-[1.30] sm:!leading-[1.32] lg:leading-[86px] md:text-6xl font-semibold md:font-bold"
 		>
-			The Digital Experts Behind <span class="team-behind bg-black text-white"> Your Brand's Success</span>
+			The Digital Experts Behind&nbsp;<span class="team-behind bg-black text-white">Your Brand's Success</span>
 		</h2>
 		<p class="text-lg md:text-xl">
 			At Digitimatic, we're a team of passionate digital marketing experts with a proven track record of success. We combine creativity, data-driven strategies, and cutting-edge tools to deliver exceptional results for our clients.
