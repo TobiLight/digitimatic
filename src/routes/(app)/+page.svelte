@@ -139,7 +139,7 @@
 					Get the Brand Recognition You Deserve:&nbsp;
 					<span class=" bg-black text-white break-words">
 						<a href="/contact" class="underline">PR </a>,&nbsp;
-						<a href="https://branding.digitimatic.com" class="underline">Branding </a>&nbsp;
+						<a href="https://branding.digitimatic.com" class="underline">Branding</a>&nbsp;
 						and Advertising solutions</span
 					>
 				</h1>
