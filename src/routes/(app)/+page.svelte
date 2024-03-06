@@ -136,8 +136,8 @@
 				<h1
 					class="font-bold tracking-wide text-3xl leading-[37px] sm:mx-auto sm:text-[3.5rem] sm:leading-[65px] md:text-[2.8rem] lg:text-[3.5rem] lg:leading-[70px]"
 				>
-					Get the Brand Recognition You Deserve:
-					<span class=" bg-black text-white break-words">&nbsp;
+					Get the Brand Recognition You Deserve:&nbsp;
+					<span class=" bg-black text-white break-words">
 						<a href="/contact" class="underline">PR </a>,&nbsp;
 						<a href="https://branding.digitimatic.com" class="underline">Branding </a>&nbsp;
 						and Advertising solutions</span
