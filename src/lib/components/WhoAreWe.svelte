@@ -117,7 +117,7 @@
 				<div class="flex flex-col gap-3">
 					<h2 class="text-2xl font-bold">Paving paths to prosperity</h2>
 					<p class="text-lg">
-						 We craft personalized digital marketing strategies to fuel growth, regardless of your stage. <span class="font-semibold"> For startups, we help you launch with a bang </span> by developing targeted strategies to get your new venture off the ground and build a strong brand foundation. <span class="font-semibold"> For established businesses, we help you scale new heights </span> by leveraging data-driven insights to optimize your marketing efforts and propel your company's growth.
+						 We craft personalized digital marketing strategies to fuel growth, regardless of your stage.&nbsp;<span class="font-semibold">For startups, we help you launch with a bang</span>&nbsp;by developing targeted strategies to get your new venture off the ground and build a strong brand foundation.&nbsp;<span class="font-semibold">For established businesses, we help you scale new heights</span>&nbsp;by leveraging data-driven insights to optimize your marketing efforts and propel your company's growth.
 					</p>
 				</div>
 			</div>
