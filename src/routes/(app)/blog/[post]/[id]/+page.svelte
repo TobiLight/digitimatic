@@ -23,7 +23,7 @@
 	<meta property="og:title" content={post?.title.rendered} />
 </svelte:head>
 
-<section>
+<section class="mb-[200px]">
 	<div class="post-container px-6">
 		<div
 			class="post-categories-container flex flex-col-reverse justify-center items-center gap-3 md:gap-6 mt-32 md:mt-40"
