@@ -12,7 +12,7 @@
 		<h2
 			class="mt-10 text-3xl sm:text-5xl !leading-[1.30] sm:!leading-[1.32] lg:leading-[86px] md:text-6xl font-semibold md:font-bold break-words"
 		>
-			Why Choose <b class="team-behind bg-black text-white">Digitimatic?</b>
+			Why Choose <span class="team-behind bg-black text-white">Digitimatic?</span>
 		</h2>
 		<p class="text-lg md:text-xl">
 			At Digitimatic, we're a team of passionate digital marketing experts with a proven track
@@ -38,23 +38,30 @@
 						<p class="text-lg font-semibold text-neutral-700 leading-tight">Tailored PR Strategy</p>
 					</div>
 					<p class="mt-4 text-sm">
-						Every brand is unique, so we craft custom PR campaigns that align with your goals and target audience.
+						Every brand is unique, so we craft custom PR campaigns that align with your goals and
+						target audience.
 					</p>
 				</div>
 				<div class="p-4 w-full text-neutral-500">
 					<div class="flex items-center justify-center">
-						<p class="text-lg font-semibold text-neutral-700 leading-tight">Exclusive Media Connections</p>
+						<p class="text-lg font-semibold text-neutral-700 leading-tight">
+							Exclusive Media Connections
+						</p>
 					</div>
 					<p class="mt-4 text-sm">
-						Our established relationships with leading journalists and editors ensure your story gets in front of the right eyes.
+						Our established relationships with leading journalists and editors ensure your story
+						gets in front of the right eyes.
 					</p>
 				</div>
 				<div class="p-4 w-full text-neutral-500">
 					<div class="flex items-center justify-center">
-						<p class="text-lg font-semibold text-neutral-700 leading-tight">Results-Driven Approach</p>
+						<p class="text-lg font-semibold text-neutral-700 leading-tight">
+							Results-Driven Approach
+						</p>
 					</div>
 					<p class="mt-4 text-sm">
-						From media placements to brand storytelling, we focus on measurable outcomes that grow your business.
+						From media placements to brand storytelling, we focus on measurable outcomes that grow
+						your business.
 					</p>
 				</div>
 			</div>
