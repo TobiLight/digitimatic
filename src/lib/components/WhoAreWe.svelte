@@ -4,6 +4,10 @@
 	import Gear from '$lib/components/icons/Gear.svelte';
 	import Growth from '$lib/components/icons/Growth.svelte';
 	import Globe from './icons/Globe.svelte';
+	import Megaphone from './icons/Megaphone.svelte';
+	import Quill from './icons/Quill.svelte';
+	import PersonStar from './icons/PersonStar.svelte';
+	import Triangle from './icons/Triangle.svelte';
 </script>
 
 <section id="who-we-are" class="mt-10 border-t-2 pt-24 pb-20 px-4 relative overflow-hidden">
@@ -14,7 +18,7 @@
 		>
 			Why Choose&nbsp;<span class="team-behind bg-black text-white">Digitimatic?</span>
 		</h2>
-		<p class="text-lg md:text-xl">
+		<p class="text-base leading-tight md:text-xl">
 			At Digitimatic, we're a team of passionate digital marketing experts with a proven track
 			record of success. We combine creativity, data-driven strategies, and cutting-edge tools to
 			deliver exceptional results for our clients.
@@ -24,7 +28,9 @@
 			<div class="grid sm:grid-cols-2 lg:grid-cols-4 justify-center w-full gap-4">
 				<div class="p-4 w-full text-neutral-500">
 					<div class="flex items-center justify-center">
-						<p class="text-lg font-semibold text-neutral-700 leading-tight">Proven Track Record</p>
+						<p class="text-base leading-tight font-semibold text-neutral-700 leading-tight">
+							Proven Track Record
+						</p>
 					</div>
 					<p class="mt-2 text-sm">
 						We’ve helped countless brands land features in top-tier publications such as <b
@@ -35,7 +41,9 @@
 				</div>
 				<div class="p-4 w-full text-neutral-500">
 					<div class="flex items-center justify-center">
-						<p class="text-lg font-semibold text-neutral-700 leading-tight">Tailored PR Strategy</p>
+						<p class="text-base leading-tight font-semibold text-neutral-700 leading-tight">
+							Tailored PR Strategy
+						</p>
 					</div>
 					<p class="mt-2 text-sm">
 						Every brand is unique, so we craft custom PR campaigns that align with your goals and
@@ -44,7 +52,7 @@
 				</div>
 				<div class="p-4 w-full text-neutral-500">
 					<div class="flex items-center justify-center">
-						<p class="text-lg font-semibold text-neutral-700 leading-tight">
+						<p class="text-base leading-tight font-semibold text-neutral-700 leading-tight">
 							Exclusive Media Connections
 						</p>
 					</div>
@@ -55,7 +63,7 @@
 				</div>
 				<div class="p-4 w-full text-neutral-500">
 					<div class="flex items-center justify-center">
-						<p class="text-lg font-semibold text-neutral-700 leading-tight">
+						<p class="text-base leading-tight font-semibold text-neutral-700 leading-tight">
 							Results-Driven Approach
 						</p>
 					</div>
@@ -125,12 +133,13 @@
 		<div class="bg-purple-200 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
 			<div class="grid lg:flex items-start gap-4 lg:gap-8">
 				<div class="icon">
-					<Bulb class="text-5xl text-purple-800" />
+					<Megaphone class="text-5xl text-purple-800" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-xl leading-tight font-bold">Understanding Consumer Buying Behavior</h2>
-					<p class="text-lg">
-						We help you understand buyer behavior to position your brand for success.
+					<h2 class="text-xl leading-tight font-bold">Press Features & Media Placement</h2>
+					<p class="text-base leading-tight">
+						Get featured in leading national and international media outlets. We help you understand
+						buyer behavior to position your brand for success.
 					</p>
 				</div>
 			</div>
@@ -138,12 +147,12 @@
 		<div class="bg-sky-100 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
 			<div class="grid lg:flex items-start gap-4 lg:gap-8">
 				<div class="icon">
-					<Gear class="text-5xl text-sky-800" />
+					<Quill class="text-5xl text-sky-800" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-xl leading-tight font-bold">Guaranteed Media Coverage</h2>
-					<p class="text-lg">
-						We take ownership of securing placements and exceeding expectations.
+					<h2 class="text-xl leading-tight font-bold">Brand Storytelling</h2>
+					<p class="text-base leading-tight">
+						We craft compelling stories that resonate with your audience and the target publication.
 					</p>
 				</div>
 			</div>
@@ -151,13 +160,12 @@
 		<div class="bg-sky-100 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
 			<div class="grid lg:flex items-start gap-4 lg:gap-8">
 				<div class="icon">
-					<Handshake class="text-5xl text-sky-600" />
+					<PersonStar class="text-5xl text-sky-600" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-xl leading-tight font-bold">We Elevate Your Online Presence</h2>
-					<p class="text-lg">
-						We create impactful brands for businesses and empower individuals to thrive on social
-						media.
+					<h2 class="text-xl leading-tight font-bold">Thought Leadership Development</h2>
+					<p class="text-base leading-tight">
+						Position yourself as an expert in your field with customized PR strategies.
 					</p>
 				</div>
 			</div>
@@ -165,19 +173,12 @@
 		<div class="bg-purple-100 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
 			<div class="grid lg:flex items-start gap-4 lg:gap-8">
 				<div class="icon">
-					<Growth class="text-5xl text-purple-600" />
+					<Triangle class="text-5xl text-purple-600" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-xl leading-tight font-bold">Paving paths to prosperity</h2>
-					<p class="text-lg">
-						We craft personalized digital marketing strategies to fuel growth, regardless of your
-						stage.&nbsp;<span class="font-semibold"
-							>For startups, we help you launch with a bang</span
-						>&nbsp;by developing targeted strategies to get your new venture off the ground and
-						build a strong brand foundation.&nbsp;<span class="font-semibold"
-							>For established businesses, we help you scale new heights</span
-						>&nbsp;by leveraging data-driven insights to optimize your marketing efforts and propel
-						your company's growth.
+					<h2 class="text-xl leading-tight font-bold">Crisis Management</h2>
+					<p class="text-base leading-tight">
+						Protect your reputation with proactive and responsive communication strategies.
 					</p>
 				</div>
 			</div>
