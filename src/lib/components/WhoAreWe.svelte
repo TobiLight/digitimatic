@@ -25,49 +25,49 @@
 		</p>
 
 		<div class="max-w-6xl grid">
-			<div class="grid sm:grid-cols-2 lg:grid-cols-4 justify-center w-full gap-4">
-				<div class="p-4 w-full text-neutral-500">
-					<div class="flex items-center justify-center">
-						<p class="text-base leading-tight font-semibold text-neutral-700 leading-tight">
+			<div class="grid sm:grid-cols-2 lg:grid-cols-4 lg:justify-center w-full gap-4">
+				<div class="p-4 w-full text-neutral-500 drop-shadow-xl bg-neutral-50">
+					<div class="flex items-center justify-cente">
+						<p class="text-base font-semibold text-neutral-700 leading-tight text-left">
 							Proven Track Record
 						</p>
 					</div>
-					<p class="mt-2 text-sm">
+					<p class="mt-2 text-sm text-left lg:ext-center">
 						We’ve helped countless brands land features in top-tier publications such as <b
 							>Forbes</b
 						>, <b>Business Insider</b>, <b>BBC</b>, <b>New York Times</b>, boosting their visibility
 						and authority.
 					</p>
 				</div>
-				<div class="p-4 w-full text-neutral-500">
-					<div class="flex items-center justify-center">
-						<p class="text-base leading-tight font-semibold text-neutral-700 leading-tight">
+				<div class="p-4 w-full text-neutral-500 drop-shadow-xl bg-neutral-50">
+					<div class="flex items-center justify-cente">
+						<p class="text-base font-semibold text-neutral-700 leading-tight text-left">
 							Tailored PR Strategy
 						</p>
 					</div>
-					<p class="mt-2 text-sm">
+					<p class="mt-2 text-sm text-left lg:ext-center">
 						Every brand is unique, so we craft custom PR campaigns that align with your goals and
 						target audience.
 					</p>
 				</div>
-				<div class="p-4 w-full text-neutral-500">
-					<div class="flex items-center justify-center">
-						<p class="text-base leading-tight font-semibold text-neutral-700 leading-tight">
+				<div class="p-4 w-full text-neutral-500 drop-shadow-xl bg-neutral-50">
+					<div class="flex items-center justify-cente">
+						<p class="text-base font-semibold text-neutral-700 leading-tight text-left">
 							Exclusive Media Connections
 						</p>
 					</div>
-					<p class="mt-2 text-sm">
+					<p class="mt-2 text-sm text-left lg:ext-center">
 						Our established relationships with leading journalists and editors ensure your story
 						gets in front of the right eyes.
 					</p>
 				</div>
-				<div class="p-4 w-full text-neutral-500">
-					<div class="flex items-center justify-center">
-						<p class="text-base leading-tight font-semibold text-neutral-700 leading-tight">
+				<div class="p-4 w-full text-neutral-500 drop-shadow-xl bg-neutral-50">
+					<div class="flex items-center justify-cente">
+						<p class="text-base font-semibold text-neutral-700 leading-tight text-left">
 							Results-Driven Approach
 						</p>
 					</div>
-					<p class="mt-2 text-sm">
+					<p class="mt-2 text-sm text-left lg:ext-center">
 						From media placements to brand storytelling, we focus on measurable outcomes that grow
 						your business.
 					</p>
