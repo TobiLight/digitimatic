@@ -24,7 +24,7 @@ export const load: PageServerLoad = async ({ fetch, url }) => {
 			throw error(posts.data.status as NumericRange<400, 599>, posts.message)
 	} catch (e: any) {
 		console.error('Error fetching posts:', e);
-		if (e.cause.code === 'ENOTFOUND')
+		if (e.cause?.code === 'ENOTFOUND')
 			return error(500, 'Internal Server Error')
 
 		return error(e.status, `${e.body.message}`)

@@ -127,7 +127,7 @@
 
 <section class="mt-28 md:mt-0 px-4 py-8 overflow-hidden">
 	<div class="flex flex-col lg:flex-row gap-6 lg:gap-14 md:items-center md:justify-between">
-		<div class="flex flex-col max-w-[900px] w-full">
+		<div class="flex flex-col max-w-[900px] w-full pt-10 lg:pt-5">
 			<div class="font-semibold mx-auto md:mx-0 md:text-2xl md:flex items-center gap-x-3">
 				<div class="hidden md:block w-20 h-[2px] bg-black"></div>
 				<p>DIGITAL AGENCY</p>
@@ -136,16 +136,18 @@
 				<h1
 					class="font-bold tracking-wide text-3xl leading-[37px] sm:mx-auto sm:text-[3.5rem] sm:leading-[65px] md:text-[2.8rem] lg:text-[3.5rem] lg:leading-[70px]"
 				>
-					Get the Brand Recognition You Deserve:&nbsp;
-					<span class=" bg-black text-white break-words">
+					Elevate Your Brand with Powerful Media Coverage
+					<!-- <span class=" bg-black text-white break-words">
 						<a href="/contact" class="underline">PR</a>,&nbsp;
 						<a href="https://branding.digitimatic.com" class="underline">Branding</a>&nbsp;and
 						Advertising solutions</span
-					>
+					> -->
 				</h1>
 				<p class="tracking-wider text-xl sm:mx-auto w-full md:mx-0">
-					We deliver streamlined digital PR, branding, and advertising solutions that are efficient,
-					simple, and achieve exceptional results.
+					At Digitimatic, we specialize in helping entrepreneurs, startups, and established brands
+					secure impactful press features that drive real results. Whether you’re looking to build
+					credibility, attract investors, or grow your audience, our PR and media placement services
+					are designed to position you as a thought leader in your industry.
 				</p>
 			</div>
 			<div
@@ -167,8 +169,14 @@
 				</a>
 			</div>
 		</div>
-		<div class="w-full mx-auto md:ml-[-55px] md:mr-[-103px] sm:w-3/5 md:w-full hero-image">
-			<img src={HeroRocket} alt="Digitmatic Hero" class="w-full h-full object-cover flex-1" />
+		<div
+			class="w-full mx-auto md:ml-[-55px] md:mr-[-103px] sm:w-3/5 md:w-full hero-image aspect-square"
+		>
+			<img
+				src={HeroRocket}
+				alt="Digitmatic Hero"
+				class="w-full h-full object-cover flex-1 aspect-square"
+			/>
 		</div>
 	</div>
 </section>
@@ -206,6 +214,21 @@
 		{/each}
 	</div>
 	<Testimonials />
+</section>
+
+<section class="pb-10">
+	<div class="w-full max-w-full mx-auto px-4 text-center space-y-4">
+		<p class="text-5xl font-bold">Ready to Make Headlines?</p>
+		<div class="block">
+			<p class="max-w-xl mx-auto">
+			Don’t wait for the perfect opportunity—create it. Contact us today to discover how we can help
+			you win press coverage that accelerates your business growth.
+		</p>
+
+		<button>Let's Get Started</button>
+		</div>
+		
+	</div>
 </section>
 
 <style>
