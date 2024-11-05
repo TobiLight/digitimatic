@@ -216,18 +216,21 @@
 	<Testimonials />
 </section>
 
-<section class="pb-10">
+<section class="py-10 bg-green-400">
 	<div class="w-full max-w-full mx-auto px-4 text-center space-y-4">
-		<p class="text-5xl font-bold">Ready to Make Headlines?</p>
+		<p class="text-3xl lg:text-5xl font-bold">Ready to Make Headlines?</p>
 		<div class="block">
-			<p class="max-w-xl mx-auto">
-			Don’t wait for the perfect opportunity—create it. Contact us today to discover how we can help
-			you win press coverage that accelerates your business growth.
-		</p>
+			<p class="max-w-xl text-[1rem] lg:text-xl leading-tight mx-auto mb-4">
+				Don’t wait for the perfect opportunity—create it. Contact us today to discover how we can
+				help you win press coverage that accelerates your business growth.
+			</p>
 
-		<button>Let's Get Started</button>
+			<a
+				href="/"
+				class="w-fit px-3 py-1 font-semibold border border-transparent bg-black text-white rounded-full flex items-center justify-center mx-auto hover:-translate-y-1 transition-all ease-in duration-200 hover:bg-transparent hover:border-black hover:text-black"
+				>Let's Get Started</a
+			>
 		</div>
-		
 	</div>
 </section>
 

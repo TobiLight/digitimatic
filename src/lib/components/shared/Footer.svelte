@@ -4,7 +4,7 @@
 	import Twitter from '../icons/Twitter.svelte';
 </script>
 
-<footer class="2xl:bg-gray-200 h-[350px] md:h-[240px]">
+<footer class="2xl:bg-gray-200">
 	<div
 		class="w-full flex flex-col-reverse gap-4 md:gap-10 justify-items-end items-center md:items-end md:flex-row md:justify-between bg-black text-white p-3 border-t border-gray-600 2xl:w-3/4 2xl:mx-auto h-[inherit]"
 	>
