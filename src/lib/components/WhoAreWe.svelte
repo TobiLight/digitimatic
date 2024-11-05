@@ -10,9 +10,9 @@
 	<h2 class="text-center text-xl md:text-2xl font-semibold">ABOUT US</h2>
 	<div class="text-center sm:max-w-[600px] md:max-w-[900px] mx-auto flex flex-col gap-y-5">
 		<h2
-			class="mt-10 text-3xl sm:text-5xl !leading-[1.30] sm:!leading-[1.32] lg:leading-[86px] md:text-6xl font-semibold md:font-bold"
+			class="mt-10 text-3xl sm:text-5xl !leading-[1.30] sm:!leading-[1.32] lg:leading-[86px] md:text-6xl font-semibold md:font-bold break-words"
 		>
-			Why Choose <span class="team-behind bg-black text-white">Digitimatic?</span>
+			Why Choose <b class="team-behind bg-black text-white">Digitimatic?</b>
 		</h2>
 		<p class="text-lg md:text-xl">
 			At Digitimatic, we're a team of passionate digital marketing experts with a proven track
