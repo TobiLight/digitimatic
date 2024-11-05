@@ -12,7 +12,7 @@
 		<h2
 			class="mt-10 text-3xl sm:text-5xl !leading-[1.30] sm:!leading-[1.32] lg:leading-[86px] md:text-6xl font-semibold md:font-bold break-words"
 		>
-			Why Choose <span class="team-behind bg-black text-white">Digitimatic?</span>
+			Why Choose&nbsp;<span class="team-behind bg-black text-white">Digitimatic?</span>
 		</h2>
 		<p class="text-lg md:text-xl">
 			At Digitimatic, we're a team of passionate digital marketing experts with a proven track
@@ -26,7 +26,7 @@
 					<div class="flex items-center justify-center">
 						<p class="text-lg font-semibold text-neutral-700 leading-tight">Proven Track Record</p>
 					</div>
-					<p class="mt-4 text-sm">
+					<p class="mt-2 text-sm">
 						We’ve helped countless brands land features in top-tier publications such as <b
 							>Forbes</b
 						>, <b>Business Insider</b>, <b>BBC</b>, <b>New York Times</b>, boosting their visibility
@@ -37,7 +37,7 @@
 					<div class="flex items-center justify-center">
 						<p class="text-lg font-semibold text-neutral-700 leading-tight">Tailored PR Strategy</p>
 					</div>
-					<p class="mt-4 text-sm">
+					<p class="mt-2 text-sm">
 						Every brand is unique, so we craft custom PR campaigns that align with your goals and
 						target audience.
 					</p>
@@ -48,7 +48,7 @@
 							Exclusive Media Connections
 						</p>
 					</div>
-					<p class="mt-4 text-sm">
+					<p class="mt-2 text-sm">
 						Our established relationships with leading journalists and editors ensure your story
 						gets in front of the right eyes.
 					</p>
@@ -59,7 +59,7 @@
 							Results-Driven Approach
 						</p>
 					</div>
-					<p class="mt-4 text-sm">
+					<p class="mt-2 text-sm">
 						From media placements to brand storytelling, we focus on measurable outcomes that grow
 						your business.
 					</p>
@@ -125,10 +125,10 @@
 		<div class="bg-purple-200 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
 			<div class="grid lg:flex items-start gap-4 lg:gap-8">
 				<div class="icon">
-					<Bulb class="text-7xl text-purple-800" />
+					<Bulb class="text-5xl text-purple-800" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-2xl font-bold">Understanding Consumer Buying Behavior</h2>
+					<h2 class="text-xl leading-tight font-bold">Understanding Consumer Buying Behavior</h2>
 					<p class="text-lg">
 						We help you understand buyer behavior to position your brand for success.
 					</p>
@@ -138,10 +138,10 @@
 		<div class="bg-sky-100 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
 			<div class="grid lg:flex items-start gap-4 lg:gap-8">
 				<div class="icon">
-					<Gear class="text-7xl text-sky-800" />
+					<Gear class="text-5xl text-sky-800" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-2xl font-bold">Guaranteed Media Coverage</h2>
+					<h2 class="text-xl leading-tight font-bold">Guaranteed Media Coverage</h2>
 					<p class="text-lg">
 						We take ownership of securing placements and exceeding expectations.
 					</p>
@@ -151,10 +151,10 @@
 		<div class="bg-sky-100 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
 			<div class="grid lg:flex items-start gap-4 lg:gap-8">
 				<div class="icon">
-					<Handshake class="text-7xl text-sky-600" />
+					<Handshake class="text-5xl text-sky-600" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-2xl font-bold">We Elevate Your Online Presence</h2>
+					<h2 class="text-xl leading-tight font-bold">We Elevate Your Online Presence</h2>
 					<p class="text-lg">
 						We create impactful brands for businesses and empower individuals to thrive on social
 						media.
@@ -165,10 +165,10 @@
 		<div class="bg-purple-100 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
 			<div class="grid lg:flex items-start gap-4 lg:gap-8">
 				<div class="icon">
-					<Growth class="text-7xl text-purple-600" />
+					<Growth class="text-5xl text-purple-600" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-2xl font-bold">Paving paths to prosperity</h2>
+					<h2 class="text-xl leading-tight font-bold">Paving paths to prosperity</h2>
 					<p class="text-lg">
 						We craft personalized digital marketing strategies to fuel growth, regardless of your
 						stage.&nbsp;<span class="font-semibold"
