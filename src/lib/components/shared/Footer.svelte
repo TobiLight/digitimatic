@@ -30,21 +30,28 @@
 			</ul>
 		</nav>
 		<div class="footer-social-links flex items-center md:justify-between gap-4">
-			<div class="w-10 h-10 bg-blue-600 p-2 flex items-center justify-center rounded-full">
-				<a title="Facebook" href="https://www.facebook.com/digitimatic">
-					<Facebook class="w-4 h-4 text-white" />
-				</a>
-			</div>
-			<div class="w-10 h-10 bg-white p-2 flex items-center justify-center rounded-full">
-				<a title="Instagram" href="https://www.instagram.com/digitimatic?igshid=YzAwZjE1ZTI0Zg==">
-					<Instagram class="w-4 h-4 text-black" />
-				</a>
-			</div>
-			<div class="w-10 h-10 bg-white p-2 flex items-center justify-center rounded-full">
-				<a title="Twitter" href="https://x.com/digitimatic">
-					<Twitter class="w-4 h-4 text-black" />
-				</a>
-			</div>
+			<a
+				title="Facebook"
+				href="https://www.facebook.com/digitimatic"
+				class="w-10 h-10 bg-blue-600 p-2 flex items-center justify-center rounded-full hover:-translate-y-2 transition-all ease-linear delay-200"
+			>
+				<Facebook class="w-4 h-4 text-white" />
+			</a>
+			<a
+				title="Instagram"
+				href="https://www.instagram.com/digitimatic?igshid=YzAwZjE1ZTI0Zg=="
+				class="w-10 h-10 bg-white p-2 flex items-center justify-center rounded-full hover:-translate-y-2 transition-all ease-linear delay-200"
+			>
+				<Instagram class="w-4 h-4 text-black" />
+			</a>
+
+			<a
+				href="https://x.com/digitimatic"
+				title="Twitter/X"
+				class="w-10 h-10 bg-white p-2 flex items-center justify-center rounded-full hover:-translate-y-2 transition-all ease-linear delay-200"
+			>
+				<Twitter class="w-4 h-4 text-black" />
+			</a>
 		</div>
 	</div>
 </footer>
