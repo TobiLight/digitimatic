@@ -26,7 +26,7 @@
 
 		<div class="max-w-6xl grid">
 			<div class="grid sm:grid-cols-2 lg:grid-cols-4 lg:justify-center w-full gap-4">
-				<div class="p-4 w-full text-neutral-500 drop-shadow-xl bg-neutral-50">
+				<div class="p-4 w-full text-neutral-500 drop-shadow-xl bg-neutral-50 border-b-2 border-purple-800">
 					<div class="flex items-center justify-cente">
 						<p class="text-base font-semibold text-neutral-700 leading-tight text-left">
 							Proven Track Record
@@ -131,7 +131,7 @@
 
 	<div class="grid lg:grid-cols-2 items-stretch gap-10 justify-between relative mt-[6rem] xs:mt-40">
 		<div class="bg-purple-200 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
-			<div class="grid lg:flex items-start gap-4 lg:gap-8">
+			<div class="grid lg:flex items-start gap-4 lg:gap-5">
 				<div class="icon">
 					<Megaphone class="text-5xl text-purple-800" />
 				</div>
@@ -145,7 +145,7 @@
 			</div>
 		</div>
 		<div class="bg-sky-100 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
-			<div class="grid lg:flex items-start gap-4 lg:gap-8">
+			<div class="grid lg:flex items-start gap-4 lg:gap-5">
 				<div class="icon">
 					<Quill class="text-5xl text-sky-800" />
 				</div>
@@ -158,7 +158,7 @@
 			</div>
 		</div>
 		<div class="bg-sky-100 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
-			<div class="grid lg:flex items-start gap-4 lg:gap-8">
+			<div class="grid lg:flex items-start gap-4 lg:gap-5">
 				<div class="icon">
 					<PersonStar class="text-5xl text-sky-600" />
 				</div>
@@ -171,7 +171,7 @@
 			</div>
 		</div>
 		<div class="bg-purple-100 rounded-xl p-10 hover:scale-[105%] transition-all ease-linear">
-			<div class="grid lg:flex items-start gap-4 lg:gap-8">
+			<div class="grid lg:flex items-start gap-4 lg:gap-5">
 				<div class="icon">
 					<Triangle class="text-5xl text-purple-600" />
 				</div>
