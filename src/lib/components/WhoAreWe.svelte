@@ -25,12 +25,14 @@
 		</p>
 
 		<div class="max-w-6xl grid">
-			<div class="grid sm:grid-cols-2 lg:grid-cols-4 lg:justify-center w-full gap-4">
-				<div class="p-4 w-full text-neutral-500 drop-shadow-xl bg-neutral-50 border-b-2 border-purple-800">
+			<div
+				class="grid sm:grid-cols-2 lg:grid-cols-4 lg:justify-center w-full gap-4 text-[cornsilk]"
+			>
+				<div
+					class="p-4 w-full drop-shadow-xl border-l-8 sm:border-y-4 sm:border-l-0 border-purple-800 rounded-sm bg-[#00008073] hover:translate-x-2 transition-all ease-linear duration-200"
+				>
 					<div class="flex items-center justify-cente">
-						<p class="text-base font-semibold text-neutral-700 leading-tight text-left">
-							Proven Track Record
-						</p>
+						<p class="text-base font-extrabold leading-tight text-left">Proven Track Record</p>
 					</div>
 					<p class="mt-2 text-sm text-left lg:ext-center">
 						We’ve helped countless brands land features in top-tier publications such as <b
@@ -39,20 +41,22 @@
 						and authority.
 					</p>
 				</div>
-				<div class="p-4 w-full text-neutral-500 drop-shadow-xl bg-neutral-50">
+				<div
+					class="p-4 w-full drop-shadow-xl border-l-8 sm:border-y-4 sm:border-l-0 border-sky-800 rounded-sm bg-[#0759857d] hover:translate-x-2 transition-all ease-linear duration-200"
+				>
 					<div class="flex items-center justify-cente">
-						<p class="text-base font-semibold text-neutral-700 leading-tight text-left">
-							Tailored PR Strategy
-						</p>
+						<p class="text-base font-semibold leading-tight text-left">Tailored PR Strategy</p>
 					</div>
 					<p class="mt-2 text-sm text-left lg:ext-center">
 						Every brand is unique, so we craft custom PR campaigns that align with your goals and
 						target audience.
 					</p>
 				</div>
-				<div class="p-4 w-full text-neutral-500 drop-shadow-xl bg-neutral-50">
+				<div
+					class="p-4 w-full drop-shadow-xl border-l-8 sm:border-y-4 sm:border-l-0 border-gray-900 rounded-sm bg-[#36454fa8] hover:translate-x-2 transition-all ease-linear duration-200"
+				>
 					<div class="flex items-center justify-cente">
-						<p class="text-base font-semibold text-neutral-700 leading-tight text-left">
+						<p class="text-base font-semibold leading-tight text-left">
 							Exclusive Media Connections
 						</p>
 					</div>
@@ -61,11 +65,9 @@
 						gets in front of the right eyes.
 					</p>
 				</div>
-				<div class="p-4 w-full text-neutral-500 drop-shadow-xl bg-neutral-50">
+				<div class="p-4 w-full drop-shadow-xl border-l-8 sm:border-y-4 sm:border-l-0 border-orange-800 rounded-sm bg-[#ff4500c2] hover:translate-x-2 transition-all ease-linear duration-200">
 					<div class="flex items-center justify-cente">
-						<p class="text-base font-semibold text-neutral-700 leading-tight text-left">
-							Results-Driven Approach
-						</p>
+						<p class="text-base font-semibold leading-tight text-left">Results-Driven Approach</p>
 					</div>
 					<p class="mt-2 text-sm text-left lg:ext-center">
 						From media placements to brand storytelling, we focus on measurable outcomes that grow
