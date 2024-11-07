@@ -30,8 +30,8 @@
 						<p class="text-base font-extrabold leading-tight text-left">Proven Track Record</p>
 					</div>
 					<p class="mt-2 text-sm text-left lg:ext-center">
-						We’ve helped countless brands land features in top-tier publications such as <b
-							>Forbes</b
+						We’ve helped countless brands land features in top-tier publications such as <b>
+							Forbes</b
 						>, <b>Business Insider</b>, <b>BBC</b>, <b>New York Times</b>, boosting their visibility
 						and authority.
 					</p>
@@ -60,7 +60,9 @@
 						gets in front of the right eyes.
 					</p>
 				</div>
-				<div class="p-4 w-full drop-shadow-xl border-l-8 sm:border-y-4 sm:border-l-0 border-orange-800 rounded-sm bg-[#ff4500c2] hover:translate-x-2 transition-all ease-linear duration-200">
+				<div
+					class="p-4 w-full drop-shadow-xl border-l-8 sm:border-y-4 sm:border-l-0 border-orange-800 rounded-sm bg-[#ff4500c2] hover:translate-x-2 transition-all ease-linear duration-200"
+				>
 					<div class="flex items-center justify-cente">
 						<p class="text-base font-semibold leading-tight text-left">Results-Driven Approach</p>
 					</div>
