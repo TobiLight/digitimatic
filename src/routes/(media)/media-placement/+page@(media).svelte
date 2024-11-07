@@ -21,11 +21,11 @@
 		<div class="grid mt-12 gap-y-8">
 			<video width="100%" height="400" loop muted playsinline controls class="mx-auto lg:w-[60%]">
 				<source
-					src="https://res.cloudinary.com/ddt59lbmx/video/upload/v1684922678/Agency_VSL_3min_nvlduy.mp4"
+					src="https://res.cloudinary.com/ddt59lbmx/video/upload/v1730967642/digitimatic/Videos/trim.59D7AB83-6652-43CD-AC9E-94DC5D439892_u63i0v.mp4"
 					type="video/mp4"
 				/>
 				<source
-					src="https://res.cloudinary.com/ddt59lbmx/video/upload/v1684919613/agency-vsl-3min_bcuomk.webm"
+					src="https://res.cloudinary.com/ddt59lbmx/video/upload/v1730968100/digitimatic/Videos/trim.59D7AB83-6652-43CD-AC9E-94DC5D439892_idsmsj.webm"
 					type="video/webm"
 				/>
 				Your browser does not support the video tag.

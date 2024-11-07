@@ -115,6 +115,8 @@ export const POST: RequestHandler = async ({ fetch, request }) => {
 		else {
 			const err = await email.json()
 			console.log("Error occured: ", err)
+			throw Error(JSON.stringify({success: false,
+				message: 'An error has occured while sending your message. Please try again!'}))
 			return new Response(JSON.stringify({
 				success: false,
 				message: 'An error has occured while sending your message. Please try again!',

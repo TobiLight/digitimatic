@@ -1,9 +1,4 @@
 <script lang="ts">
-	import Handshake from '$lib/components/icons/Handshake.svelte';
-	import Bulb from '$lib/components/icons/Bulb.svelte';
-	import Gear from '$lib/components/icons/Gear.svelte';
-	import Growth from '$lib/components/icons/Growth.svelte';
-	import Globe from './icons/Globe.svelte';
 	import Megaphone from './icons/Megaphone.svelte';
 	import Quill from './icons/Quill.svelte';
 	import PersonStar from './icons/PersonStar.svelte';

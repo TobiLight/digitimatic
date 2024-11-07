@@ -9,7 +9,7 @@
 			<div class="flex flex-col gap-4 text-center md:text-left md:mt-6">
 				<h3 class="font-bold text-[8rem] md:text-[15rem] md:leading-[11rem]">{$page.status}</h3>
 				<p class="tracking-wider text-3xl md:text-7xl sm:mx-auto w-full md:mx-0">
-					{$page.error.message}
+					{$page.error?.message}
 				</p>
 			</div>
 			<div
