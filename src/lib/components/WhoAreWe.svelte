@@ -30,9 +30,8 @@
 						<p class="text-base font-extrabold leading-tight text-left">Proven Track Record</p>
 					</div>
 					<p class="mt-2 text-sm text-left lg:ext-center">
-						We’ve helped countless brands land features in top-tier publications such as <b>
-							Forbes</b
-						>, <b>Business Insider</b>, <b>BBC</b>, <b>New York Times</b>, boosting their visibility
+						We’ve helped countless brands land features in top-tier publications such as
+							Forbes, Business Insider, BBC, New York Times, boosting their visibility
 						and authority.
 					</p>
 				</div>

@@ -30,7 +30,7 @@
 				/>
 				Your browser does not support the video tag.
 			</video>
-			<a href="https://digitimatic.com/form/media-placement-form/" class="book-call"
+			<a href="https://digitimatic.com/contact" class="book-call"
 				>BOOK 7MIN INTRO CALL</a
 			>
 		</div>
