@@ -112,10 +112,6 @@
 			<label for="budget" class="flex flex-col gap-1 w-full">
 				<span class="font-semibold text-xl">Budget</span>
 				<input
-					bind:value={$form.budget}
-					on:input={(e) => {
-						$form.budget = parseInt(e.currentTarget.value);
-					}}
 					type="text"
 					placeholder="$1,999 - $3,999 USD"
 					name="budget"
