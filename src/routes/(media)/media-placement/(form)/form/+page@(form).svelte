@@ -11,55 +11,11 @@
 		dataType: 'json',
 		customValidity: true,
 		onResult(event) {
-			console.log('event', event);
 			if (event.result.status === 200 && event.result.type === 'success') {
 				isMessageSent = true;
 			}
 		}
 	});
-
-	let loading: boolean = false;
-	let formEl: HTMLFormElement;
-	export let actionData: {
-		message: string;
-		success: boolean;
-		email?: string;
-		name?: string;
-		businessName?: string;
-		budget?: string;
-		description?: string;
-	} | null;
-
-	async function handleSubmit(event: { currentTarget: EventTarget & HTMLFormElement }) {
-		actionData = null;
-		$submitting = true;
-		const data = new FormData(event.currentTarget);
-
-		const req = await fetch('/api/contact', {
-			method: 'POST',
-			body: data
-		});
-
-		const res = (await req.json()) as {
-			message: string;
-			success: boolean;
-			email?: string;
-			name?: string;
-			businessName?: string;
-			budget?: string;
-			description?: string;
-		};
-
-		$errors = {
-			...res
-		};
-
-		$submitting = false;
-
-		if (res.success) return formEl.reset();
-
-		return;
-	}
 </script>
 
 <form use:enhance method="POST" class="bg-sky-200 px-8 py-14 rounded-3xl grid gap-6 w-full flex-1">
