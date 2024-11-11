@@ -18,6 +18,7 @@
 	});
 </script>
 
+<h1 class="text-2xl font-bold mb-5">Media Placement Contact</h1>
 <form use:enhance method="POST" class="bg-sky-200 px-8 py-14 rounded-3xl grid gap-6 w-full flex-1">
 	<div class=" grid gap-8 w-full">
 		<div class="flex flex-col md:flex-row gap-6">
