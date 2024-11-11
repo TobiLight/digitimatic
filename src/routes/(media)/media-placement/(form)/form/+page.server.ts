@@ -1,5 +1,5 @@
-import { EmailService } from '$lib/mail/mail.server.ts';
-import { mediaPlacementSchema } from '$lib/validation/schema.js';
+import { EmailService } from '$lib/mail/mail.server';
+import { mediaPlacementSchema } from '$lib/validation/schema';
 import { fail } from '@sveltejs/kit';
 import { superValidate } from 'sveltekit-superforms';
 import { zod } from 'sveltekit-superforms/adapters';
@@ -37,10 +37,9 @@ export const actions = {
 				`
 			});
 
-			return { form };
+			return { form, success: true, message: 'Message sent!' };
 		} catch (err: any) {
-			console.error('error occured', err);
-			return { err, form };
+			return { err, form, success: false, message: 'An error has occured' };
 		}
 	}
 };

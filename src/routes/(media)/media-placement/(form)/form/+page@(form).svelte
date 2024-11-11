@@ -5,9 +5,17 @@
 
 	export let data;
 
-	const { form, submitting, errors } = superForm(data.form, {
+	let isMessageSent: boolean;
+
+	const { form, submitting, errors, enhance } = superForm(data.form, {
 		dataType: 'json',
-		customValidity: true
+		customValidity: true,
+		onResult(event) {
+			console.log('event', event);
+			if (event.result.status === 200 && event.result.type === 'success') {
+				isMessageSent = true;
+			}
+		}
 	});
 
 	let loading: boolean = false;
@@ -54,7 +62,7 @@
 	}
 </script>
 
-<form method="POST" class="bg-sky-200 px-8 py-14 rounded-3xl grid gap-6 w-full flex-1">
+<form use:enhance method="POST" class="bg-sky-200 px-8 py-14 rounded-3xl grid gap-6 w-full flex-1">
 	<div class=" grid gap-8 w-full">
 		<div class="flex flex-col md:flex-row gap-6">
 			<label for="fullName" class="flex flex-col gap-1 w-full">
@@ -148,6 +156,10 @@
 			<label for="budget" class="flex flex-col gap-1 w-full">
 				<span class="font-semibold text-xl">Budget</span>
 				<input
+					bind:value={$form.budget}
+					on:input={(e) => {
+						$form.budget = parseInt(e.currentTarget.value);
+					}}
 					type="text"
 					placeholder="$1,999 - $3,999 USD"
 					name="budget"
@@ -164,6 +176,7 @@
 		<label for="description" class="flex flex-col gap-1">
 			<span class="font-semibold text-xl">Describe your project</span>
 			<textarea
+				bind:value={$form.description}
 				name="description"
 				id="description"
 				placeholder="What can we help you with?"
@@ -200,9 +213,9 @@
 			{/if}
 		</button>
 	</div>
-	<!-- {#if $errors && !$errors.success}
-		<p class="text-red-600 font-bold">{$errors.message}</p>
-	{:else if $errors && $errors.success}
-		<p class="text-green-600 font-bold">{$errors.message}</p>
-	{/if} -->
+	{#if isMessageSent === true}
+		<p class="text-green-600 font-bold">Message sent</p>
+	{:else if isMessageSent === false}
+		<p class="text-red-600 font-bold">Message failed to send.</p>
+	{/if}
 </form>
