@@ -73,7 +73,7 @@
 			</div>
 			<div class="flex flex-col gap-4 text-center lg:text-left md:mt-6 md:gap-6">
 				<h1
-					class="font-bold tracking-wide text-3xl leading-[37px] sm:mx-auto sm:text-[3.5rem] sm:leading-[65px] md:text-[2.8rem] lg:text-[3.5rem] md:leading-[60px]"
+					class="font-bold tracking-wide text-3xl leading-[37px] sm:mx-auto sm:text-[3.5rem] sm:leading-[65px] md:text-[2.8rem] lg:text-[3.5rem] md:leading-[60px] md:mx-0"
 				>
 					Get in touch with us today!
 				</h1>

@@ -19,7 +19,7 @@
 		</div>
 
 		<div class="grid mt-12 gap-y-8">
-			<video width="100%" height="400" loop muted playsinline controls class="mx-auto lg:w-[60%]">
+			<video loop autoplay muted playsinline controls class="mx-auto aspect-video lg:w-[60%]">
 				<source
 					src="https://res.cloudinary.com/ddt59lbmx/video/upload/v1730967642/digitimatic/Videos/trim.59D7AB83-6652-43CD-AC9E-94DC5D439892_u63i0v.mp4"
 					type="video/mp4"
@@ -30,7 +30,7 @@
 				/>
 				Your browser does not support the video tag.
 			</video>
-			<a href="https://digitimatic.com/contact" class="book-call">BOOK 7MIN INTRO CALL</a>
+			<a href="/media-placement/form" class="book-call">BOOK 7MIN INTRO CALL</a>
 		</div>
 
 		<div class="offer grid gap-y-8 mx-auto">
@@ -132,7 +132,7 @@
 				<p>It's not how I operate or run my business.</p>
 				<p>100% of my business is based on results, and results only.</p>
 			</div>
-			<video width="100%" height="400" autoplay loop muted playsinline class="mx-auto lg:w-[60%]">
+			<video loop muted playsinline controls class="mx-auto aspect-video lg:w-[60%]">
 				<source
 					src="https://res.cloudinary.com/ddt59lbmx/video/upload/v1730967642/digitimatic/Videos/trim.59D7AB83-6652-43CD-AC9E-94DC5D439892_u63i0v.mp4"
 					type="video/mp4"
@@ -168,7 +168,7 @@
 		</div>
 
 		<div class="sect-6 grid gap-y-8 mt-14">
-			<video width="100%" height="400" autoplay loop muted playsinline class="mx-auto">
+			<video loop muted playsinline controls class="mx-auto aspect-video lg:w-[60%]">
 				<source
 					src="https://res.cloudinary.com/ddt59lbmx/video/upload/v1730967642/digitimatic/Videos/trim.59D7AB83-6652-43CD-AC9E-94DC5D439892_u63i0v.mp4"
 					type="video/mp4"
@@ -179,7 +179,7 @@
 				/>
 				Your browser does not support the video tag.
 			</video>
-			<a href="https://digitimatic.com/contact" class="book-call">BOOK 7MIN INTRO CALL</a>
+			<a href="/media-placement/form" class="book-call">BOOK 7MIN INTRO CALL</a>
 		</div>
 	</div>
 {:else}
