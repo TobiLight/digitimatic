@@ -16,7 +16,6 @@ export const actions = {
 		const form = await superValidate(request, zod(mediaPlacementSchema));
 
 		if (!form.valid) {
-			console.log(form);
 			return fail(400, { form });
 		}
 
@@ -26,7 +25,6 @@ export const actions = {
 			await mail.sendEmail({
 				to: 'info@digitimatic.com',
 				subject: form.data.placementNeed,
-				text: '',
 				html: `
 					<h2>You have a new message'</h2>
 					<p>Full name: ${form.data.fullName}</p>
