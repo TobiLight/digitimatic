@@ -22,19 +22,21 @@ export const actions = {
 
 		try {
 			const mail = new EmailService();
-			
+
 			await mail.sendEmail({
 				to: 'info@digitimatic.com',
 				subject: form.data.placementNeed,
 				text: '',
 				html: `
-					<h2>You have a new message from '${form.data.email}'</h2>
+					<h2>You have a new message'</h2>
 					<p>Full name: ${form.data.fullName}</p>
+					<p>Full name: ${form.data.email}</p>
 					<p>Placement Need: ${form.data.placementNeed}</p>
 					<p>Budget: ${form.data.budget}</p>
 					<p>Message: ${form.data.description}</p>
-				`,
+				`
 			});
+
 			return { form };
 		} catch (err: any) {
 			console.error('error occured', err);
