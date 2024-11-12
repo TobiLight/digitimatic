@@ -25,7 +25,7 @@ export class EmailService {
 
 	async sendEmail(options: EmailOptions): Promise<void> {
 		const mailOptions = {
-			from: 'info@digitimatic.com',
+			from: 'admin@digitimatic.com',
 			...options
 		};
 

@@ -18,7 +18,6 @@ export const actions = {
 		if (!form.valid) {
 			return fail(400, { form });
 		}
-		
 
 		try {
 			const mail = new EmailService();
@@ -29,7 +28,7 @@ export const actions = {
 				html: `
 					<h2>You have a new message'</h2>
 					<p>Full name: ${form.data.fullName}</p>
-					<p>Full name: ${form.data.email}</p>
+					<p>Email: ${form.data.email}</p>
 					<p>Placement Need: ${form.data.placementNeed}</p>
 					<p>Budget: ${form.data.budget}</p>
 					<p>Message: ${form.data.description}</p>
