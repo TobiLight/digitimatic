@@ -2,6 +2,8 @@
 	import Loading from '$lib/components/icons/Loading.svelte';
 	import RightArrow from '$lib/components/icons/RightArrow.svelte';
 	import { superForm } from 'sveltekit-superforms';
+	import LeftArrow from './icon/LeftArrow.svelte';
+	import Home from './icon/Home.svelte';
 
 	export let data;
 
@@ -18,7 +20,14 @@
 	});
 </script>
 
-<h1 class="text-2xl font-bold mb-5">Media Placement Contact</h1>
+<div class="flex items-center justify-between gap-4 my-6">
+	<a href="/media-placement" class="flex items-center">
+		<LeftArrow class="w-6 h-6" />
+		Back</a>
+	<a href="/" class="flex items-center">
+		<Home class="w-5 h-5 mr-1" />
+		Home</a>
+</div>
 <form use:enhance method="POST" class="bg-sky-200 px-8 py-14 rounded-3xl grid gap-6 w-full flex-1">
 	<div class=" grid gap-8 w-full">
 		<div class="flex flex-col md:flex-row gap-6">
