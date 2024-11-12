@@ -23,10 +23,12 @@
 <div class="flex items-center justify-between gap-4 my-6">
 	<a href="/media-placement" class="flex items-center">
 		<LeftArrow class="w-6 h-6" />
-		Back</a>
+		Back</a
+	>
 	<a href="/" class="flex items-center">
 		<Home class="w-5 h-5 mr-1" />
-		Home</a>
+		Home</a
+	>
 </div>
 <form use:enhance method="POST" class="bg-sky-200 px-8 py-14 rounded-3xl grid gap-6 w-full flex-1">
 	<div class=" grid gap-8 w-full">
@@ -122,6 +124,7 @@
 			<label for="budget" class="flex flex-col gap-1 w-full">
 				<span class="font-semibold text-xl">Budget</span>
 				<input
+					bind:value={$form.budget}
 					type="text"
 					placeholder="$1,999 - $3,999 USD"
 					name="budget"
