@@ -26,7 +26,7 @@ export const actions = {
 				to: 'info@digitimatic.com',
 				subject: form.data.placementNeed,
 				html: `
-					<h2>You have a new message'</h2>
+					<h2>You have a new message</h2>
 					<p>Full name: ${form.data.fullName}</p>
 					<p>Email: ${form.data.email}</p>
 					<p>Placement Need: ${form.data.placementNeed}</p>
