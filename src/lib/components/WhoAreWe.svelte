@@ -134,7 +134,7 @@
 					<Megaphone class="text-5xl text-purple-800" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-xl leading-tight font-bold">Press Features & Media Placement</h2>
+					<h2 class="text-xl leading-tight font-bold text-purple-900">Press Features & Media Placement</h2>
 					<p class="text-base leading-tight">
 						Get featured in leading national and international media outlets. We help you understand
 						buyer behavior to position your brand for success.
@@ -148,7 +148,7 @@
 					<Quill class="text-5xl text-sky-800" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-xl leading-tight font-bold">Brand Storytelling</h2>
+					<h2 class="text-xl leading-tight font-bold text-sky-800">Brand Storytelling</h2>
 					<p class="text-base leading-tight">
 						We craft compelling stories that resonate with your audience and the target publication.
 					</p>
@@ -161,7 +161,7 @@
 					<PersonStar class="text-5xl text-sky-600" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-xl leading-tight font-bold">Thought Leadership Development</h2>
+					<h2 class="text-xl leading-tight font-bold text-sky-600">Thought Leadership Development</h2>
 					<p class="text-base leading-tight">
 						Position yourself as an expert in your field with customized PR strategies.
 					</p>
@@ -174,7 +174,7 @@
 					<Triangle class="text-5xl text-purple-600" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-xl leading-tight font-bold">Crisis Management</h2>
+					<h2 class="text-xl leading-tight font-bold text-purple-600">Crisis Management</h2>
 					<p class="text-base leading-tight">
 						Protect your reputation with proactive and responsive communication strategies.
 					</p>
