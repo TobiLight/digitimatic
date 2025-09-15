@@ -131,7 +131,7 @@ export const POST: RequestHandler = async ({ fetch, request }) => {
 		console.log("An error has occured", err)
 		return new Response(JSON.stringify({
 			success: false,
-			message: err.message
+			message: (err as Error).message
 		}), {
 			headers: {
 				'Content-Type': 'application/json'
