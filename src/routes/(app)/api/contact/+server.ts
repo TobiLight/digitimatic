@@ -190,7 +190,7 @@ ${description}
 `;
 
 		const sendemail = await transporter.sendMail({
-			from: `"Digitimatic.com" <${EMAIL_USER}>`,
+			from: `"digitimatic.com" <${EMAIL_USER}>`,
 			to: TO_EMAIL, // where you want to receive the emails
 			replyTo: email,
 			subject: `New inquiry from ${name}`,
