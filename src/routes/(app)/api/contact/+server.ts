@@ -1,5 +1,5 @@
 import { json, type RequestHandler } from '@sveltejs/kit';
-import { EMAIL_HOST, EMAIL_PWD, EMAIL_USER } from '$env/static/private';
+import { EMAIL_HOST, EMAIL_PWD, EMAIL_USER, TO_EMAIL } from '$env/static/private';
 import nodemailer from 'nodemailer';
 
 export const prerender = false;
@@ -190,8 +190,8 @@ ${description}
 `;
 
 		const sendemail = await transporter.sendMail({
-			from: `"${name}" <${EMAIL_USER}>`,
-			to: EMAIL_USER, // where you want to receive the emails
+			from: `"Digitimatic.com" <${EMAIL_USER}>`,
+			to: TO_EMAIL, // where you want to receive the emails
 			replyTo: email,
 			subject: `New inquiry from ${name}`,
 			text: plainText,
