@@ -1,4 +1,4 @@
-import { json, type RequestHandler } from '@sveltejs/kit';
+import { type RequestHandler } from '@sveltejs/kit';
 import { EMAIL_HOST, EMAIL_PWD, EMAIL_USER, TO_EMAIL } from '$env/static/private';
 import nodemailer from 'nodemailer';
 
