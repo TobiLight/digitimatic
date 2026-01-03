@@ -5,10 +5,8 @@
 	import Instagram from '$lib/components/icons/InstagramAlt.svelte';
 	import Envelope from '$lib/components/icons/Envelope.svelte';
 	import Loading from '$lib/components/icons/Loading.svelte';
-	import { deserialize, applyAction } from '$app/forms';
-	import type { ActionResult } from '@sveltejs/kit';
 	import { Recaptcha, recaptcha, observer } from 'svelte-recaptcha-v2';
-	import { PUB_RECAPTCHA_SITE_KEY } from '$env/static/public';
+	import { PUB_RECAPTCHA_SITE_KEY } from '$env/static/private';
 
 	let loading: boolean = false;
 	let formEl: HTMLFormElement;
