@@ -7,6 +7,8 @@
 	import Loading from '$lib/components/icons/Loading.svelte';
 	import { deserialize, applyAction } from '$app/forms';
 	import type { ActionResult } from '@sveltejs/kit';
+	import { Recaptcha, recaptcha, observer } from 'svelte-recaptcha-v2';
+	import { PUBLIC_RECAPTCHA_SITE_KEY } from '$env/static/public';
 
 	let loading: boolean = false;
 	let formEl: HTMLFormElement;
@@ -19,8 +21,41 @@
 		budget?: string;
 		description?: string;
 	} | null;
+	const userTracker = {
+		promise: null as Promise<CustomEvent> | null,
+		resolve: null as ((value: CustomEvent) => void) | null,
+		reject: null as ((reason?: any) => void) | null,
+		getPromise() {
+			if (!this.promise) {
+				this.promise = new Promise<CustomEvent>((res, rej) => {
+					this.resolve = res;
+					this.reject = rej;
+				});
+			}
+			return this.promise;
+		},
+		reset() {
+			this.promise = null;
+			this.resolve = null;
+			this.reject = null;
+		}
+	};
 
 	async function handleSubmit(event: { currentTarget: EventTarget & HTMLFormElement }) {
+		console.log('launching recaptcha');
+		recaptcha.execute();
+
+		console.log('pending for google response');
+		const ev = await Promise.resolve(observer);
+
+		const recaptchaToken = ev.detail?.token ? ev.detail.token : false;
+
+		if (!recaptchaToken) {
+			console.log('recaptcha is NOT OK');
+			return false;
+		}
+
+		console.log('token retrieved', recaptchaToken);
 		actionData = null;
 		loading = true;
 		const data = new FormData(event.currentTarget);
@@ -50,6 +85,54 @@
 
 		return;
 	}
+
+	const onCaptchaReady = (event) => {
+		console.log('recaptcha init has completed.');
+		/*
+     │You can enable your form button here.
+     */
+	};
+
+	const onCaptchaSuccess = (event) => {
+		observer.userTracker.resolve(event);
+		console.log('token received: ' + event.detail.token);
+		/*
+     │If using checkbox method, you can attach your
+     │form logic here, or dispatch your custom event.
+     */
+	};
+
+	const onCaptchaError = (event) => {
+		console.log(PUBLIC_RECAPTCHA_SITE_KEY, 'recaptcha init has failed.', event);
+		/*
+     │Usually due to incorrect siteKey.
+     |Make sure you have the correct siteKey..
+     */
+	};
+
+	const onCaptchaExpire = (event) => {
+		console.log('recaptcha api has expired');
+		/*
+     │Normally, you wouldn't need to do anything.
+     │Recaptcha should reinit itself automatically.
+     */
+	};
+
+	const onCaptchaOpen = (event) => {
+		console.log('google decided to challange the user');
+		/*
+     │This fires when the puzzle frame pops.
+     */
+	};
+
+	const onCaptchaClose = (event) => {
+		console.log('google decided to challange the user');
+		/*
+     │This fires when the puzzle frame closes.
+     │Usually happens when the user clicks outside
+     |the modal frame.
+     */
+	};
 </script>
 
 <svelte:head>
@@ -199,6 +282,20 @@
 						</label>
 					</div>
 
+					<!-- Honeypot fields -->
+					<div style="display: none !important;" aria-hidden="true">
+						<input type="text" name="website" autocomplete="off" tabindex="-1" />
+					</div>
+					<div style="position: absolute; left: -9999px;" aria-hidden="true">
+						<input type="tel" name="phone" autocomplete="off" tabindex="-1" />
+					</div>
+					<div style="height: 0; overflow: hidden;" aria-hidden="true">
+						<input type="email" name="contact-method" autocomplete="off" tabindex="-1" />
+					</div>
+
+					<!-- Timing fields -->
+					<input type="hidden" name="time-started" value={Date.now()} />
+
 					<label for="description" class="flex flex-col gap-3">
 						<span class="font-semibold text-xl">Describe your project</span>
 						<textarea
@@ -218,6 +315,20 @@
 							<span class="font-bold text-red-500 -mt-2">{actionData.description}</span>
 						{/if}
 					</label>
+
+					<Recaptcha
+						sitekey={`${PUBLIC_RECAPTCHA_SITE_KEY}`}
+						size="invisible"
+						badge="inline"
+						theme="light"
+						id="recaptcha"
+						lang="en"
+						on:success={onCaptchaSuccess}
+						on:error={onCaptchaError}
+						on:expired={onCaptchaExpire}
+						on:close={onCaptchaClose}
+						on:ready={onCaptchaReady}
+					/>
 
 					<button
 						type="submit"

@@ -1,72 +1,78 @@
 import { type RequestHandler } from '@sveltejs/kit';
-import { EMAIL_HOST, EMAIL_PWD, EMAIL_USER, TO_EMAIL } from '$env/static/private';
+import {
+	EMAIL_HOST,
+	EMAIL_PWD,
+	EMAIL_USER,
+	TO_EMAIL,
+	RECAPTCHA_SECRET_KEY
+} from '$env/static/private';
 import nodemailer from 'nodemailer';
+import { RateLimiter } from 'sveltekit-rate-limiter/server';
+import { contactFormSchema, analyzeSpamContent } from '$lib/validation/contact-schema';
+
+const limiter = new RateLimiter({ IP: [2, 'm'] });
 
 export const prerender = false;
 
-export const POST: RequestHandler = async ({ request }) => {
-	const form = await request.formData();
-	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-	function isValidEmail(email: string) {
-		return emailRegex.test(email);
+export const POST: RequestHandler = async (event) => {
+	const rated = await limiter.check(event);
+	if (rated.limited) {
+		return new Response(
+			JSON.stringify({
+				message: `You're sending too many requests. Please wait a while and try again.`
+			}),
+			{ status: 429 }
+		);
 	}
-	const email = form.get('email') as string;
-	const name = form.get('fullname') as string;
-	const businessName = form.get('business-name') as string;
-	const budget = form.get('budget') as string;
-	const description = form.get('description') as string;
 
-	if (name === null || !name.length)
+	const formData = await event.request.formData();
+	const data = Object.fromEntries(formData);
+
+	// Validate against schema
+	const validation = contactFormSchema.safeParse(data);
+	if (!validation.success) {
 		return new Response(
 			JSON.stringify({
 				success: false,
-				message: 'An error has occured!',
-				name: 'Name cannot be blank!'
+				message: 'Validation failed',
+				errors: validation.error.flatten()
 			}),
-			{
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				status: 400
-			}
+			{ status: 400 }
 		);
+	}
 
-	if (email === null || !isValidEmail(email))
+	// Analyze for spam
+	const spamAnalysis = analyzeSpamContent(validation.data);
+	if (spamAnalysis.isSpam) {
+		console.log('Spam detected:', spamAnalysis.reasons);
 		return new Response(
 			JSON.stringify({
 				success: false,
-				message: 'An error has occured!',
-				email: 'Email address is not valid!'
+				message: 'Spam detected - please try again',
+				reasons: spamAnalysis.reasons
 			}),
-			{
-				status: 400,
-				headers: {
-					'Content-Type': 'application/json'
-				}
-			}
+			{ status: 400 }
 		);
+	}
 
-	if (businessName === null || !businessName.length)
+	// Extract validated data
+	const { email, fullname, 'business-name': businessName, budget, description } = validation.data;
+	// Verify reCAPTCHA
+	const recaptchaToken = validation.data['g-recaptcha-response'];
+	const response = await fetch('https://www.google.com/recaptcha/api/siteverify', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/x-www-form-urlencoded'
+		},
+		body: `secret=${RECAPTCHA_SECRET_KEY}&response=${recaptchaToken}`
+	});
+
+	const recaptchaData = await response.json();
+	if (!recaptchaData.success || recaptchaData.score < 0.5) {
 		return new Response(
 			JSON.stringify({
 				success: false,
-				message: 'An error has occured!',
-				name: 'Business name cannot be blank!'
-			}),
-			{
-				status: 400,
-				headers: {
-					'Content-Type': 'application/json'
-				}
-			}
-		);
-
-	if (budget === null || !budget.length)
-		return new Response(
-			JSON.stringify({
-				success: false,
-				message: 'An error has occured!',
-				name: 'Budget cannot be blank!'
+				message: 'reCAPTCHA verification failed.'
 			}),
 			{
 				status: 400,
@@ -75,21 +81,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				}
 			}
 		);
-
-	if (description === null || !description.length)
-		return new Response(
-			JSON.stringify({
-				success: false,
-				message: 'An error has occured!',
-				name: 'Description cannot be blank!'
-			}),
-			{
-				status: 400,
-				headers: {
-					'Content-Type': 'application/json'
-				}
-			}
-		);
+	}
 
 	try {
 		const transporter = nodemailer.createTransport({
@@ -147,7 +139,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
             <div class="field">
               <span class="label">Client name</span>
-              <div class="value" id="client-name">${name}</div>
+              <div class="value" id="client-name">${fullname}</div>
             </div>
 
             <div class="field">
@@ -181,7 +173,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		const plainText = `New Client Inquiry
 
-Client name: ${name}
+Client name: ${fullname}
 Business name: ${businessName}
 Budget: ${budget}
 
