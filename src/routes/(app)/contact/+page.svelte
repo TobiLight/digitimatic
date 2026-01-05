@@ -337,7 +337,7 @@
 							loading && 'opacity-60'
 						} w-full md:w-fit md:px-10 md:py-5 rounded-full bg-black text-white flex items-center justify-center p-6 font-bold ${
 							!loading && 'hover:bg-indigo-500'
-						} hover:translate-y-[-3px] ease-linear transition-all`}
+						} hover:-translate-y-0.75 ease-linear transition-all`}
 					>
 						{#if loading}
 							Please wait...
