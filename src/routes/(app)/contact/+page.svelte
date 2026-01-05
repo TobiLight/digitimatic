@@ -6,7 +6,7 @@
 	import Envelope from '$lib/components/icons/Envelope.svelte';
 	import Loading from '$lib/components/icons/Loading.svelte';
 	import { Recaptcha, recaptcha, observer } from 'svelte-recaptcha-v2';
-	import { PUB_RECAPTCHA_SITE_KEY } from '$env/static/private';
+	import { PUBLIC_RECAPTCHA_SITE_KEY } from '$env/static/public';
 
 	let loading: boolean = false;
 	let formEl: HTMLFormElement;
@@ -101,7 +101,7 @@
 	};
 
 	const onCaptchaError = (event) => {
-		console.log(PUB_RECAPTCHA_SITE_KEY, 'recaptcha init has failed.', event);
+		console.log(PUBLIC_RECAPTCHA_SITE_KEY, 'recaptcha init has failed.', event);
 		/*
      │Usually due to incorrect siteKey.
      |Make sure you have the correct siteKey..
@@ -315,7 +315,7 @@
 					</label>
 
 					<Recaptcha
-						sitekey={`${PUB_RECAPTCHA_SITE_KEY}`}
+						sitekey={`${PUBLIC_RECAPTCHA_SITE_KEY}`}
 						size="invisible"
 						badge="inline"
 						theme="light"
