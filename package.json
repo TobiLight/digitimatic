@@ -21,7 +21,8 @@
 		"marked": "^17.0.1",
 		"nodemailer": "^7.0.12",
 		"svelte-inview": "^4.0.4",
-		"sveltekit-rate-limiter": "^0.7.0"
+		"sveltekit-rate-limiter": "^0.7.0",
+		"valibot": "^1.2.0"
 	},
 	"engines": {
 		"node": ">=22"
