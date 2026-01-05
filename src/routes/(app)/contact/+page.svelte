@@ -6,7 +6,9 @@
 	import Envelope from '$lib/components/icons/Envelope.svelte';
 	import Loading from '$lib/components/icons/Loading.svelte';
 	import { Recaptcha, recaptcha, observer } from 'svelte-recaptcha-v2';
-	import { PUBLIC_RECAPTCHA_SITE_KEY } from '$env/static/public';
+	import env from '$env/static/public';
+	const PUBLIC_RECAPTCHA_SITE_KEY = env.PUBLIC_RECAPTCHA_SITE_KEY;
+
 
 	let loading: boolean = false;
 	let formEl: HTMLFormElement;
