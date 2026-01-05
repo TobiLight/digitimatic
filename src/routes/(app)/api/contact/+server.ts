@@ -1,14 +1,17 @@
 import { type RequestHandler } from '@sveltejs/kit';
-import {
-	EMAIL_HOST,
-	EMAIL_PWD,
-	EMAIL_USER,
-	TO_EMAIL,
-	RECAPTCHA_SECRET_KEY
-} from '$env/static/private';
+// import {
+// 	EMAIL_HOST,
+// 	EMAIL_PWD,
+// 	EMAIL_USER,
+// 	TO_EMAIL,
+// 	RECAPTCHA_SECRET_KEY
+// } from '$env/dynamic/private';
 import nodemailer from 'nodemailer';
 import { RateLimiter } from 'sveltekit-rate-limiter/server';
 import { contactFormSchema, analyzeSpamContent } from '$lib/validation/contact-schema';
+import { env } from '$env/dynamic/private';
+
+const { EMAIL_HOST, EMAIL_PWD, EMAIL_USER, TO_EMAIL, RECAPTCHA_SECRET_KEY } = env;
 
 const limiter = new RateLimiter({ IP: [2, 'm'] });
 
