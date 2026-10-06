@@ -1,5 +1,5 @@
 <script>
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import RightArrow from '#lib/components/icons/RightArrow.svelte';
 </script>
 
@@ -7,9 +7,9 @@
 	<div class="flex flex-col md:flex-row gap-6 md:gap-3 md:items-center md:justify-between">
 		<div class="flex flex-col max-w-[900px] w-full">
 			<div class="flex flex-col gap-4 text-center md:text-left md:mt-6">
-				<h3 class="font-bold text-[8rem] md:text-[15rem] md:leading-[11rem]">{$page.status}</h3>
+				<h3 class="font-bold text-[8rem] md:text-[15rem] md:leading-[11rem]">{page.status}</h3>
 				<p class="tracking-wider text-3xl md:text-7xl sm:mx-auto w-full md:mx-0">
-					{$page.error?.message}
+					{page.error?.message}
 				</p>
 			</div>
 			<div

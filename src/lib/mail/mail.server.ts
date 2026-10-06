@@ -1,4 +1,4 @@
-import { EMAIL_HOST, EMAIL_USER, EMAIL_PWD } from '$env/static/private';
+import { EMAIL_HOST, EMAIL_USER, EMAIL_PWD } from '$app/env/private';
 import nodemailer, { type Transporter } from 'nodemailer';
 
 export interface EmailOptions {

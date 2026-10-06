@@ -1,5 +1,5 @@
-import { minify } from 'html-minifier-terser'
-import { dev, building } from '$app/environment'
+import { minify } from 'html-minifier-terser';
+import { dev, building } from '$app/env';
 
 const minification_options = {
 	collapseWhitespace: true,
@@ -7,16 +7,14 @@ const minification_options = {
 	removeComments: true,
 	minifyCSS: true,
 	minifyJS: true
-}
+};
 
 export async function handle({ event, resolve }) {
-	let response = resolve(event)
-
-	if (!dev && building) {
-		response = await resolve(event, {
-			transformPageChunk: ({ html }) => minify(html, minification_options)
-		})
+	if (dev || !building) {
+		return resolve(event);
 	}
 
-	return response
+	return resolve(event, {
+		transformPageChunk: ({ html }) => minify(html, minification_options)
+	});
 }

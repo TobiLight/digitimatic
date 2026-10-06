@@ -1,4 +1,4 @@
-import { WORDPRESS_URL } from "$env/static/private";
+import { WORDPRESS_URL } from '$app/env/private';
 import type { PageServerLoad } from "../../$types";
 import { error } from '@sveltejs/kit'
 
