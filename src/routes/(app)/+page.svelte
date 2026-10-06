@@ -202,7 +202,7 @@
 	<div
 		class="mt-6 flex flex-wrap justify-center gap-5 items-center mx-auto w-4/5 md:w-3/5 relative"
 	>
-		{#each partners as partner}
+		{#each partners as partner (partner.src)}
 			<figure in:slide out:slide class="w-[100px] flex-none h-auto relative">
 				<img
 					src={partner.src}

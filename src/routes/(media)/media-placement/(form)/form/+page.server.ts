@@ -36,7 +36,7 @@ export const actions = {
 			});
 
 			return { form, success: true, message: 'Message sent!' };
-		} catch (err: any) {
+		} catch (err: unknown) {
 			return { err, form, success: false, message: 'An error has occured' };
 		}
 	}

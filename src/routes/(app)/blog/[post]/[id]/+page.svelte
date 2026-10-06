@@ -11,7 +11,6 @@
 		day: 'numeric',
 		year: 'numeric'
 	});
-
 </script>
 
 <svelte:head>
@@ -32,7 +31,7 @@
 				class="post-categories flex items-center justify-center gap-3 flex-wrap w-3/4 md:w-fit md:max-w-[33.33%]"
 			>
 				{#if categories && categories.length > 0}
-					{#each categories as category}
+					{#each categories as category (category.id)}
 						<p class="bg-black text-white rounded-full px-3 py-1">&num;{category.name}</p>
 					{/each}
 				{/if}
@@ -49,6 +48,7 @@
 			</div>
 			<div class="post-content md:w-3/5 mx-auto md:text-lg">
 				{#if post && post.content.rendered.length > 0}
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -- content rendered from the site's own WordPress CMS -->
 					{@html marked(post.content.rendered)}
 				{/if}
 			</div>
@@ -59,7 +59,7 @@
 					<h3 class="text-3xl font-bold">Related Posts</h3>
 					<div class="related-posts-wrapper">
 						<div class="related-posts flex gap-4 items-center">
-							{#each relatedPosts as relatedPost}
+							{#each relatedPosts as relatedPost (relatedPost.id)}
 								<BlogPost
 									id={`${relatedPost.id}`}
 									title={excerptPostContent(relatedPost.title.rendered, 70)}

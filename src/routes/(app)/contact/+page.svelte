@@ -8,10 +8,9 @@
 	import { Recaptcha, recaptcha, observer, type RecaptchaEvent } from 'svelte-recaptcha-v2';
 	import { PUBLIC_RECAPTCHA_SITE_KEY } from '$app/env/public';
 
-
 	let loading: boolean = false;
 	let formEl: HTMLFormElement;
-	export let actionData: {
+	let actionData: {
 		message: string;
 		success: boolean;
 		email?: string;
@@ -19,26 +18,7 @@
 		businessName?: string;
 		budget?: string;
 		description?: string;
-	} | null;
-	const userTracker = {
-		promise: null as Promise<CustomEvent> | null,
-		resolve: null as ((value: CustomEvent) => void) | null,
-		reject: null as ((reason?: any) => void) | null,
-		getPromise() {
-			if (!this.promise) {
-				this.promise = new Promise<CustomEvent>((res, rej) => {
-					this.resolve = res;
-					this.reject = rej;
-				});
-			}
-			return this.promise;
-		},
-		reset() {
-			this.promise = null;
-			this.resolve = null;
-			this.reject = null;
-		}
-	};
+	} | null = null;
 
 	async function handleSubmit(event: { currentTarget: EventTarget & HTMLFormElement }) {
 		console.log('launching recaptcha');
@@ -85,7 +65,7 @@
 		return;
 	}
 
-	const onCaptchaReady = (event: RecaptchaEvent) => {
+	const onCaptchaReady = () => {
 		console.log('recaptcha init has completed.');
 		/*
      │You can enable your form button here.
@@ -109,7 +89,7 @@
      */
 	};
 
-	const onCaptchaExpire = (event: RecaptchaEvent) => {
+	const onCaptchaExpire = () => {
 		console.log('recaptcha api has expired');
 		/*
      │Normally, you wouldn't need to do anything.
@@ -117,14 +97,7 @@
      */
 	};
 
-	const onCaptchaOpen = (event: RecaptchaEvent) => {
-		console.log('google decided to challange the user');
-		/*
-     │This fires when the puzzle frame pops.
-     */
-	};
-
-	const onCaptchaClose = (event: RecaptchaEvent) => {
+	const onCaptchaClose = () => {
 		console.log('google decided to challange the user');
 		/*
      │This fires when the puzzle frame closes.

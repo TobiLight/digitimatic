@@ -23,6 +23,7 @@
 			</h3>
 		</div>
 		{#if excerpt && excerpt.length > 0}
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -- content rendered from the site's own WordPress CMS -->
 			{@html excerpt}
 		{/if}
 	</div>

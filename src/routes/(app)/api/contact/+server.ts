@@ -207,7 +207,7 @@ ${description}
 				})
 			);
 		}
-	} catch (err: any) {
+	} catch (err: unknown) {
 		console.log('An error has occured', err);
 		return new Response(
 			JSON.stringify({

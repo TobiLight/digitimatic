@@ -1,6 +1,5 @@
 <script lang="ts">
 	import MenuIcon from '#lib/components/icons/Menu.svelte';
-	import WorkWithUs from '#lib/components/WorkWithUs.svelte';
 	import CloseIcon from '#lib/components/icons/Close.svelte';
 	import '../../app.css';
 	import { isMenuOpen } from '../../stores/store';
@@ -17,7 +16,7 @@
 		name="description"
 		content="Grow Your Brand & Attract Customers with Award-Winning PR, Branding & Advertising. Digitimatic - Your Digital Marketing Partner. Contact Us for a Free Consultation"
 	/>
-	<title>Digitimatic: PR, Branding & Advertising Solutions </title>
+	<title>Digitimatic: PR, Branding & Advertising Solutions</title>
 </svelte:head>
 
 <header class="fixed bg-white w-full top-0 z-[999] 2xl:bg-gray-200">
@@ -71,10 +70,8 @@
 				>
 			</li>
 			<li>
-				<a
-					target="_blank"
-					on:click={() => isMenuOpen.set(false)}
-					href="/media-placement">Media Placement</a
+				<a target="_blank" on:click={() => isMenuOpen.set(false)} href="/media-placement"
+					>Media Placement</a
 				>
 			</li>
 			<li>

@@ -1,22 +1,20 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" sizes="32x32" href="%sveltekit.assets%/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://www.google.com/recaptcha/api.js?render=%sveltekit.env.PUBLIC_RECAPTCHA_SITE_KEY%"></script>
 
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/png" sizes="32x32" href="%sveltekit.assets%/favicon.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<script src="https://www.google.com/recaptcha/api.js?render=%sveltekit.env.PUBLIC_RECAPTCHA_SITE_KEY%"></script>
+		%sveltekit.head%
+		<style>
+			body {
+				scroll-behavior: smooth;
+			}
+		</style>
+	</head>
 
-	%sveltekit.head%
-	<style>
-		body {
-			scroll-behavior: smooth;
-		}
-	</style>
-</head>
-
-<body data-sveltekit-preload-data="hover" class="2xl:bg-gray-200">
-	<div style="display: contents">%sveltekit.body%</div>
-</body>
-
+	<body data-sveltekit-preload-data="hover" class="2xl:bg-gray-200">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
 </html>

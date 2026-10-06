@@ -30,9 +30,8 @@
 						<p class="text-base font-extrabold leading-tight text-left">Proven Track Record</p>
 					</div>
 					<p class="mt-2 text-sm text-left lg:ext-center">
-						We’ve helped countless brands land features in top-tier publications such as
-							Forbes, Business Insider, BBC, New York Times, boosting their visibility
-						and authority.
+						We’ve helped countless brands land features in top-tier publications such as Forbes,
+						Business Insider, BBC, New York Times, boosting their visibility and authority.
 					</p>
 				</div>
 				<div
@@ -134,7 +133,9 @@
 					<Megaphone class="text-5xl text-purple-800" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-xl leading-tight font-bold text-purple-900">Press Features & Media Placement</h2>
+					<h2 class="text-xl leading-tight font-bold text-purple-900">
+						Press Features & Media Placement
+					</h2>
 					<p class="text-base leading-tight">
 						Get featured in leading national and international media outlets. We help you understand
 						buyer behavior to position your brand for success.
@@ -161,7 +162,9 @@
 					<PersonStar class="text-5xl text-sky-600" />
 				</div>
 				<div class="flex flex-col gap-3">
-					<h2 class="text-xl leading-tight font-bold text-sky-600">Thought Leadership Development</h2>
+					<h2 class="text-xl leading-tight font-bold text-sky-600">
+						Thought Leadership Development
+					</h2>
 					<p class="text-base leading-tight">
 						Position yourself as an expert in your field with customized PR strategies.
 					</p>

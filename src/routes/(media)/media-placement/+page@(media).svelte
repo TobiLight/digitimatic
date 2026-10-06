@@ -149,16 +149,16 @@
 			<h1 class="text-center">What are some of <b>the benefits?</b></h1>
 			<ul class="list-disc px-8 md:px-0 w-auto grid gap-y-4">
 				<li>
-					<b>Gain instant trust & credibility:</b> Turn 10s of thousands of cold leads into hot ones
-					by leveraging the established trust of other major media companies.
+					<b>Gain instant trust & credibility:</b> Turn 10s of thousands of cold leads into hot ones by
+					leveraging the established trust of other major media companies.
 				</li>
 				<li>
 					<b>Convert more sales:</b> Getting featured on the press gives you status. Those with status
 					don't "hard" sell. It’s the difference between attraction and force. Status is power.
 				</li>
 				<li>
-					<b>Build brand awareness:</b> Stay top-of-mind with customers, increase trust and loyalty,
-					and ultimately drive more sales
+					<b>Build brand awareness:</b> Stay top-of-mind with customers, increase trust and loyalty, and
+					ultimately drive more sales
 				</li>
 				<li>
 					<b>Get into bigger opportunities:</b> We get you the social proof and leverage that catches

@@ -2,7 +2,7 @@
 	import type { Options } from 'svelte-inview';
 	import { inview } from 'svelte-inview';
 	import { fade } from 'svelte/transition';
-	import Partner from '#lib/components/icons/Partner.svelte'
+	import Partner from '#lib/components/icons/Partner.svelte';
 
 	let isInView: boolean;
 	const options: Options = {
@@ -29,7 +29,9 @@
 		}`}
 	>
 		<div class="grid gap-2">
-			<div class="flex justify-center items-center w-36 h-36 mx-auto rounded-full border-2 border-green-500">
+			<div
+				class="flex justify-center items-center w-36 h-36 mx-auto rounded-full border-2 border-green-500"
+			>
 				<Partner class="text-green-500 w-28 h-28" />
 			</div>
 			<h1 class="text-center text-4xl font-bold text-green-500">SIGNIFICANT ASSOCIATION</h1>
