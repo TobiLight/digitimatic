@@ -1,10 +1,17 @@
+import adapter from '@sveltejs/adapter-vercel';
+import tailwindcss from '@tailwindcss/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [sveltekit(), tailwindcss()],
-  optimizeDeps: {
-    include: ['valibot', '@valibot/to-json-schema']
-  }
+	plugins: [
+		sveltekit({
+			adapter: adapter(),
+			prerender: {
+				handleMissingId: 'ignore'
+			},
+			inlineStyleThreshold: Infinity
+		}),
+		tailwindcss()
+	]
 });
