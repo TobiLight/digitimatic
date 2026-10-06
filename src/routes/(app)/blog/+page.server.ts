@@ -4,8 +4,12 @@ export const ssr = true
 import type { PageServerLoad } from './$types';
 import { WORDPRESS_PER_PAGE, WORDPRESS_URL } from '$app/env/private';
 import type { APIResponse, Posts } from '#lib/types.ts';
-import { error, type NumericRange } from '@sveltejs/kit';
+import { error, isHttpError } from '@sveltejs/kit';
 
+function httpError(status: unknown, message: string) {
+	const code = typeof status === 'number' && status >= 400 && status <= 599 ? status : 500;
+	return error(code, message);
+}
 
 export const load: PageServerLoad = async ({ fetch, url }) => {
 	const currentPage = url.searchParams.get('page') ?? 1
@@ -21,12 +25,14 @@ export const load: PageServerLoad = async ({ fetch, url }) => {
 			return { posts, pages, currentPage };
 
 		if (posts.data)
-			throw error(posts.data.status as NumericRange<400, 599>, posts.message)
+			return httpError(posts.data.status, posts.message ?? 'Failed to load posts');
 	} catch (e: any) {
 		console.error('Error fetching posts:', e);
-		if (e.cause?.code === 'ENOTFOUND')
-			return error(500, 'Internal Server Error')
+		if (isHttpError(e)) throw e;
 
-		return error(e.status, `${e.body.message}`)
+		if (e?.cause?.code === 'ENOTFOUND')
+			return error(500, 'Internal Server Error');
+
+		return httpError(e?.status, e?.body?.message ?? 'Failed to load posts');
 	}
 };

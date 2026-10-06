@@ -2,7 +2,7 @@ import { EmailService } from '#lib/mail/mail.server.ts';
 import { mediaPlacementSchema } from '#lib/validation/schema.ts';
 import { fail } from '@sveltejs/kit';
 import { superValidate } from 'sveltekit-superforms';
-import { zod } from 'sveltekit-superforms/adapters';
+import { zod4 as zod } from 'sveltekit-superforms/adapters';
 
 export async function load(event) {
 	const form = await superValidate(event, zod(mediaPlacementSchema));

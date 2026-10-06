@@ -5,7 +5,7 @@
 	import Instagram from '#lib/components/icons/InstagramAlt.svelte';
 	import Envelope from '#lib/components/icons/Envelope.svelte';
 	import Loading from '#lib/components/icons/Loading.svelte';
-	import { Recaptcha, recaptcha, observer } from 'svelte-recaptcha-v2';
+	import { Recaptcha, recaptcha, observer, type RecaptchaEvent } from 'svelte-recaptcha-v2';
 	import { PUBLIC_RECAPTCHA_SITE_KEY } from '$app/env/public';
 
 
@@ -85,15 +85,15 @@
 		return;
 	}
 
-	const onCaptchaReady = (event) => {
+	const onCaptchaReady = (event: RecaptchaEvent) => {
 		console.log('recaptcha init has completed.');
 		/*
      │You can enable your form button here.
      */
 	};
 
-	const onCaptchaSuccess = (event) => {
-		observer.userTracker.resolve(event);
+	const onCaptchaSuccess = (event: RecaptchaEvent) => {
+		observer.resolve(event);
 		console.log('token received: ' + event.detail.token);
 		/*
      │If using checkbox method, you can attach your
@@ -101,7 +101,7 @@
      */
 	};
 
-	const onCaptchaError = (event) => {
+	const onCaptchaError = (event: RecaptchaEvent) => {
 		console.log(PUBLIC_RECAPTCHA_SITE_KEY, 'recaptcha init has failed.', event);
 		/*
      │Usually due to incorrect siteKey.
@@ -109,7 +109,7 @@
      */
 	};
 
-	const onCaptchaExpire = (event) => {
+	const onCaptchaExpire = (event: RecaptchaEvent) => {
 		console.log('recaptcha api has expired');
 		/*
      │Normally, you wouldn't need to do anything.
@@ -117,14 +117,14 @@
      */
 	};
 
-	const onCaptchaOpen = (event) => {
+	const onCaptchaOpen = (event: RecaptchaEvent) => {
 		console.log('google decided to challange the user');
 		/*
      │This fires when the puzzle frame pops.
      */
 	};
 
-	const onCaptchaClose = (event) => {
+	const onCaptchaClose = (event: RecaptchaEvent) => {
 		console.log('google decided to challange the user');
 		/*
      │This fires when the puzzle frame closes.
@@ -319,9 +319,6 @@
 						sitekey={`${PUBLIC_RECAPTCHA_SITE_KEY}`}
 						size="invisible"
 						badge="inline"
-						theme="light"
-						id="recaptcha"
-						lang="en"
 						on:success={onCaptchaSuccess}
 						on:error={onCaptchaError}
 						on:expired={onCaptchaExpire}

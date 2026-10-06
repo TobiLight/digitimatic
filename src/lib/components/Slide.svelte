@@ -25,7 +25,7 @@
 		currentSlide = i;
 		// timer();
 	};
-	let interval: number;
+	let interval: ReturnType<typeof setInterval>;
 	const timer = () => {
 		clearInterval(interval);
 		interval = setInterval(nextSlide, duration);

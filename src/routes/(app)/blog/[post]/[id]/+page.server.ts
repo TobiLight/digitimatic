@@ -1,6 +1,6 @@
 import { WORDPRESS_URL } from '$app/env/private';
-import type { PageServerLoad } from "../../$types";
-import { error } from '@sveltejs/kit'
+import type { PageServerLoad } from './$types';
+import { error, isHttpError } from '@sveltejs/kit'
 
 export const prerender = false
 
@@ -26,7 +26,7 @@ export const load: PageServerLoad = async ({ params }) => {
 		const postResp = await fetch(postUrl, { method: "GET" })
 		const post: Post = await postResp.json();
 		if (post.data?.status)
-			throw error(404, "Post not found.")
+			return error(404, "Post not found.")
 		const categories: Category = post._embedded['wp:term'][0]
 		const categoryIDs = categories.map(category => category.id).join("").split("").join(",")
 		const relatedPostsResp = await fetch(`${WORDPRESS_URL}/wp-json/wp/v2/posts?categories=${categoryIDs}&_embed`)
@@ -35,7 +35,8 @@ export const load: PageServerLoad = async ({ params }) => {
 
 		return { post, categories, relatedPosts };
 	} catch (e: any) {
+		if (isHttpError(e)) throw e;
 		console.error('Error fetching post:', e);
-		return error(404, `${e.body.message}`)
+		return error(404, 'Post not found.')
 	}
 }
