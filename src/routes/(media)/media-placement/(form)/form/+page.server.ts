@@ -1,5 +1,5 @@
-import { EmailService } from '$lib/mail/mail.server';
-import { mediaPlacementSchema } from '$lib/validation/schema';
+import { EmailService } from '#lib/mail/mail.server.ts';
+import { mediaPlacementSchema } from '#lib/validation/schema.ts';
 import { fail } from '@sveltejs/kit';
 import { superValidate } from 'sveltekit-superforms';
 import { zod } from 'sveltekit-superforms/adapters';

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import BlogPost from '$lib/components/Blog/BlogPost.svelte';
-	import { excerptPostContent } from '$lib/utils/excerptPost';
+	import BlogPost from '#lib/components/Blog/BlogPost.svelte';
+	import { excerptPostContent } from '#lib/utils/excerptPost.ts';
 	import type { PageServerData } from './$types';
 	import { marked } from 'marked';
 

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Options } from 'svelte-inview';
 	import { inview } from 'svelte-inview';
-	import RightArrow from '$lib/components/icons/RightArrow.svelte';
+	import RightArrow from '#lib/components/icons/RightArrow.svelte';
 
 	let isInView: boolean;
 	const options: Options = {

@@ -1,10 +1,10 @@
 <script lang="ts">
-	import MenuIcon from '$lib/components/icons/Menu.svelte';
-	import WorkWithUs from '$lib/components/WorkWithUs.svelte';
-	import CloseIcon from '$lib/components/icons/Close.svelte';
+	import MenuIcon from '#lib/components/icons/Menu.svelte';
+	import WorkWithUs from '#lib/components/WorkWithUs.svelte';
+	import CloseIcon from '#lib/components/icons/Close.svelte';
 	import '../../app.css';
 	import { isMenuOpen } from '../../stores/store';
-	import Footer from '$lib/components/shared/Footer.svelte';
+	import Footer from '#lib/components/shared/Footer.svelte';
 	import 'animate.css';
 
 	function toggleMenu() {

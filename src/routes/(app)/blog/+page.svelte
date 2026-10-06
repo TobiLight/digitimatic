@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { excerptPostContent } from '$lib/utils/excerptPost';
+	import { excerptPostContent } from '#lib/utils/excerptPost.ts';
 	import type { PageServerData } from './$types';
-	import BlogPost from '$lib/components/Blog/BlogPost.svelte';
-	import Loading from '$lib/components/icons/Loading.svelte';
+	import BlogPost from '#lib/components/Blog/BlogPost.svelte';
+	import Loading from '#lib/components/icons/Loading.svelte';
 	import { onMount } from 'svelte';
 
 	let isLoading: boolean = false;

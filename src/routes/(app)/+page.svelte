@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { isMenuOpen } from '../../stores/store';
-	import WhoAreWe from '$lib/components/WhoAreWe.svelte';
-	import Testimonials from '$lib/components/Testimonials.svelte';
-	import HeroRocket from '$lib/components/icons/hero-rocket.webp';
+	import WhoAreWe from '#lib/components/WhoAreWe.svelte';
+	import Testimonials from '#lib/components/Testimonials.svelte';
+	import HeroRocket from '#lib/components/icons/hero-rocket.webp';
 	import { slide } from 'svelte/transition';
-	import RightArrow from '$lib/components/icons/RightArrow.svelte';
+	import RightArrow from '#lib/components/icons/RightArrow.svelte';
 
 	function smoothScroll(e: MouseEvent) {
 		e.preventDefault();

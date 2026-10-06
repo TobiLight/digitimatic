@@ -1,10 +1,10 @@
 <script lang="ts">
-	import RightArrow from '$lib/components/icons/RightArrow.svelte';
-	import Facebook from '$lib/components/icons/FacebookAlt.svelte';
-	import Twitter from '$lib/components/icons/TwitterAlt.svelte';
-	import Instagram from '$lib/components/icons/InstagramAlt.svelte';
-	import Envelope from '$lib/components/icons/Envelope.svelte';
-	import Loading from '$lib/components/icons/Loading.svelte';
+	import RightArrow from '#lib/components/icons/RightArrow.svelte';
+	import Facebook from '#lib/components/icons/FacebookAlt.svelte';
+	import Twitter from '#lib/components/icons/TwitterAlt.svelte';
+	import Instagram from '#lib/components/icons/InstagramAlt.svelte';
+	import Envelope from '#lib/components/icons/Envelope.svelte';
+	import Loading from '#lib/components/icons/Loading.svelte';
 	import { Recaptcha, recaptcha, observer } from 'svelte-recaptcha-v2';
 	import {env} from '$env/dynamic/public';
 	const PUBLIC_RECAPTCHA_SITE_KEY = env.PUBLIC_RECAPTCHA_SITE_KEY;

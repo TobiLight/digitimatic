@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Loading from '$lib/components/icons/Loading.svelte';
-	import RightArrow from '$lib/components/icons/RightArrow.svelte';
+	import Loading from '#lib/components/icons/Loading.svelte';
+	import RightArrow from '#lib/components/icons/RightArrow.svelte';
 	import { superForm } from 'sveltekit-superforms';
 	import LeftArrow from './icon/LeftArrow.svelte';
 	import Home from './icon/Home.svelte';

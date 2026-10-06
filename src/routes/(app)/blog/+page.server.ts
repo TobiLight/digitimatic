@@ -3,7 +3,7 @@ export const ssr = true
 
 import type { PageServerLoad } from './$types';
 import { WORDPRESS_PER_PAGE, WORDPRESS_URL } from '$env/static/private';
-import type { APIResponse, Posts } from '$lib/types';
+import type { APIResponse, Posts } from '#lib/types.ts';
 import { error, type NumericRange } from '@sveltejs/kit';
 
 

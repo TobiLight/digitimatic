@@ -2,7 +2,7 @@
 	import type { Options } from 'svelte-inview';
 	import { inview } from 'svelte-inview';
 	import { fade } from 'svelte/transition';
-	import Partner from '$lib/components/icons/Partner.svelte'
+	import Partner from '#lib/components/icons/Partner.svelte'
 
 	let isInView: boolean;
 	const options: Options = {

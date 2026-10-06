@@ -8,7 +8,7 @@ import { type RequestHandler } from '@sveltejs/kit';
 // } from '$env/dynamic/private';
 import * as nodemailer from 'nodemailer';
 import { RateLimiter } from 'sveltekit-rate-limiter/server';
-import { contactFormSchema, analyzeSpamContent } from '$lib/validation/contact-schema';
+import { contactFormSchema, analyzeSpamContent } from '#lib/validation/contact-schema.ts';
 import { env } from '$env/dynamic/private';
 
 const { EMAIL_HOST, EMAIL_PWD, EMAIL_USER, TO_EMAIL, RECAPTCHA_SECRET_KEY } = env;

@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import RightArrow from '$lib/components/icons/RightArrow.svelte';
+	import RightArrow from '#lib/components/icons/RightArrow.svelte';
 </script>
 
 <section class="error pt-24 pb-64 p-8 overflow-hidden">

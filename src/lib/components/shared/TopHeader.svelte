@@ -1,7 +1,7 @@
 <script>
-	import Facebook from "$lib/components/icons/Facebook.svelte";
-	import Twitter from "$lib/components/icons/Twitter.svelte";
-	import Instagram from "$lib/components/icons/Instagram.svelte";
+	import Facebook from "#lib/components/icons/Facebook.svelte";
+	import Twitter from "#lib/components/icons/Twitter.svelte";
+	import Instagram from "#lib/components/icons/Instagram.svelte";
 </script>
 
 <div

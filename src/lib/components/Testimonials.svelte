@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
-	import LeftArrowN from '$lib/components/icons/LeftArrowN.svelte';
-	import RightArrowN from '$lib/components/icons/RightArrowN.svelte';
+	import LeftArrowN from '#lib/components/icons/LeftArrowN.svelte';
+	import RightArrowN from '#lib/components/icons/RightArrowN.svelte';
 
 
 	const testimonials = [
