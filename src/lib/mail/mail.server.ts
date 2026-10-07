@@ -25,14 +25,13 @@ export class EmailService {
 
 	async sendEmail(options: EmailOptions): Promise<void> {
 		const mailOptions = {
-			from: 'admin@digitimatic.com',
+			from: 'oluwatobilobagunloye@gmail.com',
 			...options
 		};
 
 		try {
-			await this.transporter.sendMail(mailOptions);
+			return await this.transporter.sendMail(mailOptions);
 
-			console.log('Email sent successfully');
 		} catch (error: unknown) {
 			console.error('Error sending email:', error);
 			throw error;

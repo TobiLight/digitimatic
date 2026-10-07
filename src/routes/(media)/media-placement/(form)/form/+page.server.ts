@@ -23,7 +23,7 @@ export const actions = {
 			const mail = new EmailService();
 
 			await mail.sendEmail({
-				to: 'info@digitimatic.com',
+				to: 'oluwatobilobagunloye@gmail.com',
 				subject: form.data.placementNeed,
 				html: `
 					<h2>You have a new message</h2>
@@ -35,9 +35,11 @@ export const actions = {
 				`
 			});
 
+
 			return { form, success: true, message: 'Message sent!' };
 		} catch (err: unknown) {
-			return { err, form, success: false, message: 'An error has occured' };
+			console.log('Error sending email:', err);
+			return fail(500, { form, success: false, message: 'An error has occurred' });
 		}
 	}
 };
